@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slide-out-left 0.5s forwards;
+}
+
+@keyframes slide-in-left {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-out-left {
+  100% {
+    left: -100%;
+  }
+}
