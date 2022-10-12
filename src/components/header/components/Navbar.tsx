@@ -30,7 +30,7 @@ const Navbar = () => {
               : "fixed md:block left-0 slide-out-left"
           }`}
         >
-          <ul className="flex flex-col items-center gap-6 text-xl mt-10 md:flex-row md:mt-0">
+          <ul className="flex flex-col items-center gap-5 text-xl mt-10 md:flex-row md:mt-0">
             <li className="hover:text-blue-500">
               <Link to="/cars">Cars</Link>
             </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="hover:text-blue-500">
               <Link to="/about">About Us</Link>
             </li>
-            <button className="text-white bg-blue-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full bg-gray-100">
+            <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full bg-gray-100">
               Log in
             </button>
           </ul>
