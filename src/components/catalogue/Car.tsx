@@ -1,24 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { formatCurrency } from "../../utils/formatCurrency";
+import { ICar } from "./../../../types.d";
 
 interface IProps {
   car: ICar;
-}
-
-interface ICar {
-  id: number;
-  brand: string;
-  model: string;
-  year: number;
-  type: string;
-  price: number;
-  fuel: string;
-  seats: number;
-  images: string[];
-  description: string;
-  location: string;
-  count: number;
 }
 
 const Car = ({ car }: IProps) => {
