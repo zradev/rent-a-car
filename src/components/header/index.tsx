@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 const index = () => {
   return (
-    <header>
+    <header className="z-50 sticky top-0 bg-white">
       <Banner />
       <Navbar />
     </header>

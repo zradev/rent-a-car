@@ -1,781 +1,932 @@
-[
-  {
-    "id": 0,
-    "brand": "bmw",
-    "model": "SF25",
-    "year": 2016,
-    "type": "luxury",
-    "price": 180,
-    "fuel": "petrol",
-    "seats": 7,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Exercitation dolore pariatur occaecat deserunt velit tempor cupidatat qui elit fugiat qui duis. Culpa consequat do magna ea aute culpa nostrud. Incididunt labore et laboris cupidatat aute reprehenderit deserunt sunt esse tempor. Ea veniam deserunt elit duis sint cillum. Eiusmod cillum ipsum commodo nostrud fugiat sit proident cupidatat aliquip Lorem. Lorem nostrud commodo adipisicing occaecat nostrud et ad. Et eu nulla dolor nostrud incididunt elit.\r\nLabore aliquip ex non culpa in. Ex cillum sit nulla nisi aliqua incididunt laboris voluptate. Duis et fugiat pariatur cupidatat aute irure magna. Mollit aliquip irure nisi ipsum deserunt Lorem cupidatat dolor mollit. Non sint minim cupidatat cillum et commodo anim consectetur labore voluptate anim. Amet elit cupidatat pariatur dolore laborum officia tempor incididunt aliqua.\r\nCupidatat cillum elit ipsum aliqua adipisicing dolor Lorem aute consectetur. Nulla id sit non esse fugiat magna et sunt. Tempor ex Lorem fugiat eu est nostrud minim officia nisi. Nulla reprehenderit proident nostrud deserunt minim commodo nulla voluptate ullamco sit pariatur officia exercitation. Reprehenderit id ipsum occaecat ea adipisicing aliqua elit tempor anim voluptate laboris sint ipsum aliqua.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 1,
-    "brand": "honda",
-    "model": "JS24",
-    "year": 2008,
-    "type": "SUV",
-    "price": 350,
-    "fuel": "petrol",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Officia enim adipisicing cillum do magna et est sunt quis commodo tempor sit. Ex ea adipisicing ipsum laboris amet occaecat reprehenderit minim. Sint exercitation eiusmod proident anim sit ipsum reprehenderit elit id est quis.\r\nPariatur enim do minim anim excepteur veniam commodo occaecat reprehenderit voluptate. Duis laboris commodo tempor dolor pariatur id sit qui enim sit. Dolor aliqua ipsum ipsum cupidatat ut Lorem adipisicing dolor officia Lorem proident aliqua consequat incididunt. Laborum duis Lorem do mollit tempor cupidatat sint voluptate.\r\nAdipisicing consequat excepteur veniam sit fugiat commodo nulla aliquip officia cupidatat fugiat aliqua. Amet anim consequat mollit sit eiusmod veniam cillum sit laborum nostrud excepteur. Amet non esse ullamco adipisicing esse irure excepteur tempor ea id laboris. Amet aliqua ullamco qui ut pariatur ipsum dolor sint amet eiusmod reprehenderit. Est quis nisi duis elit sit. Enim cillum dolore deserunt exercitation sint. Adipisicing ex mollit officia proident occaecat aliqua eu sit.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 2,
-    "brand": "porsche",
-    "model": "G92",
-    "year": 2005,
-    "type": "economy",
-    "price": 139,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Aliqua ut nisi proident veniam elit minim enim sit adipisicing. Ex et ex id enim aute est aliquip pariatur labore quis enim proident duis. Reprehenderit nulla proident cillum dolore adipisicing. Exercitation deserunt aliquip laborum amet in elit incididunt duis consectetur ullamco cupidatat consequat. Mollit deserunt sunt cupidatat adipisicing dolor duis laboris mollit excepteur cillum commodo et.\r\nMagna pariatur adipisicing ad ea nostrud. Id irure veniam consectetur tempor ullamco minim officia est aliqua sit nostrud anim labore. Enim exercitation minim nostrud sint incididunt laborum id voluptate et amet ex amet veniam. Eiusmod ad sit labore eiusmod nulla nisi qui consectetur. Sit eiusmod ullamco esse aliquip ipsum officia cillum. Amet incididunt veniam labore anim veniam qui.\r\nEsse aliquip sunt commodo aliquip. Minim do deserunt minim amet tempor irure veniam reprehenderit culpa aute eu culpa tempor proident. Dolore in laborum mollit excepteur. Eu nisi consequat esse ullamco non sunt consequat sit laboris voluptate commodo ipsum excepteur. Sint laborum Lorem cillum laborum nisi adipisicing deserunt commodo fugiat esse. Excepteur deserunt sunt aliqua ex irure. Magna in voluptate qui cillum dolor ad pariatur qui nostrud cillum cillum dolore incididunt cupidatat.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 3,
-    "brand": "chevrolet",
-    "model": "GS76",
-    "year": 2021,
-    "type": "economy",
-    "price": 468,
-    "fuel": "electric",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "In consectetur duis anim deserunt. Officia non tempor excepteur id duis. Ut fugiat ipsum ut labore excepteur proident tempor laborum. Labore cillum adipisicing consectetur officia reprehenderit ea labore voluptate. Et dolor enim Lorem dolore ex excepteur exercitation exercitation proident nulla culpa.\r\nNisi duis ad non enim eiusmod mollit voluptate consequat sunt laboris. Proident voluptate nostrud nulla ut dolore aliquip tempor ex. Id in amet eu sint aute ea nostrud qui nostrud.\r\nAmet consequat cupidatat ea aliquip et ipsum elit id anim eu occaecat. Consectetur id irure et labore ipsum consectetur ut et. Laborum ipsum non officia aliqua labore cupidatat fugiat eu exercitation sunt magna esse in. Est ea culpa est aliquip aliqua commodo exercitation culpa elit cillum amet. Incididunt deserunt sint tempor et ullamco labore et sunt ex labore cupidatat.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 4,
-    "brand": "bmw",
-    "model": "C12",
-    "year": 2002,
-    "type": "luxury",
-    "price": 455,
-    "fuel": "disel",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Cillum sint mollit nostrud elit esse. Duis commodo voluptate reprehenderit magna. Elit culpa excepteur nostrud dolor Lorem velit do.\r\nAnim voluptate labore officia ad culpa est laboris qui labore laboris consectetur culpa. Enim aliquip culpa adipisicing tempor eiusmod ut amet proident eu cillum excepteur. Et ut duis duis exercitation est nulla dolor. Mollit anim consectetur dolor ut exercitation exercitation consectetur duis esse sint cupidatat sit. Ea anim laboris duis excepteur deserunt laboris sint irure sunt sint reprehenderit amet. Nisi est velit reprehenderit irure occaecat ut cillum et nulla quis veniam Lorem est veniam.\r\nAliqua est ea aliquip elit velit laboris ea amet in. Sit tempor ullamco sit ut in voluptate nulla. Ipsum occaecat aliqua cupidatat reprehenderit duis Lorem qui consequat dolor aliquip. Sint et culpa ea cillum nisi Lorem nulla et nisi veniam enim adipisicing non.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 5,
-    "brand": "mercedes",
-    "model": "B64",
-    "year": 2018,
-    "type": "cargo",
-    "price": 229,
-    "fuel": "petrol",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Nulla reprehenderit nulla officia velit esse pariatur velit esse commodo cillum sint anim sit. Eu laborum dolore labore nisi. Lorem sit occaecat amet occaecat ipsum laboris eu consequat ad enim. Ex dolore labore magna magna anim officia eiusmod cillum sit tempor occaecat ullamco proident.\r\nIpsum officia culpa consequat ad nisi eiusmod esse ipsum Lorem amet occaecat est enim aliqua. Mollit velit minim amet est dolore incididunt ipsum eiusmod proident ea ad. Culpa excepteur deserunt et occaecat laboris ut dolor mollit excepteur. Commodo do consectetur ex est qui duis reprehenderit. Consequat laborum enim et est voluptate ut nulla commodo cupidatat. Qui tempor sunt magna incididunt irure eiusmod adipisicing irure commodo aliquip.\r\nEa voluptate qui nisi in elit incididunt. Dolor Lorem nostrud ipsum fugiat mollit commodo sint. Labore laborum non irure ipsum velit ad magna nostrud incididunt qui proident. Dolore ad minim ullamco qui aliqua Lorem minim. Adipisicing laborum cupidatat irure non reprehenderit fugiat sunt reprehenderit anim non id nulla deserunt dolor. Et adipisicing laborum sunt irure laboris id aute qui voluptate. Occaecat consequat non eu dolor magna ipsum duis qui incididunt ea consectetur velit mollit.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 6,
-    "brand": "citroen",
-    "model": "SO2",
-    "year": 2002,
-    "type": "SUV",
-    "price": 120,
-    "fuel": "petrol",
-    "seats": 8,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Ullamco sunt proident ullamco voluptate non ullamco non velit velit proident duis. Aliquip aliquip incididunt velit cupidatat veniam consequat cupidatat tempor ad laboris occaecat est. Voluptate culpa tempor dolore ullamco eiusmod cillum proident consectetur ipsum. Nostrud occaecat pariatur sunt cupidatat velit dolore amet nisi qui reprehenderit incididunt occaecat quis dolor. Tempor ex enim commodo exercitation.\r\nUt est voluptate labore eiusmod irure ullamco et. Culpa ea laboris enim dolor. Fugiat amet irure ut sit proident labore sint. Proident veniam nulla non sunt nisi nisi sint nisi quis commodo. Ipsum elit in ipsum ea enim non esse labore exercitation minim et non ullamco irure.\r\nUllamco ut cillum ut minim ipsum cillum. Sit elit cupidatat aliquip ipsum minim voluptate velit sunt. Ullamco sit et anim irure. Laborum do magna proident cillum.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 1
-  },
-  {
-    "id": 7,
-    "brand": "porsche",
-    "model": "B64",
-    "year": 1998,
-    "type": "cargo",
-    "price": 242,
-    "fuel": "electric",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Deserunt id voluptate quis veniam exercitation fugiat incididunt. Proident sint consectetur sit laborum. Minim sunt ipsum ut dolor consectetur amet duis labore reprehenderit occaecat dolore id. Nulla ea dolore ad consectetur id ipsum aute. Laboris excepteur eu minim laboris tempor ad minim aliqua velit cillum ea.\r\nLabore cupidatat ut mollit commodo aliqua in non laboris velit velit eu anim minim. Laboris commodo labore in quis amet quis sint mollit aute eiusmod. Non commodo elit commodo ex esse esse aute nostrud Lorem anim aliqua. Aliquip anim minim ullamco reprehenderit elit est incididunt non aliqua qui.\r\nAdipisicing nisi ad anim duis minim et sint exercitation officia sunt amet est. Mollit id excepteur elit ut. Ut aute dolore veniam adipisicing. Culpa anim veniam quis qui ea mollit dolor. Irure dolore Lorem non laborum tempor culpa elit labore duis.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 8,
-    "brand": "mercedes",
-    "model": "GS76",
-    "year": 2017,
-    "type": "cargo",
-    "price": 240,
-    "fuel": "disel",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Nostrud cupidatat dolore labore aliqua cupidatat. Consequat sunt ut ullamco deserunt excepteur dolore. Et sint culpa ipsum ex anim ipsum culpa ex non labore. Ipsum consequat enim consectetur qui mollit incididunt cillum est labore aliqua cupidatat sit est dolor.\r\nDo anim velit sit esse magna amet velit consequat. Commodo pariatur nulla quis proident excepteur. Excepteur consequat reprehenderit dolor reprehenderit et. Ea non irure ad nostrud dolor et amet.\r\nExercitation laborum qui adipisicing cupidatat nulla. Dolore laborum labore aliquip exercitation tempor ad qui tempor ut consequat. Magna commodo nulla excepteur non fugiat nostrud laboris ullamco eiusmod fugiat eu sit nostrud incididunt. Eiusmod velit magna labore minim voluptate sit ipsum ipsum cupidatat cupidatat culpa laborum magna enim. Laboris qui aliqua dolore qui tempor mollit irure Lorem.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 9,
-    "brand": "mercedes",
-    "model": "C12",
-    "year": 2016,
-    "type": "estate",
-    "price": 389,
-    "fuel": "disel",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Commodo labore mollit cillum commodo amet cillum veniam aliquip sunt exercitation ex nisi deserunt magna. Ullamco elit est aliqua sit id esse non reprehenderit. Laboris Lorem minim Lorem enim occaecat elit aliquip in id magna proident nulla.\r\nVoluptate ea dolor Lorem ut consequat. Consequat esse ea dolor do sunt excepteur irure labore. Ut ullamco eiusmod aliqua reprehenderit sunt. Irure ea veniam fugiat fugiat laborum ullamco sunt fugiat exercitation nulla consectetur duis mollit magna. Duis consectetur nisi voluptate consectetur nisi.\r\nAute exercitation veniam mollit et nisi nostrud anim do. Non proident irure nulla tempor deserunt. Voluptate excepteur laboris elit amet sint exercitation cillum do. Labore ex commodo in dolore. Enim qui pariatur anim aliquip culpa mollit.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 10,
-    "brand": "honda",
-    "model": "JS24",
-    "year": 2007,
-    "type": "luxury",
-    "price": 338,
-    "fuel": "gybrid",
-    "seats": 5,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Sit laboris nostrud magna sint duis excepteur enim. Amet tempor eiusmod consequat nostrud ad labore ad magna id ex pariatur minim. Enim incididunt nisi ex est enim non id duis. Dolore sit ad velit elit labore dolore commodo consectetur ullamco eiusmod do.\r\nDeserunt aliquip proident fugiat minim nisi velit adipisicing. Anim proident eu adipisicing aliqua exercitation nisi nulla aliqua culpa do sit nulla. Deserunt labore pariatur tempor do veniam amet Lorem qui aute tempor voluptate. Aliquip elit esse adipisicing reprehenderit. Nisi cupidatat deserunt Lorem et id consectetur cupidatat quis do labore est quis Lorem ad. Deserunt commodo qui deserunt ut duis et nisi tempor consequat tempor cillum. Adipisicing eu fugiat laborum laboris proident labore tempor nisi.\r\nMagna sit mollit labore nostrud dolor pariatur veniam consequat elit duis. Nostrud ea labore fugiat minim tempor eu velit adipisicing amet. Occaecat nisi sunt consectetur nisi ex deserunt id fugiat aliqua. Consequat ut magna est esse occaecat amet anim eiusmod adipisicing. Sunt velit ad ea velit nisi exercitation sint veniam. Occaecat voluptate sunt mollit aute mollit aliquip voluptate id ullamco cillum commodo. Aute velit irure et fugiat commodo ipsum nostrud in nulla incididunt excepteur et mollit amet.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 11,
-    "brand": "honda",
-    "model": "JK34",
-    "year": 2022,
-    "type": "luxury",
-    "price": 341,
-    "fuel": "gybrid",
-    "seats": 2,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Veniam laborum occaecat nulla ipsum duis. Tempor veniam irure pariatur ipsum aliqua exercitation esse labore exercitation. Non proident do tempor duis duis anim pariatur consequat cillum exercitation duis. Nulla ipsum laboris eu ullamco sunt pariatur do labore aute mollit.\r\nIpsum ex occaecat veniam ipsum amet eu non. Nisi non aute adipisicing laboris. Cupidatat deserunt velit id magna aliqua esse dolor id enim laborum ut ullamco dolore. Id sunt aliquip incididunt culpa aute laboris esse quis laborum Lorem. Incididunt duis ut ad ex tempor. Culpa aliqua velit Lorem incididunt sint minim eu ut occaecat pariatur nulla exercitation quis.\r\nNostrud do aliquip duis qui pariatur dolore laboris esse. Ullamco id cillum laboris enim irure reprehenderit sunt amet ad. Nulla consectetur exercitation amet ipsum cillum est et incididunt irure enim magna cillum.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 12,
-    "brand": "chevrolet",
-    "model": "GS76",
-    "year": 2012,
-    "type": "luxury",
-    "price": 314,
-    "fuel": "gybrid",
-    "seats": 8,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Qui nisi velit quis aliquip Lorem culpa. Laboris nisi Lorem deserunt pariatur sit voluptate irure excepteur voluptate enim. Amet consectetur proident aliqua voluptate enim excepteur nulla in. Amet eiusmod officia est laboris commodo irure anim anim duis. Culpa ex quis nisi esse velit consequat ex anim pariatur minim voluptate magna ut duis. Adipisicing cupidatat enim eiusmod cupidatat exercitation cillum anim adipisicing nisi nulla id sit.\r\nAute nulla occaecat aute sint id eu nisi ad cupidatat nisi Lorem amet. Laborum aliquip occaecat velit officia ullamco esse id. Eu qui irure consectetur magna eiusmod velit laboris minim.\r\nCillum nisi sunt Lorem consectetur reprehenderit officia sunt. Fugiat aliqua cillum eiusmod exercitation. Sunt tempor mollit duis velit labore et amet laboris ullamco sint incididunt tempor ad. Non consequat ipsum ex minim esse dolore do tempor magna mollit voluptate.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 13,
-    "brand": "opel",
-    "model": "GS76",
-    "year": 1998,
-    "type": "SUV",
-    "price": 258,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Commodo occaecat commodo deserunt minim eu aliqua consectetur eiusmod laborum ut sint deserunt. Reprehenderit pariatur anim ullamco nisi tempor. Ut adipisicing sint dolore tempor esse fugiat id Lorem eu pariatur.\r\nIn mollit tempor elit ex ipsum officia reprehenderit exercitation esse aliqua eu irure dolor. Laborum sint in officia ipsum aliqua aute reprehenderit. Aute cillum cillum magna in consequat ullamco magna eiusmod quis. Aliqua deserunt et quis proident fugiat cillum commodo exercitation. Cupidatat occaecat irure Lorem esse culpa dolor incididunt commodo velit dolor et magna reprehenderit sit. Laborum ea sit consectetur consequat.\r\nEnim duis est excepteur ea fugiat ut deserunt est irure ex est in sunt laboris. Labore eiusmod eu eiusmod anim. Nostrud magna mollit irure quis in id fugiat voluptate in. Id ipsum et deserunt in non eu labore reprehenderit. Ipsum dolor enim aliquip ad non reprehenderit deserunt voluptate culpa incididunt sunt laborum incididunt. Mollit laboris fugiat sunt eiusmod duis consequat exercitation occaecat sit id ex id velit.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 1
-  },
-  {
-    "id": 14,
-    "brand": "porsche",
-    "model": "SD17",
-    "year": 2018,
-    "type": "cargo",
-    "price": 486,
-    "fuel": "disel",
-    "seats": 2,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Incididunt esse magna ad exercitation dolore exercitation deserunt elit deserunt. Cillum ipsum pariatur deserunt irure. Et sit ut sint esse occaecat voluptate fugiat anim. In sit culpa aliquip culpa pariatur nulla nostrud do aliqua. Nisi proident officia occaecat adipisicing et. Eu dolor duis laborum consectetur magna et nisi labore ullamco velit velit aute sint. Deserunt est sunt ut id veniam consequat culpa.\r\nEt tempor in irure officia adipisicing sit dolor duis ullamco nulla eu nostrud est ipsum. Aliquip dolore est commodo commodo qui labore anim esse. Ut minim cillum laborum in ex ullamco.\r\nEa eu adipisicing proident anim cupidatat velit deserunt aute esse commodo et ullamco magna tempor. Et cillum elit fugiat quis ex elit. Ipsum ex pariatur amet eu ad elit do duis elit. Sunt in do dolore aliqua consequat eu.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 15,
-    "brand": "nissan",
-    "model": "C12",
-    "year": 2004,
-    "type": "SUV",
-    "price": 192,
-    "fuel": "electric",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Eu reprehenderit cupidatat sit est veniam nostrud irure esse sunt nostrud irure. Laborum consectetur fugiat deserunt aliqua cupidatat consectetur velit pariatur. Minim reprehenderit sint dolor labore mollit veniam id minim eiusmod eiusmod incididunt tempor culpa. Laboris do minim cupidatat voluptate veniam ullamco velit aliquip adipisicing ut pariatur. Enim pariatur ut enim anim ipsum nisi eu amet consequat aute ut elit qui laboris. Commodo duis est reprehenderit deserunt ut voluptate mollit labore voluptate pariatur.\r\nEt ipsum aliqua aliqua consectetur. Dolore proident voluptate labore irure tempor nisi velit dolor. Duis dolor pariatur ad ad dolore enim est. Eu et irure deserunt irure do aliquip. Irure consectetur eiusmod dolor est consequat duis ullamco commodo dolor officia laborum. Do magna do culpa esse nulla.\r\nProident nisi cillum dolor sint sunt ad fugiat magna ullamco commodo. Eu commodo velit adipisicing aliqua commodo nulla. Ad mollit fugiat adipisicing do qui irure id ea. Sint eiusmod mollit mollit nisi. Qui sint adipisicing do excepteur occaecat dolor nisi consectetur aliquip nisi dolor ut nulla incididunt.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 16,
-    "brand": "nissan",
-    "model": "SO2",
-    "year": 2019,
-    "type": "estate",
-    "price": 140,
-    "fuel": "petrol",
-    "seats": 8,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Exercitation id deserunt et incididunt duis. Do cillum aliqua magna laborum consequat nostrud. Laborum ipsum magna mollit ad. Culpa deserunt ullamco labore non anim. Adipisicing id dolor do do est enim minim quis deserunt anim anim velit culpa laboris. Do sunt et mollit ipsum deserunt cillum ea proident laborum cupidatat labore. Fugiat proident excepteur cupidatat ullamco veniam consequat ad minim velit sunt nulla pariatur reprehenderit.\r\nCupidatat incididunt exercitation irure sit anim elit consequat aute mollit nostrud exercitation. Ipsum eu est pariatur velit fugiat. Dolore laborum exercitation sint labore.\r\nExercitation velit Lorem pariatur veniam culpa. Nisi laboris commodo dolore eiusmod qui excepteur ut amet. Lorem Lorem nostrud minim nulla nulla quis est sunt ad enim aute occaecat dolor irure.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 17,
-    "brand": "porsche",
-    "model": "A21",
-    "year": 2006,
-    "type": "estate",
-    "price": 268,
-    "fuel": "disel",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Laboris eiusmod ad laborum voluptate cupidatat qui veniam laboris in proident quis nostrud deserunt. Ullamco aliqua officia esse adipisicing dolor mollit in eiusmod non eu est Lorem cillum. Elit ipsum proident culpa sit ex occaecat consectetur elit qui consectetur ea. Esse ullamco reprehenderit esse culpa laboris ea ea tempor. Occaecat Lorem ullamco sunt laborum aute Lorem amet est.\r\nCulpa ullamco amet mollit sit ipsum ea dolor ullamco. Deserunt veniam aliquip anim exercitation. Veniam aute consequat consectetur in eu sit ipsum Lorem laboris reprehenderit excepteur esse. Enim occaecat voluptate laborum Lorem quis enim proident aute sint nulla. Exercitation ipsum occaecat ipsum ut nostrud nostrud. Cupidatat duis commodo anim velit anim et eiusmod deserunt aliqua magna enim esse. Nulla nostrud occaecat tempor minim voluptate tempor aliqua et ex nisi qui quis magna cillum.\r\nPariatur eiusmod minim pariatur proident id reprehenderit sunt do mollit fugiat irure sit esse veniam. Minim fugiat cillum aliquip nulla voluptate. Proident duis eu tempor cillum dolore mollit sunt commodo ea. Enim irure quis pariatur sunt cupidatat reprehenderit. Id fugiat consectetur consectetur adipisicing excepteur do. Ullamco sit ex do adipisicing duis nulla adipisicing id.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 18,
-    "brand": "citroen",
-    "model": "G92",
-    "year": 2018,
-    "type": "SUV",
-    "price": 162,
-    "fuel": "petrol",
-    "seats": 5,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Pariatur laboris tempor esse aute incididunt proident qui officia eiusmod dolor. Mollit ut minim minim ea irure id ullamco in. Occaecat ut exercitation amet amet sint. Sint esse id officia elit fugiat tempor cupidatat sunt sint ipsum qui dolor occaecat. Aute commodo laboris cillum esse officia mollit aute nostrud fugiat irure commodo consequat ex enim.\r\nCupidatat consequat occaecat in id ullamco non ut fugiat laboris quis consectetur fugiat. Eu amet anim quis commodo non amet consequat deserunt esse ut. Ea incididunt labore mollit aliquip qui aliqua aute minim culpa deserunt cillum officia labore anim. Irure dolor nostrud id cupidatat mollit nulla aute voluptate reprehenderit sit qui. Anim quis do veniam laborum consectetur magna excepteur non sunt elit consectetur labore ea labore. Aliquip ullamco consequat proident exercitation esse. Ea exercitation nostrud magna proident excepteur ad sint.\r\nMinim culpa aliqua amet veniam voluptate. Ipsum est aliqua laborum amet excepteur id non mollit enim aliqua aute dolore consectetur. Do consequat elit irure Lorem eu anim est excepteur irure voluptate enim occaecat incididunt. Proident excepteur ullamco eiusmod ullamco.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 19,
-    "brand": "nissan",
-    "model": "JS24",
-    "year": 2017,
-    "type": "luxury",
-    "price": 401,
-    "fuel": "gybrid",
-    "seats": 7,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "In amet ea cupidatat adipisicing laborum ipsum sunt ipsum. Nostrud velit tempor mollit non duis ex aliquip deserunt nisi sunt proident magna qui in. Ipsum esse irure do sunt cupidatat laboris occaecat deserunt nisi.\r\nEx cupidatat aute eiusmod consequat cillum amet dolor. Enim sunt pariatur aliqua aute magna aliqua duis ipsum veniam adipisicing et proident exercitation adipisicing. Dolor aliqua sit sint ullamco quis tempor ea esse in consectetur commodo labore eu. Dolor aliquip est nostrud consectetur dolor ad cupidatat eu dolore. Voluptate et ea occaecat qui adipisicing tempor Lorem ullamco adipisicing nulla id ad. Ex esse dolor qui nostrud. Ipsum cillum enim ullamco eu non est consequat nulla deserunt id veniam sit.\r\nQuis aute dolore commodo Lorem eiusmod esse. Amet officia reprehenderit sit consequat ut ea laboris eiusmod deserunt tempor. Irure nostrud cillum nisi cupidatat et esse ipsum est eiusmod ad commodo incididunt.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 1
-  },
-  {
-    "id": 20,
-    "brand": "chevrolet",
-    "model": "PG23",
-    "year": 2009,
-    "type": "estate",
-    "price": 351,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Et cillum proident tempor reprehenderit quis laborum quis. Anim dolore cillum ex quis deserunt laboris incididunt quis. Anim fugiat aute non officia elit anim qui elit elit cupidatat officia elit cillum sit.\r\nVelit magna ea fugiat proident consectetur consectetur id sit consectetur duis laboris sint eiusmod adipisicing. Ad aliquip aute excepteur proident consectetur aliquip veniam reprehenderit fugiat do Lorem. Cupidatat magna elit ipsum duis mollit esse cupidatat ullamco elit sunt.\r\nAmet fugiat cupidatat pariatur deserunt. Nulla dolor ex pariatur do culpa ullamco ea ipsum. Dolore cillum nostrud esse eu id laboris minim ea aute. Aliqua minim velit cupidatat pariatur dolor adipisicing incididunt. Non commodo consequat est velit. Mollit mollit fugiat labore dolore qui esse commodo Lorem sint minim dolore magna enim ad.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 21,
-    "brand": "chevrolet",
-    "model": "SO2",
-    "year": 2022,
-    "type": "economy",
-    "price": 264,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Ullamco culpa aute sint voluptate adipisicing fugiat cupidatat. Amet aute cillum consectetur do enim velit ad enim eiusmod. Amet culpa aliqua deserunt reprehenderit consequat aliquip veniam laborum dolor Lorem Lorem adipisicing laboris occaecat. Ullamco elit nulla occaecat ut consequat labore elit id in.\r\nDeserunt aliqua nulla eiusmod commodo consequat sint ullamco ullamco quis duis culpa laborum. Voluptate incididunt do labore proident magna proident nulla minim ut ullamco. Nisi ut sunt sunt aute officia. Laboris exercitation aute officia labore deserunt aliquip. Minim in sint enim esse elit laborum.\r\nOccaecat et consectetur eu culpa. Aliqua reprehenderit nulla nulla aute et occaecat excepteur dolor ad. Aliquip dolore esse do veniam pariatur ea ea amet.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 22,
-    "brand": "nissan",
-    "model": "JK34",
-    "year": 2016,
-    "type": "cargo",
-    "price": 424,
-    "fuel": "gybrid",
-    "seats": 5,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Labore id pariatur eiusmod excepteur veniam magna esse enim mollit minim nulla amet labore. Consequat aliqua culpa aliqua incididunt et veniam esse. Id esse exercitation labore Lorem deserunt ea magna non et anim incididunt. Sit laboris enim proident aliqua fugiat commodo pariatur dolor adipisicing ullamco velit cupidatat pariatur tempor. Laboris nulla id et voluptate consequat deserunt nisi nulla anim duis aute amet voluptate tempor. Exercitation enim reprehenderit aliquip consectetur. Eu commodo dolor elit nostrud laborum fugiat ad et occaecat sint sint ex eiusmod.\r\nLorem do sit labore ex qui. Nisi incididunt adipisicing incididunt id fugiat officia laboris non incididunt. Reprehenderit ea laboris consequat ut laborum consectetur commodo labore et aliquip ipsum aliquip voluptate elit. Ex voluptate enim occaecat nisi proident. Id sunt ipsum duis reprehenderit ad occaecat.\r\nCupidatat elit cupidatat minim dolore duis eiusmod. Exercitation magna magna proident est ut deserunt velit est sint nostrud. Sit aliqua id cillum velit sint ullamco. Est Lorem minim magna laboris nisi. Pariatur excepteur deserunt minim est enim aute. Velit dolor est tempor ut ex. Commodo eu deserunt do esse voluptate adipisicing culpa ullamco qui.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 23,
-    "brand": "citroen",
-    "model": "G92",
-    "year": 2004,
-    "type": "cargo",
-    "price": 366,
-    "fuel": "petrol",
-    "seats": 2,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Aliquip aliqua in ex proident est ex et. Ullamco minim veniam laborum excepteur amet. Id quis consectetur cupidatat esse irure labore nostrud adipisicing occaecat. Consectetur exercitation ut non ut ea laboris consequat mollit mollit laborum sunt. Duis duis Lorem magna cupidatat amet commodo.\r\nCillum culpa tempor do nisi non nisi nostrud eiusmod ex. Sunt exercitation duis Lorem consectetur non elit tempor labore. Exercitation quis ea et aliqua mollit et quis velit sint ut eu magna. Exercitation sint eiusmod elit dolore est cupidatat.\r\nId fugiat et proident mollit dolor eu quis incididunt aliqua nostrud magna nulla sunt. Aliquip ullamco pariatur fugiat consectetur cillum culpa nostrud. Minim eiusmod deserunt et veniam do id ea ut reprehenderit. Tempor deserunt commodo excepteur ullamco adipisicing irure. Adipisicing exercitation incididunt pariatur esse id est aute non. Incididunt nulla do fugiat consectetur mollit dolore excepteur. Fugiat sint magna sint proident.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 24,
-    "brand": "honda",
-    "model": "GS76",
-    "year": 2002,
-    "type": "luxury",
-    "price": 196,
-    "fuel": "electric",
-    "seats": 7,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Excepteur minim cupidatat velit adipisicing ullamco irure est aliquip voluptate quis pariatur sunt. In aliquip nisi laborum fugiat excepteur. Aliqua ex commodo ea incididunt Lorem ex. Commodo esse reprehenderit non non amet aute sit ad duis incididunt officia mollit. Cupidatat labore minim magna ut adipisicing labore Lorem anim cillum pariatur consequat. Dolor anim aute culpa do reprehenderit voluptate ut tempor voluptate eu irure occaecat et veniam.\r\nId enim reprehenderit id pariatur. Labore aliqua ullamco exercitation ex non minim elit elit eu incididunt dolor. Sint labore incididunt aliqua ullamco anim deserunt qui nisi tempor deserunt magna. Aliquip qui reprehenderit consectetur id adipisicing non. Officia aliquip irure reprehenderit proident ad est. Laborum excepteur nostrud et voluptate duis proident.\r\nCommodo eu ipsum ad ad est nostrud. Et ullamco commodo fugiat fugiat excepteur sunt adipisicing veniam tempor in. Minim est veniam voluptate sit incididunt sunt sunt. Voluptate officia aliquip qui exercitation Lorem velit veniam reprehenderit enim dolor. Nostrud commodo sint non laborum aute sint minim consequat.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 2
-  },
-  {
-    "id": 25,
-    "brand": "citroen",
-    "model": "B64",
-    "year": 2000,
-    "type": "estate",
-    "price": 125,
-    "fuel": "electric",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Officia dolor elit eu duis qui fugiat aliquip. Amet anim eiusmod est proident velit commodo voluptate. Quis sunt laborum dolore ea velit veniam veniam anim pariatur irure. Commodo ut nisi sunt elit velit laboris ea. Excepteur nulla tempor deserunt amet nisi dolore nostrud sit culpa nisi exercitation anim. Laboris esse mollit sit irure consequat sit elit minim occaecat laboris. Lorem eiusmod commodo id nisi reprehenderit est ad magna.\r\nDolore sit nulla id ea magna aliquip velit pariatur. Reprehenderit ex commodo mollit amet sunt quis ipsum in consequat do. Deserunt adipisicing ipsum eiusmod voluptate duis ullamco tempor cillum. Elit proident ad cupidatat fugiat sint aute cupidatat tempor eu fugiat tempor labore aliqua occaecat.\r\nIpsum enim cupidatat dolor commodo sunt irure officia culpa excepteur in cillum. Est cupidatat nostrud anim do proident. Commodo qui excepteur sit id irure eiusmod est et. Id laborum ea officia sit cupidatat.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 26,
-    "brand": "porsche",
-    "model": "G92",
-    "year": 1999,
-    "type": "luxury",
-    "price": 390,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "In Lorem amet voluptate nostrud dolore ea irure excepteur enim id. Irure Lorem ullamco nisi et reprehenderit qui amet. Lorem in occaecat exercitation cupidatat sint veniam et ad consectetur elit consequat cillum. Aute anim pariatur minim non ullamco dolor nisi consectetur eiusmod amet cupidatat sunt laboris. Magna culpa consectetur aliquip ullamco dolor voluptate eiusmod do. Nulla ad eiusmod voluptate elit irure enim ipsum do mollit.\r\nAd do elit non nulla ullamco veniam irure non mollit sit. Enim culpa esse enim tempor eu consequat in fugiat. Ex esse ullamco enim enim adipisicing do mollit Lorem ipsum amet aliquip. Tempor quis veniam dolor esse culpa officia do. Ullamco cillum quis ex deserunt ullamco. Officia nisi sit id magna velit sint dolore. Officia do esse proident exercitation quis dolor laboris ex occaecat id et reprehenderit.\r\nEx in eu duis aliquip irure voluptate. Veniam ullamco duis eu excepteur veniam. Duis officia exercitation nisi nisi culpa excepteur elit incididunt magna eiusmod reprehenderit veniam. Laborum est dolore eiusmod ad culpa ut aliquip sint. Elit cupidatat laboris consectetur adipisicing quis cupidatat. Cupidatat dolore elit labore non nisi aliqua ipsum. Sit nisi laborum tempor sit.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 27,
-    "brand": "chevrolet",
-    "model": "SF25",
-    "year": 2003,
-    "type": "SUV",
-    "price": 297,
-    "fuel": "disel",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Velit anim ut do ad. Velit eiusmod aliquip occaecat aute voluptate. Sint adipisicing amet incididunt exercitation. Deserunt consequat ullamco officia id nisi sint eiusmod.\r\nAliqua eiusmod veniam aute irure labore sunt. Excepteur occaecat laborum et duis excepteur amet consectetur ad. Nisi dolor minim cupidatat voluptate reprehenderit nostrud magna incididunt incididunt Lorem nulla irure officia. Occaecat nostrud commodo quis sunt sint aute quis amet. Adipisicing proident quis minim dolore aliqua. Nisi ipsum magna ut Lorem voluptate.\r\nConsequat ea ea aute et nulla. Consectetur exercitation aute reprehenderit cupidatat anim eiusmod officia. Eiusmod occaecat enim sint veniam incididunt dolor enim est Lorem proident aliquip.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 28,
-    "brand": "citroen",
-    "model": "OHG",
-    "year": 2014,
-    "type": "economy",
-    "price": 147,
-    "fuel": "gybrid",
-    "seats": 5,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Esse est proident proident laboris voluptate culpa ut commodo aute sunt consectetur nostrud in fugiat. Nulla aute sunt fugiat qui minim eiusmod do sit. Do est enim proident mollit cupidatat veniam labore ipsum culpa sit id id deserunt sit. Sit reprehenderit elit velit consequat adipisicing.\r\nAnim do aliqua id dolor aute in consequat anim nulla anim. Eiusmod mollit est mollit eu ipsum cillum velit adipisicing dolor consequat cupidatat incididunt elit. Ullamco ex eiusmod laboris labore.\r\nReprehenderit dolore dolore ad dolor qui deserunt id ut eu quis fugiat mollit aliqua. Cupidatat Lorem deserunt officia non anim sit proident labore. Nostrud irure anim consequat voluptate voluptate proident laboris deserunt consequat.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 29,
-    "brand": "nissan",
-    "model": "SF25",
-    "year": 2014,
-    "type": "SUV",
-    "price": 253,
-    "fuel": "electric",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Magna consectetur proident labore aliqua do non voluptate sit laboris sint. Anim enim nulla veniam cupidatat occaecat reprehenderit consequat ipsum. Ipsum velit aliqua in excepteur magna magna aute.\r\nExercitation ipsum dolore eu commodo Lorem. Fugiat in nostrud veniam laborum quis dolore velit id cupidatat commodo. Ex tempor aliquip eu id pariatur non ad aute non ullamco. Lorem dolor qui aliqua sint cupidatat culpa eiusmod adipisicing cillum. Sit irure ullamco deserunt id labore non pariatur et. Pariatur duis laboris laborum exercitation voluptate anim ut velit pariatur fugiat.\r\nQui eiusmod proident sit est non ipsum laborum aute ad do amet. Nisi duis fugiat ad sunt commodo magna culpa aute anim consequat qui minim tempor. Cillum ea fugiat labore laboris minim elit laboris do magna nulla consectetur.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 30,
-    "brand": "honda",
-    "model": "C12",
-    "year": 2019,
-    "type": "economy",
-    "price": 359,
-    "fuel": "disel",
-    "seats": 2,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Officia laboris deserunt aliqua laboris culpa excepteur eu aliquip nisi nostrud enim labore nulla. Velit qui ad nostrud adipisicing pariatur amet laboris sit minim ipsum quis cillum. Non nulla non Lorem anim aliquip anim magna ad laboris. Dolor officia fugiat aute commodo excepteur labore ad quis et minim. Ex ad dolor ea pariatur. Exercitation laborum est ut aliqua laboris proident velit culpa.\r\nSit laboris ad ad minim officia magna. Nulla proident laborum culpa consequat. Eiusmod ipsum ullamco incididunt occaecat. Ut occaecat culpa eu ipsum est proident do officia dolore magna excepteur esse minim ullamco. Labore elit elit Lorem irure et do Lorem commodo mollit irure commodo ea cupidatat velit. Excepteur ut et est nulla reprehenderit nisi incididunt ipsum Lorem nisi proident dolore.\r\nIn laborum ut velit laborum velit proident laborum sint sint amet deserunt fugiat in sunt. In et sunt ex irure veniam esse esse ea magna sunt. Quis ut amet nisi non eiusmod sit in pariatur.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 31,
-    "brand": "citroen",
-    "model": "SO2",
-    "year": 2012,
-    "type": "economy",
-    "price": 429,
-    "fuel": "electric",
-    "seats": 7,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Id ex velit cillum laborum irure proident laborum. Reprehenderit laboris ipsum anim velit Lorem laboris eiusmod. Id nisi cillum id tempor sit ea laboris nulla irure.\r\nAnim dolor ipsum in ullamco eu deserunt laboris sit aute. Anim enim cillum amet elit incididunt consequat mollit id incididunt laborum in nostrud cupidatat. Minim ipsum duis Lorem qui eiusmod non et aliquip.\r\nCupidatat sunt minim incididunt sunt eiusmod ad sint culpa nisi sint nisi ipsum veniam veniam. Est reprehenderit nostrud anim veniam in aute Lorem mollit excepteur eiusmod velit aliqua velit. Sint sunt consectetur excepteur reprehenderit adipisicing voluptate in. Mollit pariatur esse nostrud culpa ea irure Lorem mollit. Velit veniam irure officia ipsum consectetur pariatur aliquip est reprehenderit sint ullamco Lorem quis. Nisi quis duis amet et nisi ullamco labore.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 1
-  },
-  {
-    "id": 32,
-    "brand": "citroen",
-    "model": "SO2",
-    "year": 2021,
-    "type": "cargo",
-    "price": 276,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Ex consequat commodo labore officia eiusmod do nisi magna nulla dolor occaecat aliquip. Consequat culpa duis nostrud labore fugiat ex id est dolore esse. Occaecat dolore velit cupidatat ea officia. Do culpa ad amet consectetur non ipsum eu tempor deserunt occaecat anim culpa. Adipisicing qui ea sunt deserunt elit nostrud cillum ullamco. Amet sint eu minim esse id.\r\nLaborum ullamco cillum proident irure magna enim proident enim eu exercitation. Fugiat ullamco aute aliquip dolor Lorem excepteur tempor consectetur sunt consectetur dolore deserunt labore. Culpa ad laborum aute sunt exercitation veniam. Eiusmod do anim sit deserunt excepteur laborum aliquip laborum veniam id consectetur culpa.\r\nExcepteur magna minim elit anim nostrud qui irure duis enim excepteur sint elit fugiat labore. Officia elit eiusmod et culpa. Id cupidatat consectetur cillum ipsum cupidatat laborum ullamco occaecat mollit et nisi fugiat in. Adipisicing laboris enim minim elit dolore fugiat cillum ipsum aliqua ea elit. Lorem duis Lorem esse reprehenderit enim anim aute veniam irure sint dolor.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 1
-  },
-  {
-    "id": 33,
-    "brand": "honda",
-    "model": "SO2",
-    "year": 2000,
-    "type": "SUV",
-    "price": 474,
-    "fuel": "gybrid",
-    "seats": 8,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Incididunt ipsum laborum qui sint consectetur incididunt. Cillum adipisicing veniam commodo deserunt elit aliquip veniam labore aute sit eiusmod anim ex non. Nisi cupidatat anim consectetur amet.\r\nDo nostrud aliqua aliquip nisi sint duis quis velit tempor esse. Id Lorem excepteur incididunt est reprehenderit dolore. Exercitation adipisicing sunt aliqua consequat. Nulla labore veniam incididunt duis et minim veniam ad deserunt.\r\nExcepteur est officia officia elit. Reprehenderit anim mollit ut incididunt pariatur ex reprehenderit adipisicing deserunt qui magna nulla cupidatat tempor. In consectetur Lorem Lorem ullamco incididunt voluptate. Reprehenderit enim aute anim voluptate minim ut fugiat dolor ut in veniam sint eiusmod culpa. Et ullamco commodo tempor deserunt proident aute veniam proident voluptate mollit cillum minim. Exercitation ea elit ullamco deserunt exercitation aliquip tempor eiusmod laborum. Mollit adipisicing eiusmod consequat minim ad officia.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  },
-  {
-    "id": 34,
-    "brand": "bmw",
-    "model": "GS76",
-    "year": 2006,
-    "type": "economy",
-    "price": 310,
-    "fuel": "gybrid",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Reprehenderit deserunt voluptate sint sint amet tempor occaecat. Duis ut sunt ad consequat id velit consectetur. Et culpa enim reprehenderit deserunt veniam laborum voluptate Lorem proident adipisicing deserunt culpa. Enim ipsum ea magna quis exercitation officia. Enim non tempor officia labore cupidatat sit eu do elit minim. Minim aliquip aliquip esse consequat. Proident et nulla fugiat et voluptate officia.\r\nMollit adipisicing eiusmod duis amet. Labore magna sunt consectetur cillum officia elit sunt tempor nulla sit ut esse. Dolor exercitation aliquip voluptate exercitation elit reprehenderit pariatur proident consequat velit pariatur. Minim adipisicing pariatur aliquip exercitation sunt magna excepteur ex cillum laborum culpa minim pariatur est.\r\nProident aliquip pariatur adipisicing voluptate laborum. Labore tempor ullamco quis aute do excepteur quis occaecat quis sit. Pariatur et dolore qui esse sunt pariatur.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 1
-  },
-  {
-    "id": 35,
-    "brand": "bmw",
-    "model": "SF25",
-    "year": 2021,
-    "type": "estate",
-    "price": 230,
-    "fuel": "disel",
-    "seats": 2,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Eu esse pariatur ipsum dolore do enim laboris laboris incididunt id. Amet sunt consequat dolore cillum sit fugiat enim ex in. Non eiusmod consectetur ex amet ullamco enim nulla officia mollit. Adipisicing veniam non ullamco cupidatat eiusmod velit id esse ut mollit.\r\nCupidatat velit veniam deserunt esse. Officia magna qui Lorem ea ea proident esse deserunt eu veniam. Dolor ipsum nulla dolore nulla ipsum sit esse non consectetur. Sint eu est qui adipisicing id voluptate cupidatat non irure deserunt eu mollit. Nostrud dolor velit culpa sint. Do Lorem occaecat quis reprehenderit non laborum duis ea reprehenderit. Irure cupidatat commodo anim ea commodo dolore veniam aliquip non eiusmod magna consectetur.\r\nId dolor nulla anim velit nostrud proident culpa aute cupidatat. Sit anim commodo eiusmod aliqua nostrud pariatur laboris adipisicing aliqua veniam proident fugiat. Eiusmod et tempor deserunt nisi.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 36,
-    "brand": "mercedes",
-    "model": "QE3",
-    "year": 2022,
-    "type": "cargo",
-    "price": 499,
-    "fuel": "disel",
-    "seats": 5,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Consectetur commodo voluptate dolore reprehenderit irure officia voluptate id id dolore ut irure. Duis elit ipsum ut amet anim incididunt officia nulla id nulla ex ex enim. Nulla amet amet enim qui aute ad aliquip do dolore occaecat ipsum exercitation proident. Sint cupidatat exercitation proident anim excepteur elit cillum.\r\nNulla officia nulla nostrud magna non in laborum. Labore do esse laboris sit occaecat minim non dolore ex dolore consectetur consectetur mollit. Non fugiat aute do fugiat sint nulla fugiat. Quis cupidatat voluptate nisi id fugiat voluptate eiusmod pariatur ad. Tempor veniam nulla sunt sunt sit nostrud magna laboris culpa reprehenderit in dolor. Exercitation reprehenderit est aute eu exercitation veniam.\r\nLabore sit occaecat ullamco magna eiusmod consequat id adipisicing fugiat velit non deserunt laboris laboris. Deserunt laborum sit exercitation culpa cillum ipsum cupidatat ea esse aliqua ex sunt cillum. Est officia et cillum consequat proident non consequat. Veniam consectetur eiusmod qui dolor cillum proident mollit sint ut nisi veniam.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 37,
-    "brand": "porsche",
-    "model": "SD17",
-    "year": 2011,
-    "type": "SUV",
-    "price": 410,
-    "fuel": "electric",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Enim amet minim reprehenderit sunt pariatur occaecat. Minim enim irure ex proident sunt ullamco do. Nisi minim in sunt duis ex aliquip labore exercitation. Reprehenderit ex magna reprehenderit esse sit incididunt amet fugiat quis ut tempor magna.\r\nTempor elit aute sint duis nisi irure. Irure ullamco exercitation incididunt eu reprehenderit anim culpa enim esse laboris et est elit. Labore proident officia irure aliquip excepteur laborum sint excepteur aliqua qui veniam commodo enim. Do ut amet velit sit consequat consectetur laboris irure laborum Lorem proident eu nisi.\r\nLaborum irure esse cillum do tempor est reprehenderit ea Lorem. Laborum ex nulla minim aliquip aute. Consequat laboris nisi incididunt anim dolor Lorem aliqua aliquip anim sunt sint. Qui non laborum duis irure et pariatur pariatur adipisicing ad. Magna cupidatat duis dolore quis incididunt. Incididunt in incididunt duis est Lorem occaecat in amet ut minim. Laboris aute quis sit sint do est adipisicing do occaecat dolore mollit mollit.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 4
-  },
-  {
-    "id": 38,
-    "brand": "mercedes",
-    "model": "JS24",
-    "year": 2010,
-    "type": "estate",
-    "price": 480,
-    "fuel": "disel",
-    "seats": 7,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Ad cillum proident reprehenderit laborum culpa est non. Irure tempor mollit non ut nulla ea. Velit ad aliquip Lorem magna tempor laborum do pariatur aute. Voluptate Lorem nostrud quis elit enim. Cupidatat est mollit aliquip magna. Labore proident ea excepteur aliqua adipisicing voluptate labore non in. Duis commodo voluptate non ipsum excepteur minim ipsum adipisicing ipsum pariatur ex.\r\nEiusmod deserunt ex quis labore officia ipsum dolore enim nostrud officia voluptate consectetur. Labore elit eiusmod tempor irure commodo nostrud reprehenderit reprehenderit in sint. Magna voluptate consequat magna ullamco. Laboris tempor sit id pariatur voluptate aliquip ad dolor exercitation officia laborum do. Fugiat consequat irure ut ea dolore do irure nostrud cillum cupidatat veniam qui exercitation. Laborum nostrud labore enim ipsum duis aliqua excepteur commodo quis amet quis eu. Enim deserunt et exercitation consequat duis ipsum do.\r\nEsse sit consequat qui sit aliquip labore consectetur consectetur aliqua cillum nulla proident. Occaecat Lorem cupidatat eiusmod eu nisi dolor fugiat non dolore et nulla reprehenderit tempor quis. Ad reprehenderit nostrud nostrud irure. Pariatur ea aute dolor in est velit eu laboris consectetur excepteur eu. Eu consectetur pariatur elit pariatur sunt anim excepteur enim. Sint excepteur ipsum irure ex.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 39,
-    "brand": "honda",
-    "model": "A21",
-    "year": 1999,
-    "type": "SUV",
-    "price": 211,
-    "fuel": "petrol",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "In laborum irure ea enim id. Irure non duis cillum aliquip Lorem labore nostrud do. Occaecat do cillum ea ipsum cupidatat labore anim sint est veniam magna. Irure eiusmod dolore est eu cupidatat exercitation commodo. Adipisicing sit incididunt dolor elit amet veniam duis deserunt ex culpa sint nostrud. Id nostrud ad exercitation anim irure ad ad in non consequat cillum excepteur duis tempor. Occaecat reprehenderit est fugiat aliqua irure et ullamco incididunt.\r\nMollit ipsum anim sint incididunt magna cillum dolor occaecat excepteur minim Lorem nisi. Id consectetur nisi est est occaecat exercitation in adipisicing qui duis esse mollit pariatur pariatur. In enim occaecat sint est irure reprehenderit non sit.\r\nNostrud nisi laboris aliquip proident ipsum fugiat veniam duis deserunt voluptate. Occaecat nisi aliquip sunt dolor. Aliquip officia excepteur in irure. Dolore mollit reprehenderit labore pariatur qui occaecat. Do duis est eu officia.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 3
-  },
-  {
-    "id": 40,
-    "brand": "porsche",
-    "model": "QE3",
-    "year": 2014,
-    "type": "SUV",
-    "price": 451,
-    "fuel": "petrol",
-    "seats": 4,
-    "images": [
-      "example-car.webp",
-      "example-car-2.webp",
-      "example-car-3.webp",
-      "example-car-4.webp"
-    ],
-    "description": "Quis in consequat cupidatat excepteur occaecat cillum dolore excepteur enim nisi. Magna et dolor ipsum esse cupidatat ea aliquip commodo eu aliqua ullamco deserunt. Est velit commodo labore aliqua eiusmod ipsum deserunt quis.\r\nNon culpa laborum nisi et sit incididunt adipisicing deserunt. Magna cillum velit esse consequat adipisicing Lorem ipsum sint eiusmod nisi fugiat. Officia elit culpa aliquip ea excepteur exercitation voluptate ea. Dolore duis voluptate mollit reprehenderit esse pariatur non. Incididunt tempor consectetur ea ea aliquip cillum tempor quis Lorem. Dolore pariatur eiusmod cillum enim commodo non anim veniam officia ut.\r\nCupidatat voluptate elit sit elit dolor proident consequat minim qui ad irure occaecat voluptate. Consectetur voluptate sit excepteur sunt excepteur esse duis commodo id dolor reprehenderit dolore anim. Irure velit laboris laborum sit ex eiusmod anim dolore consectetur. Incididunt est est cillum esse sint nisi ullamco pariatur ea in esse cupidatat qui labore. Sunt ut Lorem cupidatat magna ex eiusmod enim id ipsum in irure reprehenderit in.\r\n",
-    "location": "<SyntaxError: missing ) after argument list>",
-    "count": 5
-  }
-]
+{
+  "cars": [
+    {
+      "id": 0,
+      "brand": "bmw",
+      "model": "SF25",
+      "year": 2016,
+      "type": "luxury",
+      "price": 180,
+      "fuel": "petrol",
+      "seats": 7,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Exercitation dolore pariatur occaecat deserunt velit tempor cupidatat qui elit fugiat qui duis. Culpa consequat do magna ea aute culpa nostrud. Incididunt labore et laboris cupidatat aute reprehenderit deserunt sunt esse tempor. Ea veniam deserunt elit duis sint cillum. Eiusmod cillum ipsum commodo nostrud fugiat sit proident cupidatat aliquip Lorem. Lorem nostrud commodo adipisicing occaecat nostrud et ad. Et eu nulla dolor nostrud incididunt elit.\r\nLabore aliquip ex non culpa in. Ex cillum sit nulla nisi aliqua incididunt laboris voluptate. Duis et fugiat pariatur cupidatat aute irure magna. Mollit aliquip irure nisi ipsum deserunt Lorem cupidatat dolor mollit. Non sint minim cupidatat cillum et commodo anim consectetur labore voluptate anim. Amet elit cupidatat pariatur dolore laborum officia tempor incididunt aliqua.\r\nCupidatat cillum elit ipsum aliqua adipisicing dolor Lorem aute consectetur. Nulla id sit non esse fugiat magna et sunt. Tempor ex Lorem fugiat eu est nostrud minim officia nisi. Nulla reprehenderit proident nostrud deserunt minim commodo nulla voluptate ullamco sit pariatur officia exercitation. Reprehenderit id ipsum occaecat ea adipisicing aliqua elit tempor anim voluptate laboris sint ipsum aliqua.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 1,
+      "brand": "honda",
+      "model": "JS24",
+      "year": 2008,
+      "type": "SUV",
+      "price": 350,
+      "fuel": "petrol",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Officia enim adipisicing cillum do magna et est sunt quis commodo tempor sit. Ex ea adipisicing ipsum laboris amet occaecat reprehenderit minim. Sint exercitation eiusmod proident anim sit ipsum reprehenderit elit id est quis.\r\nPariatur enim do minim anim excepteur veniam commodo occaecat reprehenderit voluptate. Duis laboris commodo tempor dolor pariatur id sit qui enim sit. Dolor aliqua ipsum ipsum cupidatat ut Lorem adipisicing dolor officia Lorem proident aliqua consequat incididunt. Laborum duis Lorem do mollit tempor cupidatat sint voluptate.\r\nAdipisicing consequat excepteur veniam sit fugiat commodo nulla aliquip officia cupidatat fugiat aliqua. Amet anim consequat mollit sit eiusmod veniam cillum sit laborum nostrud excepteur. Amet non esse ullamco adipisicing esse irure excepteur tempor ea id laboris. Amet aliqua ullamco qui ut pariatur ipsum dolor sint amet eiusmod reprehenderit. Est quis nisi duis elit sit. Enim cillum dolore deserunt exercitation sint. Adipisicing ex mollit officia proident occaecat aliqua eu sit.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 2,
+      "brand": "porsche",
+      "model": "G92",
+      "year": 2005,
+      "type": "economy",
+      "price": 139,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Aliqua ut nisi proident veniam elit minim enim sit adipisicing. Ex et ex id enim aute est aliquip pariatur labore quis enim proident duis. Reprehenderit nulla proident cillum dolore adipisicing. Exercitation deserunt aliquip laborum amet in elit incididunt duis consectetur ullamco cupidatat consequat. Mollit deserunt sunt cupidatat adipisicing dolor duis laboris mollit excepteur cillum commodo et.\r\nMagna pariatur adipisicing ad ea nostrud. Id irure veniam consectetur tempor ullamco minim officia est aliqua sit nostrud anim labore. Enim exercitation minim nostrud sint incididunt laborum id voluptate et amet ex amet veniam. Eiusmod ad sit labore eiusmod nulla nisi qui consectetur. Sit eiusmod ullamco esse aliquip ipsum officia cillum. Amet incididunt veniam labore anim veniam qui.\r\nEsse aliquip sunt commodo aliquip. Minim do deserunt minim amet tempor irure veniam reprehenderit culpa aute eu culpa tempor proident. Dolore in laborum mollit excepteur. Eu nisi consequat esse ullamco non sunt consequat sit laboris voluptate commodo ipsum excepteur. Sint laborum Lorem cillum laborum nisi adipisicing deserunt commodo fugiat esse. Excepteur deserunt sunt aliqua ex irure. Magna in voluptate qui cillum dolor ad pariatur qui nostrud cillum cillum dolore incididunt cupidatat.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 3,
+      "brand": "chevrolet",
+      "model": "GS76",
+      "year": 2021,
+      "type": "economy",
+      "price": 468,
+      "fuel": "electric",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "In consectetur duis anim deserunt. Officia non tempor excepteur id duis. Ut fugiat ipsum ut labore excepteur proident tempor laborum. Labore cillum adipisicing consectetur officia reprehenderit ea labore voluptate. Et dolor enim Lorem dolore ex excepteur exercitation exercitation proident nulla culpa.\r\nNisi duis ad non enim eiusmod mollit voluptate consequat sunt laboris. Proident voluptate nostrud nulla ut dolore aliquip tempor ex. Id in amet eu sint aute ea nostrud qui nostrud.\r\nAmet consequat cupidatat ea aliquip et ipsum elit id anim eu occaecat. Consectetur id irure et labore ipsum consectetur ut et. Laborum ipsum non officia aliqua labore cupidatat fugiat eu exercitation sunt magna esse in. Est ea culpa est aliquip aliqua commodo exercitation culpa elit cillum amet. Incididunt deserunt sint tempor et ullamco labore et sunt ex labore cupidatat.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 4,
+      "brand": "bmw",
+      "model": "C12",
+      "year": 2002,
+      "type": "luxury",
+      "price": 455,
+      "fuel": "disel",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Cillum sint mollit nostrud elit esse. Duis commodo voluptate reprehenderit magna. Elit culpa excepteur nostrud dolor Lorem velit do.\r\nAnim voluptate labore officia ad culpa est laboris qui labore laboris consectetur culpa. Enim aliquip culpa adipisicing tempor eiusmod ut amet proident eu cillum excepteur. Et ut duis duis exercitation est nulla dolor. Mollit anim consectetur dolor ut exercitation exercitation consectetur duis esse sint cupidatat sit. Ea anim laboris duis excepteur deserunt laboris sint irure sunt sint reprehenderit amet. Nisi est velit reprehenderit irure occaecat ut cillum et nulla quis veniam Lorem est veniam.\r\nAliqua est ea aliquip elit velit laboris ea amet in. Sit tempor ullamco sit ut in voluptate nulla. Ipsum occaecat aliqua cupidatat reprehenderit duis Lorem qui consequat dolor aliquip. Sint et culpa ea cillum nisi Lorem nulla et nisi veniam enim adipisicing non.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 5,
+      "brand": "mercedes",
+      "model": "B64",
+      "year": 2018,
+      "type": "cargo",
+      "price": 229,
+      "fuel": "petrol",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Nulla reprehenderit nulla officia velit esse pariatur velit esse commodo cillum sint anim sit. Eu laborum dolore labore nisi. Lorem sit occaecat amet occaecat ipsum laboris eu consequat ad enim. Ex dolore labore magna magna anim officia eiusmod cillum sit tempor occaecat ullamco proident.\r\nIpsum officia culpa consequat ad nisi eiusmod esse ipsum Lorem amet occaecat est enim aliqua. Mollit velit minim amet est dolore incididunt ipsum eiusmod proident ea ad. Culpa excepteur deserunt et occaecat laboris ut dolor mollit excepteur. Commodo do consectetur ex est qui duis reprehenderit. Consequat laborum enim et est voluptate ut nulla commodo cupidatat. Qui tempor sunt magna incididunt irure eiusmod adipisicing irure commodo aliquip.\r\nEa voluptate qui nisi in elit incididunt. Dolor Lorem nostrud ipsum fugiat mollit commodo sint. Labore laborum non irure ipsum velit ad magna nostrud incididunt qui proident. Dolore ad minim ullamco qui aliqua Lorem minim. Adipisicing laborum cupidatat irure non reprehenderit fugiat sunt reprehenderit anim non id nulla deserunt dolor. Et adipisicing laborum sunt irure laboris id aute qui voluptate. Occaecat consequat non eu dolor magna ipsum duis qui incididunt ea consectetur velit mollit.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 6,
+      "brand": "citroen",
+      "model": "SO2",
+      "year": 2002,
+      "type": "SUV",
+      "price": 120,
+      "fuel": "petrol",
+      "seats": 8,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Ullamco sunt proident ullamco voluptate non ullamco non velit velit proident duis. Aliquip aliquip incididunt velit cupidatat veniam consequat cupidatat tempor ad laboris occaecat est. Voluptate culpa tempor dolore ullamco eiusmod cillum proident consectetur ipsum. Nostrud occaecat pariatur sunt cupidatat velit dolore amet nisi qui reprehenderit incididunt occaecat quis dolor. Tempor ex enim commodo exercitation.\r\nUt est voluptate labore eiusmod irure ullamco et. Culpa ea laboris enim dolor. Fugiat amet irure ut sit proident labore sint. Proident veniam nulla non sunt nisi nisi sint nisi quis commodo. Ipsum elit in ipsum ea enim non esse labore exercitation minim et non ullamco irure.\r\nUllamco ut cillum ut minim ipsum cillum. Sit elit cupidatat aliquip ipsum minim voluptate velit sunt. Ullamco sit et anim irure. Laborum do magna proident cillum.\r\n",
+      "location": "sofia",
+      "count": 1
+    },
+    {
+      "id": 7,
+      "brand": "porsche",
+      "model": "B64",
+      "year": 1998,
+      "type": "cargo",
+      "price": 242,
+      "fuel": "electric",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Deserunt id voluptate quis veniam exercitation fugiat incididunt. Proident sint consectetur sit laborum. Minim sunt ipsum ut dolor consectetur amet duis labore reprehenderit occaecat dolore id. Nulla ea dolore ad consectetur id ipsum aute. Laboris excepteur eu minim laboris tempor ad minim aliqua velit cillum ea.\r\nLabore cupidatat ut mollit commodo aliqua in non laboris velit velit eu anim minim. Laboris commodo labore in quis amet quis sint mollit aute eiusmod. Non commodo elit commodo ex esse esse aute nostrud Lorem anim aliqua. Aliquip anim minim ullamco reprehenderit elit est incididunt non aliqua qui.\r\nAdipisicing nisi ad anim duis minim et sint exercitation officia sunt amet est. Mollit id excepteur elit ut. Ut aute dolore veniam adipisicing. Culpa anim veniam quis qui ea mollit dolor. Irure dolore Lorem non laborum tempor culpa elit labore duis.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 8,
+      "brand": "mercedes",
+      "model": "GS76",
+      "year": 2017,
+      "type": "cargo",
+      "price": 240,
+      "fuel": "disel",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Nostrud cupidatat dolore labore aliqua cupidatat. Consequat sunt ut ullamco deserunt excepteur dolore. Et sint culpa ipsum ex anim ipsum culpa ex non labore. Ipsum consequat enim consectetur qui mollit incididunt cillum est labore aliqua cupidatat sit est dolor.\r\nDo anim velit sit esse magna amet velit consequat. Commodo pariatur nulla quis proident excepteur. Excepteur consequat reprehenderit dolor reprehenderit et. Ea non irure ad nostrud dolor et amet.\r\nExercitation laborum qui adipisicing cupidatat nulla. Dolore laborum labore aliquip exercitation tempor ad qui tempor ut consequat. Magna commodo nulla excepteur non fugiat nostrud laboris ullamco eiusmod fugiat eu sit nostrud incididunt. Eiusmod velit magna labore minim voluptate sit ipsum ipsum cupidatat cupidatat culpa laborum magna enim. Laboris qui aliqua dolore qui tempor mollit irure Lorem.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 9,
+      "brand": "mercedes",
+      "model": "C12",
+      "year": 2016,
+      "type": "estate",
+      "price": 389,
+      "fuel": "disel",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Commodo labore mollit cillum commodo amet cillum veniam aliquip sunt exercitation ex nisi deserunt magna. Ullamco elit est aliqua sit id esse non reprehenderit. Laboris Lorem minim Lorem enim occaecat elit aliquip in id magna proident nulla.\r\nVoluptate ea dolor Lorem ut consequat. Consequat esse ea dolor do sunt excepteur irure labore. Ut ullamco eiusmod aliqua reprehenderit sunt. Irure ea veniam fugiat fugiat laborum ullamco sunt fugiat exercitation nulla consectetur duis mollit magna. Duis consectetur nisi voluptate consectetur nisi.\r\nAute exercitation veniam mollit et nisi nostrud anim do. Non proident irure nulla tempor deserunt. Voluptate excepteur laboris elit amet sint exercitation cillum do. Labore ex commodo in dolore. Enim qui pariatur anim aliquip culpa mollit.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 10,
+      "brand": "honda",
+      "model": "JS24",
+      "year": 2007,
+      "type": "luxury",
+      "price": 338,
+      "fuel": "gybrid",
+      "seats": 5,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Sit laboris nostrud magna sint duis excepteur enim. Amet tempor eiusmod consequat nostrud ad labore ad magna id ex pariatur minim. Enim incididunt nisi ex est enim non id duis. Dolore sit ad velit elit labore dolore commodo consectetur ullamco eiusmod do.\r\nDeserunt aliquip proident fugiat minim nisi velit adipisicing. Anim proident eu adipisicing aliqua exercitation nisi nulla aliqua culpa do sit nulla. Deserunt labore pariatur tempor do veniam amet Lorem qui aute tempor voluptate. Aliquip elit esse adipisicing reprehenderit. Nisi cupidatat deserunt Lorem et id consectetur cupidatat quis do labore est quis Lorem ad. Deserunt commodo qui deserunt ut duis et nisi tempor consequat tempor cillum. Adipisicing eu fugiat laborum laboris proident labore tempor nisi.\r\nMagna sit mollit labore nostrud dolor pariatur veniam consequat elit duis. Nostrud ea labore fugiat minim tempor eu velit adipisicing amet. Occaecat nisi sunt consectetur nisi ex deserunt id fugiat aliqua. Consequat ut magna est esse occaecat amet anim eiusmod adipisicing. Sunt velit ad ea velit nisi exercitation sint veniam. Occaecat voluptate sunt mollit aute mollit aliquip voluptate id ullamco cillum commodo. Aute velit irure et fugiat commodo ipsum nostrud in nulla incididunt excepteur et mollit amet.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 11,
+      "brand": "honda",
+      "model": "JK34",
+      "year": 2022,
+      "type": "luxury",
+      "price": 341,
+      "fuel": "gybrid",
+      "seats": 2,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Veniam laborum occaecat nulla ipsum duis. Tempor veniam irure pariatur ipsum aliqua exercitation esse labore exercitation. Non proident do tempor duis duis anim pariatur consequat cillum exercitation duis. Nulla ipsum laboris eu ullamco sunt pariatur do labore aute mollit.\r\nIpsum ex occaecat veniam ipsum amet eu non. Nisi non aute adipisicing laboris. Cupidatat deserunt velit id magna aliqua esse dolor id enim laborum ut ullamco dolore. Id sunt aliquip incididunt culpa aute laboris esse quis laborum Lorem. Incididunt duis ut ad ex tempor. Culpa aliqua velit Lorem incididunt sint minim eu ut occaecat pariatur nulla exercitation quis.\r\nNostrud do aliquip duis qui pariatur dolore laboris esse. Ullamco id cillum laboris enim irure reprehenderit sunt amet ad. Nulla consectetur exercitation amet ipsum cillum est et incididunt irure enim magna cillum.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 12,
+      "brand": "chevrolet",
+      "model": "GS76",
+      "year": 2012,
+      "type": "luxury",
+      "price": 314,
+      "fuel": "gybrid",
+      "seats": 8,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Qui nisi velit quis aliquip Lorem culpa. Laboris nisi Lorem deserunt pariatur sit voluptate irure excepteur voluptate enim. Amet consectetur proident aliqua voluptate enim excepteur nulla in. Amet eiusmod officia est laboris commodo irure anim anim duis. Culpa ex quis nisi esse velit consequat ex anim pariatur minim voluptate magna ut duis. Adipisicing cupidatat enim eiusmod cupidatat exercitation cillum anim adipisicing nisi nulla id sit.\r\nAute nulla occaecat aute sint id eu nisi ad cupidatat nisi Lorem amet. Laborum aliquip occaecat velit officia ullamco esse id. Eu qui irure consectetur magna eiusmod velit laboris minim.\r\nCillum nisi sunt Lorem consectetur reprehenderit officia sunt. Fugiat aliqua cillum eiusmod exercitation. Sunt tempor mollit duis velit labore et amet laboris ullamco sint incididunt tempor ad. Non consequat ipsum ex minim esse dolore do tempor magna mollit voluptate.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 13,
+      "brand": "opel",
+      "model": "GS76",
+      "year": 1998,
+      "type": "SUV",
+      "price": 258,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Commodo occaecat commodo deserunt minim eu aliqua consectetur eiusmod laborum ut sint deserunt. Reprehenderit pariatur anim ullamco nisi tempor. Ut adipisicing sint dolore tempor esse fugiat id Lorem eu pariatur.\r\nIn mollit tempor elit ex ipsum officia reprehenderit exercitation esse aliqua eu irure dolor. Laborum sint in officia ipsum aliqua aute reprehenderit. Aute cillum cillum magna in consequat ullamco magna eiusmod quis. Aliqua deserunt et quis proident fugiat cillum commodo exercitation. Cupidatat occaecat irure Lorem esse culpa dolor incididunt commodo velit dolor et magna reprehenderit sit. Laborum ea sit consectetur consequat.\r\nEnim duis est excepteur ea fugiat ut deserunt est irure ex est in sunt laboris. Labore eiusmod eu eiusmod anim. Nostrud magna mollit irure quis in id fugiat voluptate in. Id ipsum et deserunt in non eu labore reprehenderit. Ipsum dolor enim aliquip ad non reprehenderit deserunt voluptate culpa incididunt sunt laborum incididunt. Mollit laboris fugiat sunt eiusmod duis consequat exercitation occaecat sit id ex id velit.\r\n",
+      "location": "sofia",
+      "count": 1
+    },
+    {
+      "id": 14,
+      "brand": "porsche",
+      "model": "SD17",
+      "year": 2018,
+      "type": "cargo",
+      "price": 486,
+      "fuel": "disel",
+      "seats": 2,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Incididunt esse magna ad exercitation dolore exercitation deserunt elit deserunt. Cillum ipsum pariatur deserunt irure. Et sit ut sint esse occaecat voluptate fugiat anim. In sit culpa aliquip culpa pariatur nulla nostrud do aliqua. Nisi proident officia occaecat adipisicing et. Eu dolor duis laborum consectetur magna et nisi labore ullamco velit velit aute sint. Deserunt est sunt ut id veniam consequat culpa.\r\nEt tempor in irure officia adipisicing sit dolor duis ullamco nulla eu nostrud est ipsum. Aliquip dolore est commodo commodo qui labore anim esse. Ut minim cillum laborum in ex ullamco.\r\nEa eu adipisicing proident anim cupidatat velit deserunt aute esse commodo et ullamco magna tempor. Et cillum elit fugiat quis ex elit. Ipsum ex pariatur amet eu ad elit do duis elit. Sunt in do dolore aliqua consequat eu.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 15,
+      "brand": "nissan",
+      "model": "C12",
+      "year": 2004,
+      "type": "SUV",
+      "price": 192,
+      "fuel": "electric",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Eu reprehenderit cupidatat sit est veniam nostrud irure esse sunt nostrud irure. Laborum consectetur fugiat deserunt aliqua cupidatat consectetur velit pariatur. Minim reprehenderit sint dolor labore mollit veniam id minim eiusmod eiusmod incididunt tempor culpa. Laboris do minim cupidatat voluptate veniam ullamco velit aliquip adipisicing ut pariatur. Enim pariatur ut enim anim ipsum nisi eu amet consequat aute ut elit qui laboris. Commodo duis est reprehenderit deserunt ut voluptate mollit labore voluptate pariatur.\r\nEt ipsum aliqua aliqua consectetur. Dolore proident voluptate labore irure tempor nisi velit dolor. Duis dolor pariatur ad ad dolore enim est. Eu et irure deserunt irure do aliquip. Irure consectetur eiusmod dolor est consequat duis ullamco commodo dolor officia laborum. Do magna do culpa esse nulla.\r\nProident nisi cillum dolor sint sunt ad fugiat magna ullamco commodo. Eu commodo velit adipisicing aliqua commodo nulla. Ad mollit fugiat adipisicing do qui irure id ea. Sint eiusmod mollit mollit nisi. Qui sint adipisicing do excepteur occaecat dolor nisi consectetur aliquip nisi dolor ut nulla incididunt.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 16,
+      "brand": "nissan",
+      "model": "SO2",
+      "year": 2019,
+      "type": "estate",
+      "price": 140,
+      "fuel": "petrol",
+      "seats": 8,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Exercitation id deserunt et incididunt duis. Do cillum aliqua magna laborum consequat nostrud. Laborum ipsum magna mollit ad. Culpa deserunt ullamco labore non anim. Adipisicing id dolor do do est enim minim quis deserunt anim anim velit culpa laboris. Do sunt et mollit ipsum deserunt cillum ea proident laborum cupidatat labore. Fugiat proident excepteur cupidatat ullamco veniam consequat ad minim velit sunt nulla pariatur reprehenderit.\r\nCupidatat incididunt exercitation irure sit anim elit consequat aute mollit nostrud exercitation. Ipsum eu est pariatur velit fugiat. Dolore laborum exercitation sint labore.\r\nExercitation velit Lorem pariatur veniam culpa. Nisi laboris commodo dolore eiusmod qui excepteur ut amet. Lorem Lorem nostrud minim nulla nulla quis est sunt ad enim aute occaecat dolor irure.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 17,
+      "brand": "porsche",
+      "model": "A21",
+      "year": 2006,
+      "type": "estate",
+      "price": 268,
+      "fuel": "disel",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Laboris eiusmod ad laborum voluptate cupidatat qui veniam laboris in proident quis nostrud deserunt. Ullamco aliqua officia esse adipisicing dolor mollit in eiusmod non eu est Lorem cillum. Elit ipsum proident culpa sit ex occaecat consectetur elit qui consectetur ea. Esse ullamco reprehenderit esse culpa laboris ea ea tempor. Occaecat Lorem ullamco sunt laborum aute Lorem amet est.\r\nCulpa ullamco amet mollit sit ipsum ea dolor ullamco. Deserunt veniam aliquip anim exercitation. Veniam aute consequat consectetur in eu sit ipsum Lorem laboris reprehenderit excepteur esse. Enim occaecat voluptate laborum Lorem quis enim proident aute sint nulla. Exercitation ipsum occaecat ipsum ut nostrud nostrud. Cupidatat duis commodo anim velit anim et eiusmod deserunt aliqua magna enim esse. Nulla nostrud occaecat tempor minim voluptate tempor aliqua et ex nisi qui quis magna cillum.\r\nPariatur eiusmod minim pariatur proident id reprehenderit sunt do mollit fugiat irure sit esse veniam. Minim fugiat cillum aliquip nulla voluptate. Proident duis eu tempor cillum dolore mollit sunt commodo ea. Enim irure quis pariatur sunt cupidatat reprehenderit. Id fugiat consectetur consectetur adipisicing excepteur do. Ullamco sit ex do adipisicing duis nulla adipisicing id.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 18,
+      "brand": "citroen",
+      "model": "G92",
+      "year": 2018,
+      "type": "SUV",
+      "price": 162,
+      "fuel": "petrol",
+      "seats": 5,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Pariatur laboris tempor esse aute incididunt proident qui officia eiusmod dolor. Mollit ut minim minim ea irure id ullamco in. Occaecat ut exercitation amet amet sint. Sint esse id officia elit fugiat tempor cupidatat sunt sint ipsum qui dolor occaecat. Aute commodo laboris cillum esse officia mollit aute nostrud fugiat irure commodo consequat ex enim.\r\nCupidatat consequat occaecat in id ullamco non ut fugiat laboris quis consectetur fugiat. Eu amet anim quis commodo non amet consequat deserunt esse ut. Ea incididunt labore mollit aliquip qui aliqua aute minim culpa deserunt cillum officia labore anim. Irure dolor nostrud id cupidatat mollit nulla aute voluptate reprehenderit sit qui. Anim quis do veniam laborum consectetur magna excepteur non sunt elit consectetur labore ea labore. Aliquip ullamco consequat proident exercitation esse. Ea exercitation nostrud magna proident excepteur ad sint.\r\nMinim culpa aliqua amet veniam voluptate. Ipsum est aliqua laborum amet excepteur id non mollit enim aliqua aute dolore consectetur. Do consequat elit irure Lorem eu anim est excepteur irure voluptate enim occaecat incididunt. Proident excepteur ullamco eiusmod ullamco.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 19,
+      "brand": "nissan",
+      "model": "JS24",
+      "year": 2017,
+      "type": "luxury",
+      "price": 401,
+      "fuel": "gybrid",
+      "seats": 7,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "In amet ea cupidatat adipisicing laborum ipsum sunt ipsum. Nostrud velit tempor mollit non duis ex aliquip deserunt nisi sunt proident magna qui in. Ipsum esse irure do sunt cupidatat laboris occaecat deserunt nisi.\r\nEx cupidatat aute eiusmod consequat cillum amet dolor. Enim sunt pariatur aliqua aute magna aliqua duis ipsum veniam adipisicing et proident exercitation adipisicing. Dolor aliqua sit sint ullamco quis tempor ea esse in consectetur commodo labore eu. Dolor aliquip est nostrud consectetur dolor ad cupidatat eu dolore. Voluptate et ea occaecat qui adipisicing tempor Lorem ullamco adipisicing nulla id ad. Ex esse dolor qui nostrud. Ipsum cillum enim ullamco eu non est consequat nulla deserunt id veniam sit.\r\nQuis aute dolore commodo Lorem eiusmod esse. Amet officia reprehenderit sit consequat ut ea laboris eiusmod deserunt tempor. Irure nostrud cillum nisi cupidatat et esse ipsum est eiusmod ad commodo incididunt.\r\n",
+      "location": "sofia",
+      "count": 1
+    },
+    {
+      "id": 20,
+      "brand": "chevrolet",
+      "model": "PG23",
+      "year": 2009,
+      "type": "estate",
+      "price": 351,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Et cillum proident tempor reprehenderit quis laborum quis. Anim dolore cillum ex quis deserunt laboris incididunt quis. Anim fugiat aute non officia elit anim qui elit elit cupidatat officia elit cillum sit.\r\nVelit magna ea fugiat proident consectetur consectetur id sit consectetur duis laboris sint eiusmod adipisicing. Ad aliquip aute excepteur proident consectetur aliquip veniam reprehenderit fugiat do Lorem. Cupidatat magna elit ipsum duis mollit esse cupidatat ullamco elit sunt.\r\nAmet fugiat cupidatat pariatur deserunt. Nulla dolor ex pariatur do culpa ullamco ea ipsum. Dolore cillum nostrud esse eu id laboris minim ea aute. Aliqua minim velit cupidatat pariatur dolor adipisicing incididunt. Non commodo consequat est velit. Mollit mollit fugiat labore dolore qui esse commodo Lorem sint minim dolore magna enim ad.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 21,
+      "brand": "chevrolet",
+      "model": "SO2",
+      "year": 2022,
+      "type": "economy",
+      "price": 264,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Ullamco culpa aute sint voluptate adipisicing fugiat cupidatat. Amet aute cillum consectetur do enim velit ad enim eiusmod. Amet culpa aliqua deserunt reprehenderit consequat aliquip veniam laborum dolor Lorem Lorem adipisicing laboris occaecat. Ullamco elit nulla occaecat ut consequat labore elit id in.\r\nDeserunt aliqua nulla eiusmod commodo consequat sint ullamco ullamco quis duis culpa laborum. Voluptate incididunt do labore proident magna proident nulla minim ut ullamco. Nisi ut sunt sunt aute officia. Laboris exercitation aute officia labore deserunt aliquip. Minim in sint enim esse elit laborum.\r\nOccaecat et consectetur eu culpa. Aliqua reprehenderit nulla nulla aute et occaecat excepteur dolor ad. Aliquip dolore esse do veniam pariatur ea ea amet.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 22,
+      "brand": "nissan",
+      "model": "JK34",
+      "year": 2016,
+      "type": "cargo",
+      "price": 424,
+      "fuel": "gybrid",
+      "seats": 5,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Labore id pariatur eiusmod excepteur veniam magna esse enim mollit minim nulla amet labore. Consequat aliqua culpa aliqua incididunt et veniam esse. Id esse exercitation labore Lorem deserunt ea magna non et anim incididunt. Sit laboris enim proident aliqua fugiat commodo pariatur dolor adipisicing ullamco velit cupidatat pariatur tempor. Laboris nulla id et voluptate consequat deserunt nisi nulla anim duis aute amet voluptate tempor. Exercitation enim reprehenderit aliquip consectetur. Eu commodo dolor elit nostrud laborum fugiat ad et occaecat sint sint ex eiusmod.\r\nLorem do sit labore ex qui. Nisi incididunt adipisicing incididunt id fugiat officia laboris non incididunt. Reprehenderit ea laboris consequat ut laborum consectetur commodo labore et aliquip ipsum aliquip voluptate elit. Ex voluptate enim occaecat nisi proident. Id sunt ipsum duis reprehenderit ad occaecat.\r\nCupidatat elit cupidatat minim dolore duis eiusmod. Exercitation magna magna proident est ut deserunt velit est sint nostrud. Sit aliqua id cillum velit sint ullamco. Est Lorem minim magna laboris nisi. Pariatur excepteur deserunt minim est enim aute. Velit dolor est tempor ut ex. Commodo eu deserunt do esse voluptate adipisicing culpa ullamco qui.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 23,
+      "brand": "citroen",
+      "model": "G92",
+      "year": 2004,
+      "type": "cargo",
+      "price": 366,
+      "fuel": "petrol",
+      "seats": 2,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Aliquip aliqua in ex proident est ex et. Ullamco minim veniam laborum excepteur amet. Id quis consectetur cupidatat esse irure labore nostrud adipisicing occaecat. Consectetur exercitation ut non ut ea laboris consequat mollit mollit laborum sunt. Duis duis Lorem magna cupidatat amet commodo.\r\nCillum culpa tempor do nisi non nisi nostrud eiusmod ex. Sunt exercitation duis Lorem consectetur non elit tempor labore. Exercitation quis ea et aliqua mollit et quis velit sint ut eu magna. Exercitation sint eiusmod elit dolore est cupidatat.\r\nId fugiat et proident mollit dolor eu quis incididunt aliqua nostrud magna nulla sunt. Aliquip ullamco pariatur fugiat consectetur cillum culpa nostrud. Minim eiusmod deserunt et veniam do id ea ut reprehenderit. Tempor deserunt commodo excepteur ullamco adipisicing irure. Adipisicing exercitation incididunt pariatur esse id est aute non. Incididunt nulla do fugiat consectetur mollit dolore excepteur. Fugiat sint magna sint proident.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 24,
+      "brand": "honda",
+      "model": "GS76",
+      "year": 2002,
+      "type": "luxury",
+      "price": 196,
+      "fuel": "electric",
+      "seats": 7,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Excepteur minim cupidatat velit adipisicing ullamco irure est aliquip voluptate quis pariatur sunt. In aliquip nisi laborum fugiat excepteur. Aliqua ex commodo ea incididunt Lorem ex. Commodo esse reprehenderit non non amet aute sit ad duis incididunt officia mollit. Cupidatat labore minim magna ut adipisicing labore Lorem anim cillum pariatur consequat. Dolor anim aute culpa do reprehenderit voluptate ut tempor voluptate eu irure occaecat et veniam.\r\nId enim reprehenderit id pariatur. Labore aliqua ullamco exercitation ex non minim elit elit eu incididunt dolor. Sint labore incididunt aliqua ullamco anim deserunt qui nisi tempor deserunt magna. Aliquip qui reprehenderit consectetur id adipisicing non. Officia aliquip irure reprehenderit proident ad est. Laborum excepteur nostrud et voluptate duis proident.\r\nCommodo eu ipsum ad ad est nostrud. Et ullamco commodo fugiat fugiat excepteur sunt adipisicing veniam tempor in. Minim est veniam voluptate sit incididunt sunt sunt. Voluptate officia aliquip qui exercitation Lorem velit veniam reprehenderit enim dolor. Nostrud commodo sint non laborum aute sint minim consequat.\r\n",
+      "location": "sofia",
+      "count": 2
+    },
+    {
+      "id": 25,
+      "brand": "citroen",
+      "model": "B64",
+      "year": 2000,
+      "type": "estate",
+      "price": 125,
+      "fuel": "electric",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Officia dolor elit eu duis qui fugiat aliquip. Amet anim eiusmod est proident velit commodo voluptate. Quis sunt laborum dolore ea velit veniam veniam anim pariatur irure. Commodo ut nisi sunt elit velit laboris ea. Excepteur nulla tempor deserunt amet nisi dolore nostrud sit culpa nisi exercitation anim. Laboris esse mollit sit irure consequat sit elit minim occaecat laboris. Lorem eiusmod commodo id nisi reprehenderit est ad magna.\r\nDolore sit nulla id ea magna aliquip velit pariatur. Reprehenderit ex commodo mollit amet sunt quis ipsum in consequat do. Deserunt adipisicing ipsum eiusmod voluptate duis ullamco tempor cillum. Elit proident ad cupidatat fugiat sint aute cupidatat tempor eu fugiat tempor labore aliqua occaecat.\r\nIpsum enim cupidatat dolor commodo sunt irure officia culpa excepteur in cillum. Est cupidatat nostrud anim do proident. Commodo qui excepteur sit id irure eiusmod est et. Id laborum ea officia sit cupidatat.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 26,
+      "brand": "porsche",
+      "model": "G92",
+      "year": 1999,
+      "type": "luxury",
+      "price": 390,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "In Lorem amet voluptate nostrud dolore ea irure excepteur enim id. Irure Lorem ullamco nisi et reprehenderit qui amet. Lorem in occaecat exercitation cupidatat sint veniam et ad consectetur elit consequat cillum. Aute anim pariatur minim non ullamco dolor nisi consectetur eiusmod amet cupidatat sunt laboris. Magna culpa consectetur aliquip ullamco dolor voluptate eiusmod do. Nulla ad eiusmod voluptate elit irure enim ipsum do mollit.\r\nAd do elit non nulla ullamco veniam irure non mollit sit. Enim culpa esse enim tempor eu consequat in fugiat. Ex esse ullamco enim enim adipisicing do mollit Lorem ipsum amet aliquip. Tempor quis veniam dolor esse culpa officia do. Ullamco cillum quis ex deserunt ullamco. Officia nisi sit id magna velit sint dolore. Officia do esse proident exercitation quis dolor laboris ex occaecat id et reprehenderit.\r\nEx in eu duis aliquip irure voluptate. Veniam ullamco duis eu excepteur veniam. Duis officia exercitation nisi nisi culpa excepteur elit incididunt magna eiusmod reprehenderit veniam. Laborum est dolore eiusmod ad culpa ut aliquip sint. Elit cupidatat laboris consectetur adipisicing quis cupidatat. Cupidatat dolore elit labore non nisi aliqua ipsum. Sit nisi laborum tempor sit.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 27,
+      "brand": "chevrolet",
+      "model": "SF25",
+      "year": 2003,
+      "type": "SUV",
+      "price": 297,
+      "fuel": "disel",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Velit anim ut do ad. Velit eiusmod aliquip occaecat aute voluptate. Sint adipisicing amet incididunt exercitation. Deserunt consequat ullamco officia id nisi sint eiusmod.\r\nAliqua eiusmod veniam aute irure labore sunt. Excepteur occaecat laborum et duis excepteur amet consectetur ad. Nisi dolor minim cupidatat voluptate reprehenderit nostrud magna incididunt incididunt Lorem nulla irure officia. Occaecat nostrud commodo quis sunt sint aute quis amet. Adipisicing proident quis minim dolore aliqua. Nisi ipsum magna ut Lorem voluptate.\r\nConsequat ea ea aute et nulla. Consectetur exercitation aute reprehenderit cupidatat anim eiusmod officia. Eiusmod occaecat enim sint veniam incididunt dolor enim est Lorem proident aliquip.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 28,
+      "brand": "citroen",
+      "model": "OHG",
+      "year": 2014,
+      "type": "economy",
+      "price": 147,
+      "fuel": "gybrid",
+      "seats": 5,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Esse est proident proident laboris voluptate culpa ut commodo aute sunt consectetur nostrud in fugiat. Nulla aute sunt fugiat qui minim eiusmod do sit. Do est enim proident mollit cupidatat veniam labore ipsum culpa sit id id deserunt sit. Sit reprehenderit elit velit consequat adipisicing.\r\nAnim do aliqua id dolor aute in consequat anim nulla anim. Eiusmod mollit est mollit eu ipsum cillum velit adipisicing dolor consequat cupidatat incididunt elit. Ullamco ex eiusmod laboris labore.\r\nReprehenderit dolore dolore ad dolor qui deserunt id ut eu quis fugiat mollit aliqua. Cupidatat Lorem deserunt officia non anim sit proident labore. Nostrud irure anim consequat voluptate voluptate proident laboris deserunt consequat.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 29,
+      "brand": "nissan",
+      "model": "SF25",
+      "year": 2014,
+      "type": "SUV",
+      "price": 253,
+      "fuel": "electric",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Magna consectetur proident labore aliqua do non voluptate sit laboris sint. Anim enim nulla veniam cupidatat occaecat reprehenderit consequat ipsum. Ipsum velit aliqua in excepteur magna magna aute.\r\nExercitation ipsum dolore eu commodo Lorem. Fugiat in nostrud veniam laborum quis dolore velit id cupidatat commodo. Ex tempor aliquip eu id pariatur non ad aute non ullamco. Lorem dolor qui aliqua sint cupidatat culpa eiusmod adipisicing cillum. Sit irure ullamco deserunt id labore non pariatur et. Pariatur duis laboris laborum exercitation voluptate anim ut velit pariatur fugiat.\r\nQui eiusmod proident sit est non ipsum laborum aute ad do amet. Nisi duis fugiat ad sunt commodo magna culpa aute anim consequat qui minim tempor. Cillum ea fugiat labore laboris minim elit laboris do magna nulla consectetur.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 30,
+      "brand": "honda",
+      "model": "C12",
+      "year": 2019,
+      "type": "economy",
+      "price": 359,
+      "fuel": "disel",
+      "seats": 2,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Officia laboris deserunt aliqua laboris culpa excepteur eu aliquip nisi nostrud enim labore nulla. Velit qui ad nostrud adipisicing pariatur amet laboris sit minim ipsum quis cillum. Non nulla non Lorem anim aliquip anim magna ad laboris. Dolor officia fugiat aute commodo excepteur labore ad quis et minim. Ex ad dolor ea pariatur. Exercitation laborum est ut aliqua laboris proident velit culpa.\r\nSit laboris ad ad minim officia magna. Nulla proident laborum culpa consequat. Eiusmod ipsum ullamco incididunt occaecat. Ut occaecat culpa eu ipsum est proident do officia dolore magna excepteur esse minim ullamco. Labore elit elit Lorem irure et do Lorem commodo mollit irure commodo ea cupidatat velit. Excepteur ut et est nulla reprehenderit nisi incididunt ipsum Lorem nisi proident dolore.\r\nIn laborum ut velit laborum velit proident laborum sint sint amet deserunt fugiat in sunt. In et sunt ex irure veniam esse esse ea magna sunt. Quis ut amet nisi non eiusmod sit in pariatur.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 31,
+      "brand": "citroen",
+      "model": "SO2",
+      "year": 2012,
+      "type": "economy",
+      "price": 429,
+      "fuel": "electric",
+      "seats": 7,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Id ex velit cillum laborum irure proident laborum. Reprehenderit laboris ipsum anim velit Lorem laboris eiusmod. Id nisi cillum id tempor sit ea laboris nulla irure.\r\nAnim dolor ipsum in ullamco eu deserunt laboris sit aute. Anim enim cillum amet elit incididunt consequat mollit id incididunt laborum in nostrud cupidatat. Minim ipsum duis Lorem qui eiusmod non et aliquip.\r\nCupidatat sunt minim incididunt sunt eiusmod ad sint culpa nisi sint nisi ipsum veniam veniam. Est reprehenderit nostrud anim veniam in aute Lorem mollit excepteur eiusmod velit aliqua velit. Sint sunt consectetur excepteur reprehenderit adipisicing voluptate in. Mollit pariatur esse nostrud culpa ea irure Lorem mollit. Velit veniam irure officia ipsum consectetur pariatur aliquip est reprehenderit sint ullamco Lorem quis. Nisi quis duis amet et nisi ullamco labore.\r\n",
+      "location": "sofia",
+      "count": 1
+    },
+    {
+      "id": 32,
+      "brand": "citroen",
+      "model": "SO2",
+      "year": 2021,
+      "type": "cargo",
+      "price": 276,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Ex consequat commodo labore officia eiusmod do nisi magna nulla dolor occaecat aliquip. Consequat culpa duis nostrud labore fugiat ex id est dolore esse. Occaecat dolore velit cupidatat ea officia. Do culpa ad amet consectetur non ipsum eu tempor deserunt occaecat anim culpa. Adipisicing qui ea sunt deserunt elit nostrud cillum ullamco. Amet sint eu minim esse id.\r\nLaborum ullamco cillum proident irure magna enim proident enim eu exercitation. Fugiat ullamco aute aliquip dolor Lorem excepteur tempor consectetur sunt consectetur dolore deserunt labore. Culpa ad laborum aute sunt exercitation veniam. Eiusmod do anim sit deserunt excepteur laborum aliquip laborum veniam id consectetur culpa.\r\nExcepteur magna minim elit anim nostrud qui irure duis enim excepteur sint elit fugiat labore. Officia elit eiusmod et culpa. Id cupidatat consectetur cillum ipsum cupidatat laborum ullamco occaecat mollit et nisi fugiat in. Adipisicing laboris enim minim elit dolore fugiat cillum ipsum aliqua ea elit. Lorem duis Lorem esse reprehenderit enim anim aute veniam irure sint dolor.\r\n",
+      "location": "sofia",
+      "count": 1
+    },
+    {
+      "id": 33,
+      "brand": "honda",
+      "model": "SO2",
+      "year": 2000,
+      "type": "SUV",
+      "price": 474,
+      "fuel": "gybrid",
+      "seats": 8,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Incididunt ipsum laborum qui sint consectetur incididunt. Cillum adipisicing veniam commodo deserunt elit aliquip veniam labore aute sit eiusmod anim ex non. Nisi cupidatat anim consectetur amet.\r\nDo nostrud aliqua aliquip nisi sint duis quis velit tempor esse. Id Lorem excepteur incididunt est reprehenderit dolore. Exercitation adipisicing sunt aliqua consequat. Nulla labore veniam incididunt duis et minim veniam ad deserunt.\r\nExcepteur est officia officia elit. Reprehenderit anim mollit ut incididunt pariatur ex reprehenderit adipisicing deserunt qui magna nulla cupidatat tempor. In consectetur Lorem Lorem ullamco incididunt voluptate. Reprehenderit enim aute anim voluptate minim ut fugiat dolor ut in veniam sint eiusmod culpa. Et ullamco commodo tempor deserunt proident aute veniam proident voluptate mollit cillum minim. Exercitation ea elit ullamco deserunt exercitation aliquip tempor eiusmod laborum. Mollit adipisicing eiusmod consequat minim ad officia.\r\n",
+      "location": "sofia",
+      "count": 5
+    },
+    {
+      "id": 34,
+      "brand": "bmw",
+      "model": "GS76",
+      "year": 2006,
+      "type": "economy",
+      "price": 310,
+      "fuel": "gybrid",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Reprehenderit deserunt voluptate sint sint amet tempor occaecat. Duis ut sunt ad consequat id velit consectetur. Et culpa enim reprehenderit deserunt veniam laborum voluptate Lorem proident adipisicing deserunt culpa. Enim ipsum ea magna quis exercitation officia. Enim non tempor officia labore cupidatat sit eu do elit minim. Minim aliquip aliquip esse consequat. Proident et nulla fugiat et voluptate officia.\r\nMollit adipisicing eiusmod duis amet. Labore magna sunt consectetur cillum officia elit sunt tempor nulla sit ut esse. Dolor exercitation aliquip voluptate exercitation elit reprehenderit pariatur proident consequat velit pariatur. Minim adipisicing pariatur aliquip exercitation sunt magna excepteur ex cillum laborum culpa minim pariatur est.\r\nProident aliquip pariatur adipisicing voluptate laborum. Labore tempor ullamco quis aute do excepteur quis occaecat quis sit. Pariatur et dolore qui esse sunt pariatur.\r\n",
+      "location": "sofia",
+      "count": 1
+    },
+    {
+      "id": 35,
+      "brand": "bmw",
+      "model": "SF25",
+      "year": 2021,
+      "type": "estate",
+      "price": 230,
+      "fuel": "disel",
+      "seats": 2,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Eu esse pariatur ipsum dolore do enim laboris laboris incididunt id. Amet sunt consequat dolore cillum sit fugiat enim ex in. Non eiusmod consectetur ex amet ullamco enim nulla officia mollit. Adipisicing veniam non ullamco cupidatat eiusmod velit id esse ut mollit.\r\nCupidatat velit veniam deserunt esse. Officia magna qui Lorem ea ea proident esse deserunt eu veniam. Dolor ipsum nulla dolore nulla ipsum sit esse non consectetur. Sint eu est qui adipisicing id voluptate cupidatat non irure deserunt eu mollit. Nostrud dolor velit culpa sint. Do Lorem occaecat quis reprehenderit non laborum duis ea reprehenderit. Irure cupidatat commodo anim ea commodo dolore veniam aliquip non eiusmod magna consectetur.\r\nId dolor nulla anim velit nostrud proident culpa aute cupidatat. Sit anim commodo eiusmod aliqua nostrud pariatur laboris adipisicing aliqua veniam proident fugiat. Eiusmod et tempor deserunt nisi.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 36,
+      "brand": "mercedes",
+      "model": "QE3",
+      "year": 2022,
+      "type": "cargo",
+      "price": 499,
+      "fuel": "disel",
+      "seats": 5,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Consectetur commodo voluptate dolore reprehenderit irure officia voluptate id id dolore ut irure. Duis elit ipsum ut amet anim incididunt officia nulla id nulla ex ex enim. Nulla amet amet enim qui aute ad aliquip do dolore occaecat ipsum exercitation proident. Sint cupidatat exercitation proident anim excepteur elit cillum.\r\nNulla officia nulla nostrud magna non in laborum. Labore do esse laboris sit occaecat minim non dolore ex dolore consectetur consectetur mollit. Non fugiat aute do fugiat sint nulla fugiat. Quis cupidatat voluptate nisi id fugiat voluptate eiusmod pariatur ad. Tempor veniam nulla sunt sunt sit nostrud magna laboris culpa reprehenderit in dolor. Exercitation reprehenderit est aute eu exercitation veniam.\r\nLabore sit occaecat ullamco magna eiusmod consequat id adipisicing fugiat velit non deserunt laboris laboris. Deserunt laborum sit exercitation culpa cillum ipsum cupidatat ea esse aliqua ex sunt cillum. Est officia et cillum consequat proident non consequat. Veniam consectetur eiusmod qui dolor cillum proident mollit sint ut nisi veniam.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 37,
+      "brand": "porsche",
+      "model": "SD17",
+      "year": 2011,
+      "type": "SUV",
+      "price": 410,
+      "fuel": "electric",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Enim amet minim reprehenderit sunt pariatur occaecat. Minim enim irure ex proident sunt ullamco do. Nisi minim in sunt duis ex aliquip labore exercitation. Reprehenderit ex magna reprehenderit esse sit incididunt amet fugiat quis ut tempor magna.\r\nTempor elit aute sint duis nisi irure. Irure ullamco exercitation incididunt eu reprehenderit anim culpa enim esse laboris et est elit. Labore proident officia irure aliquip excepteur laborum sint excepteur aliqua qui veniam commodo enim. Do ut amet velit sit consequat consectetur laboris irure laborum Lorem proident eu nisi.\r\nLaborum irure esse cillum do tempor est reprehenderit ea Lorem. Laborum ex nulla minim aliquip aute. Consequat laboris nisi incididunt anim dolor Lorem aliqua aliquip anim sunt sint. Qui non laborum duis irure et pariatur pariatur adipisicing ad. Magna cupidatat duis dolore quis incididunt. Incididunt in incididunt duis est Lorem occaecat in amet ut minim. Laboris aute quis sit sint do est adipisicing do occaecat dolore mollit mollit.\r\n",
+      "location": "sofia",
+      "count": 4
+    },
+    {
+      "id": 38,
+      "brand": "mercedes",
+      "model": "JS24",
+      "year": 2010,
+      "type": "estate",
+      "price": 480,
+      "fuel": "disel",
+      "seats": 7,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Ad cillum proident reprehenderit laborum culpa est non. Irure tempor mollit non ut nulla ea. Velit ad aliquip Lorem magna tempor laborum do pariatur aute. Voluptate Lorem nostrud quis elit enim. Cupidatat est mollit aliquip magna. Labore proident ea excepteur aliqua adipisicing voluptate labore non in. Duis commodo voluptate non ipsum excepteur minim ipsum adipisicing ipsum pariatur ex.\r\nEiusmod deserunt ex quis labore officia ipsum dolore enim nostrud officia voluptate consectetur. Labore elit eiusmod tempor irure commodo nostrud reprehenderit reprehenderit in sint. Magna voluptate consequat magna ullamco. Laboris tempor sit id pariatur voluptate aliquip ad dolor exercitation officia laborum do. Fugiat consequat irure ut ea dolore do irure nostrud cillum cupidatat veniam qui exercitation. Laborum nostrud labore enim ipsum duis aliqua excepteur commodo quis amet quis eu. Enim deserunt et exercitation consequat duis ipsum do.\r\nEsse sit consequat qui sit aliquip labore consectetur consectetur aliqua cillum nulla proident. Occaecat Lorem cupidatat eiusmod eu nisi dolor fugiat non dolore et nulla reprehenderit tempor quis. Ad reprehenderit nostrud nostrud irure. Pariatur ea aute dolor in est velit eu laboris consectetur excepteur eu. Eu consectetur pariatur elit pariatur sunt anim excepteur enim. Sint excepteur ipsum irure ex.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 39,
+      "brand": "honda",
+      "model": "A21",
+      "year": 1999,
+      "type": "SUV",
+      "price": 211,
+      "fuel": "petrol",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "In laborum irure ea enim id. Irure non duis cillum aliquip Lorem labore nostrud do. Occaecat do cillum ea ipsum cupidatat labore anim sint est veniam magna. Irure eiusmod dolore est eu cupidatat exercitation commodo. Adipisicing sit incididunt dolor elit amet veniam duis deserunt ex culpa sint nostrud. Id nostrud ad exercitation anim irure ad ad in non consequat cillum excepteur duis tempor. Occaecat reprehenderit est fugiat aliqua irure et ullamco incididunt.\r\nMollit ipsum anim sint incididunt magna cillum dolor occaecat excepteur minim Lorem nisi. Id consectetur nisi est est occaecat exercitation in adipisicing qui duis esse mollit pariatur pariatur. In enim occaecat sint est irure reprehenderit non sit.\r\nNostrud nisi laboris aliquip proident ipsum fugiat veniam duis deserunt voluptate. Occaecat nisi aliquip sunt dolor. Aliquip officia excepteur in irure. Dolore mollit reprehenderit labore pariatur qui occaecat. Do duis est eu officia.\r\n",
+      "location": "sofia",
+      "count": 3
+    },
+    {
+      "id": 40,
+      "brand": "porsche",
+      "model": "QE3",
+      "year": 2014,
+      "type": "SUV",
+      "price": 451,
+      "fuel": "petrol",
+      "seats": 4,
+      "images": [
+        "example-car.webp",
+        "example-car-2.webp",
+        "example-car-3.webp",
+        "example-car-4.webp"
+      ],
+      "description": "Quis in consequat cupidatat excepteur occaecat cillum dolore excepteur enim nisi. Magna et dolor ipsum esse cupidatat ea aliquip commodo eu aliqua ullamco deserunt. Est velit commodo labore aliqua eiusmod ipsum deserunt quis.\r\nNon culpa laborum nisi et sit incididunt adipisicing deserunt. Magna cillum velit esse consequat adipisicing Lorem ipsum sint eiusmod nisi fugiat. Officia elit culpa aliquip ea excepteur exercitation voluptate ea. Dolore duis voluptate mollit reprehenderit esse pariatur non. Incididunt tempor consectetur ea ea aliquip cillum tempor quis Lorem. Dolore pariatur eiusmod cillum enim commodo non anim veniam officia ut.\r\nCupidatat voluptate elit sit elit dolor proident consequat minim qui ad irure occaecat voluptate. Consectetur voluptate sit excepteur sunt excepteur esse duis commodo id dolor reprehenderit dolore anim. Irure velit laboris laborum sit ex eiusmod anim dolore consectetur. Incididunt est est cillum esse sint nisi ullamco pariatur ea in esse cupidatat qui labore. Sunt ut Lorem cupidatat magna ex eiusmod enim id ipsum in irure reprehenderit in.\r\n",
+      "location": "sofia",
+      "count": 5
+    }
+  ],
+  "customers": [
+    {
+      "id": 0,
+      "first_name": "stefan",
+      "last_name": "valchev",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 1,
+      "first_name": "kostadin",
+      "last_name": "kostadinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 2,
+      "first_name": "georgi",
+      "last_name": "gospodinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 3,
+      "first_name": "vladimir",
+      "last_name": "borisov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 4,
+      "first_name": "ivan",
+      "last_name": "radev",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 5,
+      "first_name": "kostadin",
+      "last_name": "ivanov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 6,
+      "first_name": "ivan",
+      "last_name": "ivanov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 7,
+      "first_name": "stefan",
+      "last_name": "plamenov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 8,
+      "first_name": "georgi",
+      "last_name": "radev",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 9,
+      "first_name": "ivan",
+      "last_name": "kostadinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 10,
+      "first_name": "alex",
+      "last_name": "ivanov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 11,
+      "first_name": "ivailo",
+      "last_name": "gospodinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 12,
+      "first_name": "ivan",
+      "last_name": "ivanov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 13,
+      "first_name": "ivailo",
+      "last_name": "gospodinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 14,
+      "first_name": "kostadin",
+      "last_name": "borisov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 15,
+      "first_name": "ivailo",
+      "last_name": "gospodinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 16,
+      "first_name": "alex",
+      "last_name": "gospodinov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 17,
+      "first_name": "ivailo",
+      "last_name": "borisov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 18,
+      "first_name": "plamen",
+      "last_name": "ivanov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 19,
+      "first_name": "kaloqn",
+      "last_name": "petrov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    },
+    {
+      "id": 20,
+      "first_name": "plamen",
+      "last_name": "petrov",
+      "email": "email@example.com",
+      "phone": 89111111112
+    }
+  ]
+}

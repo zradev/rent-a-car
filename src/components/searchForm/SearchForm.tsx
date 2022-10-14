@@ -1,27 +1,15 @@
 import React, { useState } from "react";
-import { FaCar } from "react-icons/fa";
+import { FaCar, FaSearch } from "react-icons/fa";
 import Datetime from "./Datetime";
 
 const SearchForm = () => {
-  const [datetime, setDatetime] = useState("");
-
-  const currentDate = new Date();
-  const minDate = currentDate.toISOString().slice(0, -8);
-  const maxDate = new Date(currentDate.setMonth(currentDate.getMonth() + 1))
-    .toISOString()
-    .slice(0, -8);
-
-  const handleDatetimeChange = (e: React.FormEvent<HTMLInputElement>) => {
-    const date = e.currentTarget.value;
-    setDatetime(date);
-  };
   return (
     <>
       <form
         action=""
-        className="relative md:w-[500px] w-[85vw] h-[350px] bg-white text-black shadow-xl"
+        className="static md:w-[500px] w-[85vw] h-[400px] bg-white text-black shadow-xl"
       >
-        <div className="flex flex-col p-[20px] md:p-[48px] text-xl">
+        <div className="flex flex-col p-[20px] md:p-[48px] h-auto text-xl">
           <h2 className="text-2 xl font-black md:text-3xl mb-3">
             Let's find your car!
           </h2>
@@ -38,6 +26,10 @@ const SearchForm = () => {
           <Datetime />
           <label>Drop-off at:</label>
           <Datetime />
+          <button className="flex items-center justify-center gap-5 mt-4 text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full outline-none">
+            Search
+            <FaSearch />
+          </button>
         </div>
       </form>
     </>
