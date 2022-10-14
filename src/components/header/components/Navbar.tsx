@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <nav className="relative bg-white shadow-sm m-5 mx-10">
+    <nav className="relative z-50 bg-white shadow-sm m-5 mx-10">
       <div className="flex items-center justify-between w-full text-black font-semibold text-lg">
         <div className="relative z-50  flex justify-between w-full md:w-auto">
           <Link
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="hover:text-blue-500">
               <Link to="/about">About Us</Link>
             </li>
-            <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full bg-gray-100">
+            <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
               Log in
             </button>
           </ul>
