@@ -8,7 +8,7 @@ interface IProps {
 
 const MainLayout = ({ children, title = "Rent a Car" }: IProps) => {
   return (
-    <div className="layout">
+    <div className="layout max-w-full">
       <Header />
       {children}
       <div>Footer</div>

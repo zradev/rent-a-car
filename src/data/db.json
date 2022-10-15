@@ -45,7 +45,7 @@
       "year": 2005,
       "type": "economy",
       "price": 139,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",
@@ -197,7 +197,7 @@
       "year": 2007,
       "type": "luxury",
       "price": 338,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 5,
       "images": [
         "example-car.webp",
@@ -216,7 +216,7 @@
       "year": 2022,
       "type": "luxury",
       "price": 341,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 2,
       "images": [
         "example-car.webp",
@@ -235,7 +235,7 @@
       "year": 2012,
       "type": "luxury",
       "price": 314,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 8,
       "images": [
         "example-car.webp",
@@ -254,7 +254,7 @@
       "year": 1998,
       "type": "SUV",
       "price": 258,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",
@@ -368,7 +368,7 @@
       "year": 2017,
       "type": "luxury",
       "price": 401,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 7,
       "images": [
         "example-car.webp",
@@ -387,7 +387,7 @@
       "year": 2009,
       "type": "estate",
       "price": 351,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",
@@ -406,7 +406,7 @@
       "year": 2022,
       "type": "economy",
       "price": 264,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",
@@ -425,7 +425,7 @@
       "year": 2016,
       "type": "cargo",
       "price": 424,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 5,
       "images": [
         "example-car.webp",
@@ -501,7 +501,7 @@
       "year": 1999,
       "type": "luxury",
       "price": 390,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",
@@ -539,7 +539,7 @@
       "year": 2014,
       "type": "economy",
       "price": 147,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 5,
       "images": [
         "example-car.webp",
@@ -615,7 +615,7 @@
       "year": 2021,
       "type": "cargo",
       "price": 276,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",
@@ -634,7 +634,7 @@
       "year": 2000,
       "type": "SUV",
       "price": 474,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 8,
       "images": [
         "example-car.webp",
@@ -653,7 +653,7 @@
       "year": 2006,
       "type": "economy",
       "price": 310,
-      "fuel": "gybrid",
+      "fuel": "hybrid",
       "seats": 4,
       "images": [
         "example-car.webp",

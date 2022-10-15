@@ -4,6 +4,7 @@ import logo from "../../../assets/images/logo/logo.jpg";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
 
   return (
     <nav className=" bg-white shadow-sm m-5 mx-10">
@@ -17,7 +18,12 @@ const Navbar = () => {
             <p className=" text-3xl  font-semibold">Rent a Car</p>
           </Link>
           <button
-            onClick={() => setIsNavbarOpen((prev) => !prev)}
+            onClick={() =>
+              setIsNavbarOpen((prev) => {
+                setPreventAnimationOnLoad(false);
+                return !prev;
+              })
+            }
             className={`relative z-50 w-10 md:hidden text-5xl hover:text-blue-500`}
           >
             {isNavbarOpen ? "x" : "="}
@@ -27,10 +33,12 @@ const Navbar = () => {
           className={`top-0 w-full h-full pt-[20vh] px-9 md:w-auto md:static md:h-auto md:p-0 bg-white ${
             isNavbarOpen
               ? "fixed md:static left-[-100%] slide-in-left"
+              : preventAnimationOnLoad
+              ? "fixed md:block left-[-100%] "
               : "fixed md:block left-0 slide-out-left"
           }`}
         >
-          <ul className="flex flex-col items-center gap-5 text-xl mt-10 md:flex-row md:mt-0">
+          <ul className="flex flex-col items-center gap-4 text-xl mt-10 md:flex-row md:mt-0">
             <li className="hover:text-blue-500">
               <Link to="/cars">Cars</Link>
             </li>
