@@ -7,7 +7,7 @@ const Navbar = () => {
   const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
 
   return (
-    <nav className=" bg-white shadow-sm m-5 mx-10">
+    <nav className=" bg-white shadow-sm  p-3 mx-10">
       <div className=" flex items-center justify-between w-full text-black font-semibold text-lg">
         <div className="relative z-50  flex justify-between w-full md:w-auto">
           <Link
