@@ -3,6 +3,7 @@ import Carousel from "../../components/carousel/Carousel";
 import SearchForm from "../../components/searchForm/SearchForm";
 import MainLayout from "../../layouts/MainLayout";
 import { CARDS, CAR_TYPES } from "../../utils/constants";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const heroImg = require("../../assets/images/layouts/home_hero.jpg");
@@ -39,6 +40,13 @@ const Index = () => {
               </div>
             </div>
           ))}
+        </section>
+        <section>
+          <Link to="/cars">
+            <div className="flex justify-center items-center cursor-pointer w-full h-[80px] text-3xl mt-10 bg-sky-800 text-white md:text-black md:transition-colors md:duration-700 md:bg-gray-200 md:hover:bg-sky-800 md:hover:text-white">
+              Rent now
+            </div>
+          </Link>
         </section>
       </div>
     </MainLayout>
