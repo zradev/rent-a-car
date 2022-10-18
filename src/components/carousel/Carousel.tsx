@@ -52,9 +52,9 @@ const Carousel = ({ items, slidesPerView = 4, spacing = 50 }: IProps) => {
             <img
               src={item.image}
               alt="carousel-item"
-              className="w-[150px] h-[80px]"
+              className="w-[150px] h-[70px]"
             />
-            <h2 className="text-lg font-semibold text-center mt-2">
+            <h2 className="text-lg font-semibold text-center mt-2 mb-9">
               {item.name}
             </h2>
           </Link>
