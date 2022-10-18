@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "../../components/carousel/Carousel";
 import SearchForm from "../../components/searchForm/SearchForm";
 import MainLayout from "../../layouts/MainLayout";

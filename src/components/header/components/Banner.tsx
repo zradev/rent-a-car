@@ -1,11 +1,19 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
-const Banner = () => {
+const Banner = ({ isFooter = false }: { isFooter?: boolean }) => {
   return (
-    <div className="hidden md:flex items-center justify-end [&>*]:hover:cursor-pointer gap-4 bg-sky-700 text-white text-md font-semibold tracking-wider pr-2 p-1">
-      <a href="mailto:email@example.com">email@example</a>{" "}
-      <a href="tel:123-456-7890">123-456-7890</a>
+    <div
+      className={` ${
+        isFooter ? "flex justify-center bg-transparent text-2xl" : "hidden"
+      } md:flex items-center justify-end [&>*]:hover:cursor-pointer gap-4 md:bg-sky-700 text-white text-md font-semibold tracking-wider pr-2 p-1`}
+    >
+      {!isFooter && (
+        <>
+          <a href="mailto:email@example.com">email@example</a>
+          <a href="tel:123-456-7890">123-456-7890</a>
+        </>
+      )}
       <a href="https://www.facebook.com">
         <FaFacebook />
       </a>

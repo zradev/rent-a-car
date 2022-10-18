@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Footer from "../components/footer/Footer";
 import Header from "../components/header";
 
 interface IProps {
@@ -11,7 +12,7 @@ const MainLayout = ({ children, title = "Rent a Car" }: IProps) => {
     <div className="layout max-w-full">
       <Header />
       {children}
-      <div>Footer</div>
+      <Footer />
     </div>
   );
 };

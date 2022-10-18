@@ -47,3 +47,25 @@ export const CARDS = [
     text: "We offer exclusive offers and VIP bonuses to our loyal customers.",
   },
 ];
+
+export const FOOTER_DATA = [
+  {
+    label: "information",
+    links: [
+      { text: "about us", link: "/about" },
+      { text: "contacts", link: "/contacts" },
+      { text: "terms and conditions", link: "/terms" },
+      { text: "faq and policy", link: "/faq" },
+    ],
+  },
+  {
+    label: "our cars",
+    links: [
+      { text: "luxury", link: "/cars?type=luxury" },
+      { text: "suv", link: "/cars?type=suv" },
+      { text: "estate", link: "/cars?type=estate" },
+      { text: "economy", link: "/cars?type=economy" },
+      { text: "cargo", link: "/cars?type=Cargo" },
+    ],
+  },
+];
