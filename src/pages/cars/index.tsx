@@ -5,16 +5,24 @@ import Car from "../../components/catalogue/Car";
 import { ICar } from "../../../types.d";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import NoResults from "../../components/catalogue/NoResults";
+import { useSearchParams } from "react-router-dom";
 import CarSkeleton from "./../../components/catalogue/CarSkeleton";
 
 const Index = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [isLoading, setIsLoading] = useState(true);
   const [cars, setCars] = useState<ICar[]>([]);
   const [carsDB, setCarsDB] = useState<ICar[]>([]);
   const [sortByPriceIndex, setSortByPriceIndex] = useState(0);
-  const [sortingType, setSortingType] = useState("all");
-  const [sortingFuel, setSortingFuel] = useState("all");
-  const [sortingCity, setSortingCity] = useState("all");
+  const [sortingType, setSortingType] = useState(
+    searchParams.get("type") || "all"
+  );
+  const [sortingFuel, setSortingFuel] = useState(
+    searchParams.get("fuel") || "all"
+  );
+  const [sortingCity, setSortingCity] = useState(
+    searchParams.get("city") || "all"
+  );
 
   const cities = useMemo(() => {
     return Array.from(new Set(carsDB.map((car) => car.location)));
@@ -82,30 +90,39 @@ const Index = () => {
   const sortByType = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === "all") {
       setSortingType("all");
+      searchParams.delete("type");
     } else {
+      searchParams.set("type", e.target.value);
       setSortingType(e.target.value);
     }
+    setSearchParams(searchParams);
   };
 
   const sortByFuel = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === "all") {
+      searchParams.delete("fuel");
       setSortingFuel("all");
     } else {
+      searchParams.set("fuel", e.target.value);
       setSortingFuel(e.target.value);
     }
+    setSearchParams(searchParams);
   };
 
   const sortByCity = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === "all") {
+      searchParams.delete("city");
       setSortingCity("all");
     } else {
+      searchParams.set("city", e.target.value);
       setSortingCity(e.target.value);
     }
+    setSearchParams(searchParams);
   };
 
   return (
     <MainLayout>
-      <div className=" w-full bg-gray-100">
+      <div className=" w-full bg-gray-100 mb-5">
         <div className="flex  gap-4 justify-center items-center m-auto font-semibold text-md">
           <button onClick={sortByPrice} className="flex m-2">
             {sortByPriceIndex === 0 ? (
