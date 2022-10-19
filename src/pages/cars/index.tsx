@@ -2,11 +2,13 @@ import React, { useEffect, useState, useMemo } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import axios from "axios";
 import Car from "../../components/catalogue/Car";
-import { ICar } from "../../../types";
+import { ICar } from "../../../types.d";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import NoResults from "../../components/catalogue/NoResults";
+import CarSkeleton from "./../../components/catalogue/CarSkeleton";
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [cars, setCars] = useState<ICar[]>([]);
   const [carsDB, setCarsDB] = useState<ICar[]>([]);
   const [sortByPriceIndex, setSortByPriceIndex] = useState(0);
@@ -16,13 +18,18 @@ const Index = () => {
 
   const cities = useMemo(() => {
     return Array.from(new Set(carsDB.map((car) => car.location)));
-  }, [cars]);
+  }, [carsDB]);
 
   useEffect(() => {
-    axios.get<ICar[]>("http://localhost:3004/cars").then((res) => {
-      setCars(res.data);
-      setCarsDB(res.data);
-    });
+    axios
+      .get<ICar[]>("http://localhost:3004/cars")
+      .then((res) => {
+        setCarsDB(res.data);
+      })
+      .catch((error) => console.log(error))
+      .finally(() => {
+        setTimeout(() => setIsLoading(false), 300);
+      });
   }, []);
 
   useEffect(() => {
@@ -31,7 +38,9 @@ const Index = () => {
         if (sortingType === "all") {
           return car.type !== null;
         } else {
-          return car.type === sortingType;
+          return (
+            car.type.toLocaleLowerCase() === sortingType.toLocaleLowerCase()
+          );
         }
       })
       .filter((car) => {
@@ -57,8 +66,6 @@ const Index = () => {
           return b.price - a.price;
         }
       });
-    console.log("rerender");
-
     setCars(sortedCars);
   }, [carsDB, sortByPriceIndex, sortingType, sortingFuel, sortingCity]);
 
@@ -146,7 +153,7 @@ const Index = () => {
             onChange={(e) => sortByCity(e)}
             className="bg-transparent outline-none my-2 [&>*]:bg-gray-100"
           >
-            <option value="all">All</option>
+            <option value="all">Location</option>
             {cities.map((city, index) => (
               <option key={index} value={city} className="capitalize">
                 {city}
@@ -154,7 +161,15 @@ const Index = () => {
             ))}
           </select>
         </div>
-        {cars.length > 0 ? (
+        {isLoading ? (
+          <div className="grid gap-2 mx-2 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+            {Array(8)
+              .fill(true)
+              .map((_, index) => (
+                <CarSkeleton key={index} />
+              ))}
+          </div>
+        ) : cars.length > 0 ? (
           <div className="grid gap-2 mx-2 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
             {cars.map((car) => (
               <Car key={car.id} car={car} />

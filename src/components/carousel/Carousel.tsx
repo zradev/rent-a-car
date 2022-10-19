@@ -18,7 +18,7 @@ interface IItem {
 }
 
 const Carousel = ({ items, slidesPerView = 4, spacing = 50 }: IProps) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
   const handleResize = () => {
     if (window.innerWidth < 720) {

@@ -10,7 +10,7 @@ const SearchForm = () => {
         className="static md:w-[500px] w-[85vw] h-[400px] bg-white text-black shadow-xl"
       >
         <div className="flex flex-col p-[20px] md:p-[48px] h-auto text-xl">
-          <h2 className="text-2 xl font-black md:text-3xl mb-3">
+          <h2 className="text-2xl text-center font-black md:text-3xl mb-3">
             Let's find your car!
           </h2>
           <label>Pick-up location:</label>

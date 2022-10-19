@@ -21,12 +21,28 @@ a {
   box-sizing: border-box;
 }
 
+.skeleton-bg {
+  animation: skeleton-bg 2.5s infinite;
+}
+
 .slide-in-left {
   animation: slide-in-left 0.5s forwards;
 }
 
 .slide-out-left {
   animation: slide-out-left 0.5s forwards;
+}
+
+@keyframes skeleton-bg {
+  0% {
+    background-color: rgb(243 244 246);
+  }
+  50% {
+    background-color: rgb(209 213 219);
+  }
+  100% {
+    background-color: rgb(243 244 246);
+  }
 }
 
 @keyframes slide-in-left {

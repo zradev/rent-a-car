@@ -19,9 +19,9 @@ const Car = ({ car }: IProps) => {
           <h1 className="text-xl font-bold mb-3">
             {car.brand} {car.model}
           </h1>
-          <h2 className="text-sm mb-2 ml-3">{car.type}</h2>
+          <h2 className="text-md mb-2 ml-3">{car.type}</h2>
         </div>
-        <div className="flex self-center	 w-[80%]">
+        <div className="flex self-center w-[80%] h-[170px] md:h-[140px]">
           <img
             src={require(`../../assets/images/cars/${car.images[0]}`)}
             alt="car"
