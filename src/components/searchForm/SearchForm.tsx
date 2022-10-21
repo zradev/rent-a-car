@@ -1,8 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaCar, FaSearch } from "react-icons/fa";
-import Datetime from "./Datetime";
+import { BasicDatePicker as DatePicker } from "./DatePicker";
+import { Dayjs } from "dayjs";
 
 const SearchForm = () => {
+  const [dayRange, setDayRange] = React.useState<Array<Dayjs | null>>([
+    null,
+    null,
+  ]);
+  const [days, setDays] = useState(0);
+
+  useEffect(() => {
+    if (dayRange[0] !== null && dayRange[1] !== null) {
+      setDays(dayRange[1]?.diff(dayRange[0], "day") + 1);
+    }
+  }, [dayRange]);
+
+  const onChangeFromDay = (newValue: Dayjs | null) => {
+    setDayRange((oldRange) => {
+      const newRange = [...oldRange];
+      newRange[0] = newValue;
+      return newRange;
+    });
+  };
+
+  const onChangeToDay = (newValue: Dayjs | null) => {
+    setDayRange((oldRange) => {
+      const newRange = [...oldRange];
+      newRange[1] = newValue;
+      return newRange;
+    });
+  };
+
   return (
     <>
       <form
@@ -22,10 +51,12 @@ const SearchForm = () => {
               className="bg-transparent w-full outline-none placeholder-black focus:placeholder-transparent"
             />
           </div>
-          <label>Pick-up at:</label>
-          <Datetime />
-          <label>Drop-off at:</label>
-          <Datetime />
+          <DatePicker
+            dayRange={dayRange}
+            onChangeFromDay={onChangeFromDay}
+            onChangeToDay={onChangeToDay}
+          />
+          <p>days: {days}</p>
           <button className="flex items-center justify-center gap-5 mt-4 text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full outline-none">
             Search
             <FaSearch />
