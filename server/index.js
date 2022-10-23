@@ -1,21 +1,27 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const credentials = require("./middleware/credentials");
 const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
 const connection = require("./db");
-const registerRoutes = require("./routes/register");
-const loginRoutes = require("./routes/login");
 
 // database connection
 connection();
 
+// check credentials before CORS
+app.use(credentials);
+
 // middlewares
+app.use(express.urlencoded({ extended: false }));
+
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 // routes
-app.use("/api/register", registerRoutes);
-app.use("/api/login", loginRoutes);
+
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
 
 const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));
