@@ -1,9 +1,10 @@
-const { User } = require("../models/user");
+const { User, validate } = require("../models/user");
 const bcrypt = require("bcrypt");
 
 const handleNewUser = async (req, res) => {
   const { email, password } = req.body;
-  console.log("email: " + email, "pass: " + password);
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send({ message: error.details[0].message });
   if (!email || !password)
     return res
       .status(400)

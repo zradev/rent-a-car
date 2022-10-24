@@ -928,5 +928,20 @@
       "email": "email@example.com",
       "phone": 89111111112
     }
+  ],
+  "users": [
+    {
+      "first_name": "zlatko",
+      "last_name": "radev",
+      "email": "radev@abv.bg",
+      "password": "radev2000"
+    },
+    {
+      "id": 5213,
+      "first_name": "ivan",
+      "last_name": "ivanov",
+      "email": "ivan@abv.bg",
+      "password": "ivanivanov"
+    }
   ]
 }

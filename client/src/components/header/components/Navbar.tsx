@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
+import AuthContext from "./../../../context/AuthProvider";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
+  const { auth } = useContext(AuthContext);
 
   return (
     <nav className=" bg-white shadow-sm  p-3 mx-10">
@@ -51,9 +53,11 @@ const Navbar = () => {
             <li className="hover:text-blue-500">
               <Link to="/about">About Us</Link>
             </li>
-            <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
-              Log in
-            </button>
+            <Link to="/login">
+              <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
+                {auth ? "Log out" : "Log in"}
+              </button>
+            </Link>
           </ul>
         </div>
       </div>
