@@ -5,9 +5,10 @@ import { ICar } from "./../../../types.d";
 
 interface IProps {
   car: ICar;
+  days: number;
 }
 
-const Car = ({ car }: IProps) => {
+const Car = ({ car, days }: IProps) => {
   return (
     <Link
       to={`product/${car.id}`}
@@ -21,7 +22,7 @@ const Car = ({ car }: IProps) => {
           </h1>
           <h2 className="text-md mb-2 ml-3">{car.type}</h2>
         </div>
-        <div className="flex self-center w-[80%] h-[170px] md:h-[140px]">
+        <div className="flex self-center w-[80%] h-[170px] md:h-[11vw]">
           <img
             src={require(`../../assets/images/cars/${car.images[0]}`)}
             alt="car"
@@ -32,7 +33,7 @@ const Car = ({ car }: IProps) => {
             {formatCurrency(car.price)} | day
           </h1>
           <h2 className="text-md text-blue-800">
-            {formatCurrency(car.price * 2)} total
+            {formatCurrency(car.price * (days || 1))} total
           </h2>
         </div>
       </div>

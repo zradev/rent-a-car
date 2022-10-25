@@ -7,9 +7,22 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import NoResults from "../../components/catalogue/NoResults";
 import { useSearchParams } from "react-router-dom";
 import CarSkeleton from "./../../components/catalogue/CarSkeleton";
+import { BasicDatePicker as DatePicker } from "../../components/searchForm/DatePicker";
+import { Dayjs } from "dayjs";
+import dayjs from "dayjs";
 
 const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [dayRange, setDayRange] = React.useState<Array<Dayjs | null>>([
+    searchParams.get("pick")
+      ? dayjs(searchParams.get("pick"), "DD/MM/YYYY")
+      : dayjs(new Date()),
+    searchParams.get("drop")
+      ? dayjs(searchParams.get("drop"), "DD/MM/YYYY")
+      : dayjs(new Date()),
+  ]);
+  console.log(searchParams.get("pick"));
+
   const [isLoading, setIsLoading] = useState(true);
   const [cars, setCars] = useState<ICar[]>([]);
   const [carsDB, setCarsDB] = useState<ICar[]>([]);
@@ -20,15 +33,23 @@ const Index = () => {
   const [sortingFuel, setSortingFuel] = useState(
     searchParams.get("fuel") || "all"
   );
-  const [sortingCity, setSortingCity] = useState(
-    searchParams.get("city") || "all"
+  const [sortingLocation, setSortingLocation] = useState(
+    searchParams.get("location") || "all"
   );
 
-  const cities = useMemo(() => {
+  const locations = useMemo(() => {
     return Array.from(new Set(carsDB.map((car) => car.location)));
   }, [carsDB]);
+  const [days, setDays] = useState(0);
 
   useEffect(() => {
+    if (dayRange[0] !== null && dayRange[1] !== null) {
+      setDays(dayRange[1]?.diff(dayRange[0], "day") + 1);
+    }
+  }, [dayRange]);
+
+  useEffect(() => {
+    // TODO: Update DB
     axios
       .get<ICar[]>("http://localhost:3004/cars")
       .then((res) => {
@@ -59,10 +80,10 @@ const Index = () => {
         }
       })
       .filter((car) => {
-        if (sortingCity === "all") {
+        if (sortingLocation === "all") {
           return car.location !== null;
         } else {
-          return car.location === sortingCity;
+          return car.location === sortingLocation;
         }
       })
       .sort((a, b) => {
@@ -75,7 +96,23 @@ const Index = () => {
         }
       });
     setCars(sortedCars);
-  }, [carsDB, sortByPriceIndex, sortingType, sortingFuel, sortingCity]);
+  }, [carsDB, sortByPriceIndex, sortingType, sortingFuel, sortingLocation]);
+
+  const onChangeFromDay = (newValue: Dayjs | null) => {
+    setDayRange((oldRange) => {
+      const newRange = [...oldRange];
+      newRange[0] = newValue;
+      return newRange;
+    });
+  };
+
+  const onChangeToDay = (newValue: Dayjs | null) => {
+    setDayRange((oldRange) => {
+      const newRange = [...oldRange];
+      newRange[1] = newValue;
+      return newRange;
+    });
+  };
 
   const sortByPrice = () => {
     if (sortByPriceIndex === 0) {
@@ -109,13 +146,13 @@ const Index = () => {
     setSearchParams(searchParams);
   };
 
-  const sortByCity = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const sortByLocation = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === "all") {
-      searchParams.delete("city");
-      setSortingCity("all");
+      searchParams.delete("location");
+      setSortingLocation("all");
     } else {
-      searchParams.set("city", e.target.value);
-      setSortingCity(e.target.value);
+      searchParams.set("location", e.target.value);
+      setSortingLocation(e.target.value);
     }
     setSearchParams(searchParams);
   };
@@ -123,19 +160,27 @@ const Index = () => {
   return (
     <MainLayout>
       <div className=" w-full bg-gray-100 mb-5">
+        <div className="flex flex-col md:flex-row justify-center items-center bg-white p-6 gap-3 text-xl mt-5">
+          <DatePicker
+            dayRange={dayRange}
+            onChangeFromDay={onChangeFromDay}
+            onChangeToDay={onChangeToDay}
+          />
+        </div>
         <div className="flex  gap-4 justify-center items-center m-auto font-semibold text-md">
           <button onClick={sortByPrice} className="flex m-2">
+            Price
             {sortByPriceIndex === 0 ? (
               <>
-                Price <FaArrowDown className="text-transparent ml-1" />
+                <FaArrowDown className="text-transparent ml-1" />
               </>
             ) : sortByPriceIndex === 1 ? (
               <>
-                Price <FaArrowDown className="ml-1" />
+                <FaArrowDown className="ml-1" />
               </>
             ) : (
               <>
-                Price <FaArrowUp className="ml-1" />
+                <FaArrowUp className="ml-1" />
               </>
             )}
           </button>
@@ -145,6 +190,13 @@ const Index = () => {
             onChange={(e) => sortByType(e)}
             className="bg-transparent outline-none my-2 [&>*]:bg-gray-100"
           >
+            <option
+              value={searchParams.get("type") || "all"}
+              selected
+              className="hidden"
+            >
+              {searchParams.get("type") || "Type"}
+            </option>
             <option value="all">Type</option>
             <option value="economy">Economy</option>
             <option value="estate">Estate</option>
@@ -158,6 +210,13 @@ const Index = () => {
             onChange={(e) => sortByFuel(e)}
             className="bg-transparent outline-none my-2 [&>*]:bg-gray-100"
           >
+            <option
+              value={searchParams.get("fuel") || "all"}
+              selected
+              className="hidden"
+            >
+              {searchParams.get("fuel") || "Fuel"}
+            </option>
             <option value="all">Fuel</option>
             <option value="petrol">Petrol</option>
             <option value="disel">Diesel</option>
@@ -165,15 +224,22 @@ const Index = () => {
             <option value="electric">Electric</option>
           </select>
           <select
-            id="city"
-            name="city"
-            onChange={(e) => sortByCity(e)}
-            className="bg-transparent outline-none my-2 [&>*]:bg-gray-100"
+            id="location"
+            name="location"
+            onChange={(e) => sortByLocation(e)}
+            className="bg-transparent outline-none my-2 [&>*]:bg-gray-100 capitalize"
           >
+            <option
+              value={searchParams.get("location") || "all"}
+              selected
+              className="hidden"
+            >
+              {searchParams.get("location") || "Location"}
+            </option>
             <option value="all">Location</option>
-            {cities.map((city, index) => (
-              <option key={index} value={city} className="capitalize">
-                {city}
+            {locations.map((location, index) => (
+              <option key={index} value={location} className="capitalize">
+                {location}
               </option>
             ))}
           </select>
@@ -189,7 +255,7 @@ const Index = () => {
         ) : cars.length > 0 ? (
           <div className="grid gap-2 mx-2 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
             {cars.map((car) => (
-              <Car key={car.id} car={car} />
+              <Car key={car.id} car={car} days={days} />
             ))}
           </div>
         ) : (
