@@ -14,4 +14,6 @@ const carSchema = new mongoose.Schema({
   count: { type: Number, default: 1 },
 });
 
-module.exports = mongoose.model("car", carSchema);
+Car = mongoose.model("car", carSchema);
+
+module.exports = { Car };
