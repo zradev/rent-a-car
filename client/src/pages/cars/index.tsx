@@ -21,7 +21,6 @@ const Index = () => {
       ? dayjs(searchParams.get("drop"), "DD/MM/YYYY")
       : dayjs(new Date()),
   ]);
-  console.log(searchParams.get("pick"));
 
   const [isLoading, setIsLoading] = useState(true);
   const [cars, setCars] = useState<ICar[]>([]);
@@ -49,9 +48,9 @@ const Index = () => {
   }, [dayRange]);
 
   useEffect(() => {
-    // TODO: Update DB
     axios
-      .get<ICar[]>("http://localhost:3004/cars")
+      // .get<ICar[]>(`${process.env.REACT_APP_REGISTER_URL}/cars/get-all`)
+      .get<ICar[]>(`http://localhost:8080/cars/get-all`)
       .then((res) => {
         setCarsDB(res.data);
       })
@@ -64,31 +63,23 @@ const Index = () => {
   useEffect(() => {
     const sortedCars = carsDB
       .filter((car) => {
-        if (sortingType === "all") {
-          return car.type !== null;
-        } else {
-          return (
-            car.type.toLocaleLowerCase() === sortingType.toLocaleLowerCase()
-          );
-        }
+        return sortingType === "all"
+          ? car.type !== null
+          : car.type.toLocaleLowerCase() === sortingType.toLocaleLowerCase();
       })
       .filter((car) => {
-        if (sortingFuel === "all") {
-          return car.fuel !== null;
-        } else {
-          return car.fuel === sortingFuel;
-        }
+        return sortingFuel === "all"
+          ? car.fuel !== null
+          : car.fuel === sortingFuel;
       })
       .filter((car) => {
-        if (sortingLocation === "all") {
-          return car.location !== null;
-        } else {
-          return car.location === sortingLocation;
-        }
+        return sortingLocation === "all"
+          ? car.location !== null
+          : car.location === sortingLocation;
       })
       .sort((a, b) => {
         if (sortByPriceIndex === 0) {
-          return a.id - b.id;
+          return a._id - b._id;
         } else if (sortByPriceIndex === 1) {
           return a.price - b.price;
         } else {
@@ -156,6 +147,8 @@ const Index = () => {
     }
     setSearchParams(searchParams);
   };
+
+  console.log(carsDB[0]);
 
   return (
     <MainLayout>
@@ -255,7 +248,7 @@ const Index = () => {
         ) : cars.length > 0 ? (
           <div className="grid gap-2 mx-2 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
             {cars.map((car) => (
-              <Car key={car.id} car={car} days={days} />
+              <Car key={car._id} car={car} days={days} />
             ))}
           </div>
         ) : (

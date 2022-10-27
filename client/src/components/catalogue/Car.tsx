@@ -11,8 +11,8 @@ interface IProps {
 const Car = ({ car, days }: IProps) => {
   return (
     <Link
-      to={`product/${car.id}`}
-      key={car.id}
+      to={`product/${car._id}`}
+      key={car._id}
       className="w-full bg-white p-4 border border-gray-300 border-b-gray-500"
     >
       <div className="flex flex-col ">

@@ -1,5 +1,5 @@
 export interface ICar {
-  id: number;
+  _id: number;
   brand: string;
   model: string;
   year: number;
