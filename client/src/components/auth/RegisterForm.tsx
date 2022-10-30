@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
+import { register } from "./../../services/auth.service";
 
 const RegisterForm = () => {
   const bgImg = require("../../assets/images/layouts/register-bg.jpg");
@@ -34,16 +35,7 @@ const RegisterForm = () => {
 
     if (isUserValid())
       try {
-        const response = await axios.post("http://localhost:8080/register", {
-          firstName: fName,
-          lastName: lName,
-          email,
-          password,
-        });
-        setEmail("");
-        setPassword("");
-        setFname("");
-        setLname("");
+        register(fName, lName, email, password);
         navigate("/login");
       } catch (error: any) {
         if (
