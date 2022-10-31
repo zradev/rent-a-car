@@ -4,7 +4,13 @@ const bcrypt = require("bcrypt");
 const handleNewUser = async (req, res) => {
   const { email, password } = req.body;
   const { error } = validate(req.body);
-  if (error) return res.status(400).send({ message: error.details[0].message });
+  if (error) {
+    if (error.message === `"Email" must be a valid email`)
+      return res
+        .status(400)
+        .send({ message: "This Email Address doesn't exist." });
+    return res.status(400).send({ message: error.details[0].message });
+  }
   if (!email || !password)
     return res
       .status(400)

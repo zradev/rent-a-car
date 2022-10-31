@@ -5,9 +5,6 @@ import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 
 const LoginForm = () => {
-  const { setAuth } = useContext(AuthContext);
-  const navigate = useNavigate();
-
   const bgImg = require("../../assets/images/layouts/login-bg.jpg");
 
   const [email, setEmail] = useState<string>("");
@@ -18,6 +15,9 @@ const LoginForm = () => {
   const [isPasswordClicked, setIsPasswordClicked] = useState(false);
 
   const [error, setError] = useState("");
+
+  const { login } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsEmailValid(isValidEmail(email));
@@ -41,13 +41,8 @@ const LoginForm = () => {
             withCredentials: true,
           }
         );
-        const accessToken = response?.data?.accessToken;
-        const refreshToken = response?.data?.refreshToken || "no refresh token";
-        const role = response?.data?.role;
-        setAuth({ email, password, role, accessToken });
-        console.log("access token: " + accessToken);
-        console.log("refresh token: " + refreshToken);
-
+        const jwt = response?.data?.token;
+        login(jwt);
         setEmail("");
         setPassword("");
         navigate("/");

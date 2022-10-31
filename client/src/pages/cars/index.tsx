@@ -147,9 +147,6 @@ const Index = () => {
     }
     setSearchParams(searchParams);
   };
-
-  console.log(carsDB[0]);
-
   return (
     <MainLayout>
       <div className=" w-full bg-gray-100 mb-5">

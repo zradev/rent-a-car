@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
-import { register } from "./../../services/auth.service";
 
 const RegisterForm = () => {
   const bgImg = require("../../assets/images/layouts/register-bg.jpg");
-  const navigate = useNavigate();
 
   const [fName, setFname] = useState<string>("");
   const [isFNameClicked, setIsFNameClicked] = useState(false);
@@ -23,6 +21,7 @@ const RegisterForm = () => {
   const [isPasswordClicked, setIsPasswordClicked] = useState(false);
 
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const isUserValid = () => {
     return (
@@ -35,7 +34,12 @@ const RegisterForm = () => {
 
     if (isUserValid())
       try {
-        register(fName, lName, email, password);
+        await axios.post("http://localhost:8080/register", {
+          firstName: fName,
+          lastName: lName,
+          email,
+          password,
+        });
         navigate("/login");
       } catch (error: any) {
         if (
@@ -68,7 +72,10 @@ const RegisterForm = () => {
 
   const isValidPassword = (password: string | null) => {
     return (
-      password !== null && /^[a-zA-Z0-9!@#$%^*)(+=._-]{8,50}$/.test(password)
+      password !== null &&
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+        password
+      )
     );
   };
 
@@ -160,8 +167,9 @@ const RegisterForm = () => {
           <div className="text-gray-400 mt-3">
             <h2>Password must have:</h2>
             <p> {"\u2022"} At least 1 upper-case and 1 lower-case letter</p>
+            <p> {"\u2022"} At least 1 number</p>
             <p> {"\u2022"} At least 1 special symbol</p>
-            <p> {"\u2022"} Minimum 8 characters and Maximum 50 characters</p>
+            <p> {"\u2022"} Min 8 and max 50 characters</p>
           </div>
         </form>
         <div className="flex flex-col justify-center items-center mt-3 gap-2">

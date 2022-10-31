@@ -6,7 +6,8 @@ import AuthContext from "./../../../context/AuthProvider";
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
-  const { auth } = useContext(AuthContext);
+  const { auth, logout } = useContext(AuthContext);
+  console.log(auth);
 
   return (
     <nav className=" bg-white shadow-sm  p-3 mx-10">
@@ -53,11 +54,15 @@ const Navbar = () => {
             <li className="hover:text-blue-500">
               <Link to="/about">About Us</Link>
             </li>
-            <Link to="/login">
-              <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
-                {auth ? "Log out" : "Log in"}
-              </button>
-            </Link>
+            {!auth ? (
+              <Link to="/login">
+                <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
+                  Log in
+                </button>
+              </Link>
+            ) : (
+              <button onClick={logout}>Log Out</button>
+            )}
           </ul>
         </div>
       </div>

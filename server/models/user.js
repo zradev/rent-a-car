@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   role: { type: String, required: false, default: "user" },
   phone: { type: String, required: false },
-  refreshToken: { type: String, required: false },
 });
 
 const User = mongoose.model("user", userSchema);
@@ -23,7 +22,6 @@ const validate = (data) => {
     password: passwordComplexity().required().label("Password"),
     role: Joi.string().label("Role"),
     phone: Joi.string().label("Phone Number"),
-    refreshToken: Joi.string().label("Refresh Token"),
   });
   return schema.validate(data);
 };
