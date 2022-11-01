@@ -1,13 +1,19 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
 import AuthContext from "./../../../context/AuthProvider";
 import UserBubble from "../../auth/UserBubble";
+import { useScrollLock } from "../../../hooks/useScrollLock";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
   const { auth } = useContext(AuthContext);
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  useEffect(() => {
+    isNavbarOpen ? lockScroll() : unlockScroll();
+  }, [isNavbarOpen, lockScroll, unlockScroll]);
 
   return (
     <nav className=" bg-white shadow-sm  p-3 md:mx-10">

@@ -1,10 +1,17 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import AuthContext from "../../context/AuthProvider";
 import { Link } from "react-router-dom";
+import { useScrollLock } from "../../hooks/useScrollLock";
 
 const UserBubble = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { logout, auth } = useContext(AuthContext);
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  useEffect(() => {
+    isOpen ? lockScroll() : unlockScroll();
+  }, [isOpen, lockScroll, unlockScroll]);
+
   return (
     <div
       className="relative flex flex-col justify-center items-center text-center select-none bg-gray-200 rounded-full w-[40px] h-[40px] md:w-9 md:h-9 md:ml-3 cursor-pointer border hover:border-gray-300"
