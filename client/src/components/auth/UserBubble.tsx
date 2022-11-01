@@ -13,7 +13,7 @@ const UserBubble = () => {
       }}
     >
       {
-        // display profile picture if you add file system to store images
+        // Display profile picture if you add file system to store images
       }
       <p className="m-auto"> {auth?.firstName[0].toLocaleUpperCase()}</p>
       {isOpen && (
