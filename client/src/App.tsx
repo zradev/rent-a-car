@@ -6,6 +6,7 @@ import Cars from "./pages/cars";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import About from "./pages/about";
+import Contacts from "./pages/contacts";
 import { AuthProvider } from "./context/AuthProvider";
 import useScrollToTop from "./hooks/useScrollToTop";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </AuthProvider>
     </div>

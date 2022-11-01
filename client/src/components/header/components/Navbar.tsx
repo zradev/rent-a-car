@@ -45,10 +45,10 @@ const Navbar = () => {
         >
           <ul className="flex flex-col items-center gap-4 text-xl mt-10 md:flex-row md:mt-0">
             <li className="hover:text-blue-500">
-              <Link to="/cars">Cars</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="hover:text-blue-500">
-              <Link to="/locations">Locations</Link>
+              <Link to="/cars">Cars</Link>
             </li>
             <li className="hover:text-blue-500">
               <Link to="/contacts">Contacts</Link>
@@ -58,15 +58,17 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        {!auth ? (
-          <Link to="/login">
-            <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
-              Log in
-            </button>
-          </Link>
-        ) : (
-          <UserBubble />
-        )}
+        <div className="ml-3">
+          {!auth ? (
+            <Link to="/login">
+              <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full">
+                Log in
+              </button>
+            </Link>
+          ) : (
+            <UserBubble />
+          )}
+        </div>
       </div>
     </nav>
   );
