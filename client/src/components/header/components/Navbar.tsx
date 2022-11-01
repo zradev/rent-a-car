@@ -2,23 +2,25 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
 import AuthContext from "./../../../context/AuthProvider";
+import UserBubble from "../../auth/UserBubble";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
-  const { auth, logout } = useContext(AuthContext);
-  console.log(auth);
+  const { auth } = useContext(AuthContext);
 
   return (
-    <nav className=" bg-white shadow-sm  p-3 mx-10">
-      <div className=" flex items-center justify-between w-full text-black font-semibold text-lg">
-        <div className="relative z-50  flex justify-between w-full md:w-auto">
+    <nav className=" bg-white shadow-sm  p-3 md:mx-10">
+      <div className=" flex items-center w-full text-black font-semibold text-lg">
+        <div className="relative z-50 flex flex-row-reverse md:flex-row justify-between w-[60%] md:w-auto mr-auto">
           <Link
             to="/"
             className="flex justify-center items-center gap-3 hover:text-blue-500"
           >
             <img src={logo} alt="logo" width={60} />
-            <p className=" text-3xl  font-semibold">Rent a Car</p>
+            <p className="hidden md:block text-3xl  font-semibold">
+              Rent a Car
+            </p>
           </Link>
           <button
             onClick={() =>
@@ -54,17 +56,17 @@ const Navbar = () => {
             <li className="hover:text-blue-500">
               <Link to="/about">About Us</Link>
             </li>
-            {!auth ? (
-              <Link to="/login">
-                <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
-                  Log in
-                </button>
-              </Link>
-            ) : (
-              <button onClick={logout}>Log Out</button>
-            )}
           </ul>
         </div>
+        {!auth ? (
+          <Link to="/login">
+            <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800	 p-1 px-4 rounded-full">
+              Log in
+            </button>
+          </Link>
+        ) : (
+          <UserBubble />
+        )}
       </div>
     </nav>
   );
