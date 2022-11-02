@@ -20,8 +20,7 @@ app.use(cors(corsOptions));
 
 // routes
 
-app.use("/register", require("./routes/register"));
-app.use("/auth", require("./routes/auth"));
+app.use("/user", require("./routes/user"));
 app.use("/cars", require("./routes/cars"));
 
 const port = process.env.PORT || 8080;
