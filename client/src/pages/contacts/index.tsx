@@ -36,7 +36,7 @@ const index = () => {
         />
         <input
           type="submit"
-          className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full"
+          className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
         />
       </form>
     </MainLayout>

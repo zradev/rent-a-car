@@ -34,7 +34,7 @@ const RegisterForm = () => {
 
     if (isUserValid())
       try {
-        await axios.post("http://localhost:8080/register", {
+        await axios.post("http://localhost:8080/user/register", {
           firstName: fName,
           lastName: lName,
           email,

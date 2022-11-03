@@ -7,7 +7,7 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import NoResults from "../../components/catalogue/NoResults";
 import { useSearchParams } from "react-router-dom";
 import CarSkeleton from "./../../components/catalogue/CarSkeleton";
-import { BasicDatePicker as DatePicker } from "../../components/searchForm/DatePicker";
+import { DateRangePicker as DatePicker } from "../../components/searchForm/DateRangePicker";
 import { Dayjs } from "dayjs";
 import dayjs from "dayjs";
 

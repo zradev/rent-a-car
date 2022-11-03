@@ -6,9 +6,15 @@ export interface IField {
 }
 
 export interface IAuth {
+  id: string;
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
   role: string;
+  birthday: string;
+  licenseNum: string;
+  licenseCountry: string;
+  licenseIssueDate: string;
+  licenseExpireDate: string;
 }

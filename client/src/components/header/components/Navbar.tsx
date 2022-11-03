@@ -67,7 +67,7 @@ const Navbar = () => {
         <div className="ml-3">
           {!auth ? (
             <Link to="/login">
-              <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full">
+              <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700">
                 Log in
               </button>
             </Link>

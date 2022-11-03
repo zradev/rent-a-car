@@ -31,7 +31,7 @@ const LoginForm = () => {
     if (isValidEmail(email)) {
       try {
         const response = await axios.post(
-          "http://localhost:8080/auth",
+          "http://localhost:8080/user/login",
           {
             email,
             password,

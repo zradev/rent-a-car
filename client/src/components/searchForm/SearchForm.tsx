@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaCar, FaSearch } from "react-icons/fa";
-import { BasicDatePicker as DatePicker } from "./DatePicker";
+import { DateRangePicker } from "./DateRangePicker";
 import { Dayjs } from "dayjs";
 import { Link } from "react-router-dom";
 import dayjs from "dayjs";
@@ -55,7 +55,7 @@ const SearchForm = () => {
               className="bg-transparent w-full outline-none placeholder-black focus:placeholder-transparent"
             />
           </div>
-          <DatePicker
+          <DateRangePicker
             dayRange={dayRange}
             onChangeFromDay={onChangeFromDay}
             onChangeToDay={onChangeToDay}
@@ -66,7 +66,7 @@ const SearchForm = () => {
               dayRange[0] ? "&pick=" + dayRange[0].format("DD-MM-YYYY") : ""
             }${dayRange[1] ? "&drop=" + dayRange[1].format("DD-MM-YYYY") : ""}`}
           >
-            <button className="flex items-center justify-center gap-5 mt-4 text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full outline-none">
+            <button className="flex items-center justify-center gap-5 mt-4 text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full outline-none hover:bg-sky-700">
               Search
               <FaSearch />
             </button>
