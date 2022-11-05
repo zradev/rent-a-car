@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
 import AuthContext from "./../../../context/AuthProvider";
-import UserBubble from "../../auth/UserBubble";
+import UserBubble from "../../profile/UserBubble";
 import { useScrollLock } from "../../../hooks/useScrollLock";
 
 const Navbar = () => {

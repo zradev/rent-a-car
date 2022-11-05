@@ -32,7 +32,7 @@ const PersonalData = ({ auth }: any) => {
   return (
     <>
       <form method="put" onSubmit={onSubmit} className="w-full">
-        <h2 className="text-2xl text-center border-b">Personal Data</h2>
+        <h2 className="text-2xl text-center border-b mb-6">Personal Data</h2>
         <div className=" flex justify-between items-center m-3">
           <label htmlFor="fName" className="font-bold text-lg">
             First Name:
@@ -97,7 +97,7 @@ const PersonalData = ({ auth }: any) => {
         <div className="flex justify-center items-center">
           <input
             type="submit"
-            className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
+            className="text-white bg-sky-800 text-start w-fit my-10 border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
             value={"Update"}
           />
         </div>

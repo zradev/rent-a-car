@@ -49,7 +49,7 @@ const UserBubble = () => {
           </li>
           {auth?.role === "admin" && (
             <li>
-              <Link to="/new-car">Add Car</Link>
+              <Link to="/add-car">Add Car</Link>
             </li>
           )}
           <li>

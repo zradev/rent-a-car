@@ -10,6 +10,7 @@ import Contacts from "./pages/contacts";
 import Terms from "./pages/terms";
 import FAQ from "./pages/faq";
 import Profile from "./pages/profile";
+import AddCar from "./pages/addCar";
 import { AuthProvider } from "./context/AuthProvider";
 import useScrollToTop from "./hooks/useScrollToTop";
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/add-car" element={<AddCar />} />
         </Routes>
       </AuthProvider>
     </div>

@@ -38,7 +38,7 @@ const LicenseData = ({ auth }: any) => {
   return (
     <>
       <form method="put" onSubmit={onSubmit} className="w-full">
-        <h2 className="text-2xl text-center border-b">
+        <h2 className="text-2xl text-center border-b mb-6">
           Driver License Details
         </h2>
         <div className=" flex justify-between items-center m-3">
@@ -68,7 +68,7 @@ const LicenseData = ({ auth }: any) => {
         <div className=" flex justify-between items-center h-fit m-3 ">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <label htmlFor="birthday" className="font-bold text-lg">
-              Issued
+              Issued:
             </label>
             <DatePicker
               value={licenseIssueDate}
@@ -81,7 +81,7 @@ const LicenseData = ({ auth }: any) => {
         <div className=" flex justify-between items-center h-fit m-3 ">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <label htmlFor="birthday" className="font-bold text-lg">
-              Expires
+              Expires:
             </label>
             <DatePicker
               value={licenseExpireDate}
@@ -94,7 +94,7 @@ const LicenseData = ({ auth }: any) => {
         <div className="flex justify-center items-center">
           <input
             type="submit"
-            className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
+            className="text-white bg-sky-800 text-start w-fit my-10 border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
             value={"Update"}
           />
         </div>

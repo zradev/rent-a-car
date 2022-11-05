@@ -24,7 +24,11 @@ const Car = ({ car, days }: IProps) => {
         </div>
         <div className="flex self-center w-[80%] h-[170px] md:h-[11vw]">
           <img
-            src={require(`../../assets/images/cars/${car.images[0]}`)}
+            src={
+              car.images[0].includes("http")
+                ? car.images[0]
+                : require(`../../assets/images/cars/${car.images[0]}`)
+            }
             alt="car"
           />
         </div>
