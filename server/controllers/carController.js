@@ -38,6 +38,15 @@ const handleUpdateCar = async (req, res) => {
   }
 };
 
+const handleGetCar = async (req, res) => {
+  try {
+    const car = await Car.findOne({ _id: req.params.id });
+    res.status(200).send({ message: "Car found." });
+  } catch (err) {
+    res.status(500).send({ message: err.message });
+  }
+};
+
 const handleGetAll = async (req, res) => {
   try {
     Car.find((err, val) => {
@@ -56,5 +65,6 @@ module.exports = {
   handleNewCar,
   handleDeleteCar,
   handleUpdateCar,
+  handleGetCar,
   handleGetAll,
 };
