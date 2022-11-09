@@ -22,6 +22,7 @@ app.use(cors(corsOptions));
 
 app.use("/user", require("./routes/user"));
 app.use("/cars", require("./routes/cars"));
+app.use("/orders", require("./routes/orders"));
 
 const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));

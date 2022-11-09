@@ -123,7 +123,7 @@ const handleUpdateUser = async (req, res) => {
 
 const handleDeleteUser = async (req, res) => {
   try {
-    await User.deleteOne({ id: req.params.id });
+    await User.deleteOne({ _id: req.params.id });
     res.status(204).send({ message: "User deleted successfully." });
   } catch (err) {
     res.status(500).send({ message: err.message });

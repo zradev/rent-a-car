@@ -1,5 +1,13 @@
 const { Order } = require("../models/order");
 
+const isOrderActive = (date) => {
+  const [day, month, year] = date.split("-");
+  const dropDate = new Date(year, month - 1, day);
+  const today = new Date();
+  const isActive = dropDate >= today;
+  return isActive;
+};
+
 const handleNewOrder = async (req, res) => {
   const { userId, carId, pick, drop } = req.body;
   const duplicate = await Order.findOne({
@@ -36,7 +44,15 @@ const handleDeleteOrder = async (req, res) => {
 const handleGetOrder = async (req, res) => {
   try {
     const order = await Order.findOne({ _id: req.params.id });
-    res.json(order);
+
+    if (!order) return res.status(404).send({ message: "Car not found." });
+    if (!isOrderActive(order.drop)) {
+      await order.updateOne({ isActive: false });
+      await order.save();
+      res.json({ ...order, isActive: false });
+    } else {
+      res.json(order);
+    }
   } catch (err) {
     res.status(500).send({ message: err.message });
   }
@@ -44,13 +60,16 @@ const handleGetOrder = async (req, res) => {
 
 const handleGetAllUserOrders = async (req, res) => {
   try {
-    Order.find((err, val) => {
-      if (err) {
-        console.log(err);
+    const orders = await Order.find({ userId: req.params.id });
+    const result = orders.map((order) => {
+      if (!isOrderActive(order.drop)) {
+        order.updateOne({ isActive: false }).then(() => order.save());
+        return { ...order._doc, isActive: false };
       } else {
-        if (val.userId === req.userId) res.json(val);
+        return order;
       }
     });
+    res.json(result);
   } catch (err) {
     res.status(500).send({ message: err.message });
   }
@@ -58,13 +77,16 @@ const handleGetAllUserOrders = async (req, res) => {
 
 const handleGetAllOrders = async (req, res) => {
   try {
-    Order.find((err, val) => {
-      if (err) {
-        console.log(err);
+    const orders = await Order.find();
+    const result = orders.map((order) => {
+      if (!isOrderActive(order.drop)) {
+        order.updateOne({ isActive: false }).then(() => order.save());
+        return { ...order._doc, isActive: false };
       } else {
-        res.json(val);
+        return order;
       }
     });
+    res.json(result);
   } catch (err) {
     res.status(500).send({ message: err.message });
   }

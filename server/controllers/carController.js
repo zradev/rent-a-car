@@ -19,7 +19,7 @@ const handleNewCar = async (req, res) => {
 
 const handleDeleteCar = async (req, res) => {
   try {
-    await Car.deleteOne({ id: req.params.id });
+    await Car.deleteOne({ _id: req.params.id });
     res.status(204).send({ message: "Car deleted successfully." });
   } catch (err) {
     res.status(500).send({ message: err.message });
