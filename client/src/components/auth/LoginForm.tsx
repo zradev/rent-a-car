@@ -3,6 +3,7 @@ import AuthContext from "../../context/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
+import { handleAxiosErrors } from "../../utils/helpfulFunctions";
 
 const LoginForm = () => {
   const bgImg = require("../../assets/images/layouts/login-bg.jpg");
@@ -46,18 +47,11 @@ const LoginForm = () => {
         setEmail("");
         setPassword("");
         navigate("/");
-      } catch (error: any) {
-        if (
-          error.response &&
-          error.response.status >= 400 &&
-          error.response.status <= 500
-        ) {
-          setError(error.response.data.message);
-        } else {
-          setError("Oops! Something Went Wrong.");
-          console.log(error);
-        }
+      } catch (error) {
+        setError(handleAxiosErrors(error));
       }
+    } else {
+      setError("Username and password are required.");
     }
   };
 
@@ -133,6 +127,10 @@ const LoginForm = () => {
             <Link to="/register" className="text-blue-400">
               Sign Up
             </Link>
+          </p>
+          <p>
+            Admin Account (for testing): <br /> email: admin@email.com <br />{" "}
+            password: @Admin123
           </p>
         </div>
       </div>

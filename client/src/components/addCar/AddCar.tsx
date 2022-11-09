@@ -5,6 +5,7 @@ import { v4 } from "uuid";
 import axios from "axios";
 import ImageUploader from "./ImageUploader";
 import { useNavigate } from "react-router-dom";
+import { handleAxiosErrors } from "../../utils/helpfulFunctions";
 
 const AddCar = ({ auth }: any) => {
   const [brand, setBrand] = useState("");
@@ -45,19 +46,8 @@ const AddCar = ({ auth }: any) => {
           count,
         });
         navigate("/cars");
-      } catch (error: any) {
-        if (
-          error.response &&
-          error.response.status >= 400 &&
-          error.response.status <= 500
-        ) {
-          setError("Error: All fields are required!");
-        } else {
-          setError("Error: Something Went Wrong.");
-          console.log(error);
-        }
-        setProgress(null);
-        window.scrollTo(0, 0);
+      } catch (error) {
+        setError(handleAxiosErrors(error));
       }
     });
   };
@@ -108,7 +98,8 @@ const AddCar = ({ auth }: any) => {
         })
       );
       return result as string[];
-    } catch (error) {
+    } catch (error: any) {
+      setError(error);
       console.log(error);
     }
   };

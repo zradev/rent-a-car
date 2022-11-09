@@ -10,6 +10,7 @@ interface IProps {
   items: IItem[];
   slidesPerView?: number;
   spacing?: number;
+  autoplay?: boolean;
 }
 
 interface IItem {
@@ -17,7 +18,12 @@ interface IItem {
   name: string;
 }
 
-const Carousel = ({ items, slidesPerView = 4, spacing = 50 }: IProps) => {
+const Carousel = ({
+  items,
+  slidesPerView = 4,
+  spacing = 50,
+  autoplay = true,
+}: IProps) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
   const handleResize = () => {
@@ -38,10 +44,14 @@ const Carousel = ({ items, slidesPerView = 4, spacing = 50 }: IProps) => {
       modules={[Autoplay, Pagination]}
       spaceBetween={isMobile ? spacing / 2 : spacing}
       slidesPerView={isMobile ? slidesPerView - 1 : slidesPerView}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
+      autoplay={
+        autoplay
+          ? {
+              delay: 3000,
+              disableOnInteraction: false,
+            }
+          : false
+      }
       pagination={{
         clickable: true,
       }}

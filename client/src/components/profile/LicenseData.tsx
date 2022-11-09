@@ -5,15 +5,16 @@ import DatePicker from "../../components/searchForm/DatePicker";
 import dayjs from "dayjs";
 import { Dayjs } from "dayjs";
 import axios from "axios";
+import { IUser } from "../../utils/interfaces";
 
-const LicenseData = ({ auth }: any) => {
-  const [licenseNum, setLicenseNum] = useState(auth.licenseNum);
-  const [licenseCountry, setLicenseCountry] = useState(auth.licenseCountry);
-  const [licenseIssueDate, setLicenseIssueDate] = useState(
-    auth.licenseIssueDate
+const LicenseData = ({ user }: { user: IUser }) => {
+  const [licenseNum, setLicenseNum] = useState(user.licenseNum);
+  const [licenseCountry, setLicenseCountry] = useState(user.licenseCountry);
+  const [licenseIssueDate, setLicenseIssueDate] = useState<Dayjs>(
+    dayjs(user.licenseIssueDate, "DD-MM-YYYY")
   );
-  const [licenseExpireDate, setLicenseExpireDate] = useState(
-    auth.licenseExpireDate
+  const [licenseExpireDate, setLicenseExpireDate] = useState<Dayjs>(
+    dayjs(user.licenseExpireDate, "DD-MM-YYYY")
   );
 
   const onChangeIssue = (newValue: Dayjs) => {
@@ -27,12 +28,15 @@ const LicenseData = ({ auth }: any) => {
   const onSubmit = async () => {
     console.log("Submited");
 
-    await axios.put(`http://localhost:8080/user/update/${auth.id}`, {
-      licenseNum,
-      licenseCountry,
-      licenseIssueDate: licenseIssueDate.format("DD/MM/YYYY"),
-      licenseExpireDate: licenseExpireDate.format("DD/MM/YYYY"),
-    });
+    await axios.put(
+      `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
+      {
+        licenseNum,
+        licenseCountry,
+        licenseIssueDate: licenseIssueDate.format("DD/MM/YYYY"),
+        licenseExpireDate: licenseExpireDate.format("DD/MM/YYYY"),
+      }
+    );
   };
 
   return (

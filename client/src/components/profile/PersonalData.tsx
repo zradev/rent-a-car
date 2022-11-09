@@ -5,13 +5,14 @@ import DatePicker from "../../components/searchForm/DatePicker";
 import dayjs from "dayjs";
 import { Dayjs } from "dayjs";
 import axios from "axios";
+import { IUser } from "../../utils/interfaces";
 
-const PersonalData = ({ auth }: any) => {
-  const [fName, setFName] = useState(auth.firstName);
-  const [lName, setLName] = useState(auth.lastName);
-  const [phone, setPhone] = useState(auth.phone);
-  const [email, setEmail] = useState(auth.email);
-  const [bday, setBday] = useState<Dayjs>(dayjs(auth.birthday, "DD-MM-YYYY"));
+const PersonalData = ({ user }: { user: IUser }) => {
+  const [fName, setFName] = useState(user.firstName);
+  const [lName, setLName] = useState(user.lastName);
+  const [phone, setPhone] = useState(user.phone);
+  const [email, setEmail] = useState(user.email);
+  const [bday, setBday] = useState<Dayjs>(dayjs(user.birthday, "DD-MM-YYYY"));
 
   const onChangeBday = (newValue: Dayjs) => {
     setBday(() => newValue);
@@ -20,13 +21,16 @@ const PersonalData = ({ auth }: any) => {
   const onSubmit = async () => {
     console.log("Submited");
 
-    await axios.put(`http://localhost:8080/user/update/${auth.id}`, {
-      firstName: fName,
-      lastName: lName,
-      phone,
-      email,
-      birthday: bday.format("DD/MM/YYYY"),
-    });
+    await axios.put(
+      `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
+      {
+        firstName: fName,
+        lastName: lName,
+        phone,
+        email,
+        birthday: bday.format("DD/MM/YYYY"),
+      }
+    );
   };
 
   return (

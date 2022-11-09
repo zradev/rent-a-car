@@ -15,8 +15,7 @@ const Gallery = ({ images }: IProps) => {
   useEffect(() => {
     isOpen ? lockScroll() : unlockScroll();
     setOpenImgIndex(() => activeImgIndex);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen]);
+  }, [isOpen, activeImgIndex, lockScroll, unlockScroll]);
 
   const handleOnClick = () => {
     setIsOpen(() => !isOpen);
@@ -103,7 +102,7 @@ const Gallery = ({ images }: IProps) => {
               className={`${
                 activeImgIndex === index
                   ? "border border-black"
-                  : "border border-transparent"
+                  : "border border-transparent hover:border-gray-500"
               } w-[100px] h-[100px]`}
               key={index}
             />

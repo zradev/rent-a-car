@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
+import { handleAxiosErrors } from "../../utils/helpfulFunctions";
 
 const RegisterForm = () => {
   const bgImg = require("../../assets/images/layouts/register-bg.jpg");
@@ -32,7 +33,7 @@ const RegisterForm = () => {
   const handleRegister = async (e: any) => {
     e.preventDefault();
 
-    if (isUserValid())
+    if (isUserValid()) {
       try {
         await axios.post("http://localhost:8080/user/register", {
           firstName: fName,
@@ -41,18 +42,12 @@ const RegisterForm = () => {
           password,
         });
         navigate("/login");
-      } catch (error: any) {
-        if (
-          error.response &&
-          error.response.status >= 400 &&
-          error.response.status <= 500
-        ) {
-          setError(error.response.data.message);
-        } else {
-          setError("Oops! Something Went Wrong.");
-          console.log(error);
-        }
+      } catch (error) {
+        setError(handleAxiosErrors(error));
       }
+    } else {
+      setError("All fields are required!");
+    }
   };
 
   useEffect(() => {

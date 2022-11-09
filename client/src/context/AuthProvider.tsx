@@ -1,5 +1,5 @@
 import { ReactNode, createContext, useState } from "react";
-import { IAuth } from "../utils/interfaces";
+import { IUser } from "../utils/interfaces";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 
@@ -8,9 +8,9 @@ export interface IAuthProvider {
 }
 
 interface IAuthContext {
-  auth: IAuth | null;
-  setAuth: React.Dispatch<React.SetStateAction<IAuth | null>>;
-  getUserData: () => Promise<IAuth>;
+  auth: IUser | null;
+  setAuth: React.Dispatch<React.SetStateAction<IUser | null>>;
+  getUserData: () => Promise<IUser | null>;
   login: (jwt: any) => void;
   logout: () => void;
 }
@@ -18,17 +18,21 @@ interface IAuthContext {
 const AuthContext = createContext({} as IAuthContext);
 
 export const AuthProvider = ({ children }: IAuthProvider) => {
-  const [auth, setAuth] = useState<IAuth | null>(
+  const [auth, setAuth] = useState<IUser | null>(
     localStorage.getItem("jwt")
       ? jwt_decode(localStorage.getItem("jwt")!)
       : null
   );
 
   const getUserData = async () => {
-    const { data } = await axios.get<IAuth>(
-      `http://localhost:8080/user/get/${auth?.id}`
-    );
-    return data;
+    if (auth) {
+      const { data } = await axios.get<IUser>(
+        `http://localhost:8080/user/get/${auth?.id}`
+      );
+
+      return data as IUser;
+    }
+    return null;
   };
 
   const login = (jwt: any) => {

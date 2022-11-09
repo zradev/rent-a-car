@@ -5,7 +5,7 @@ export interface IField {
   validator: RegExp;
 }
 
-export interface IAuth {
+export interface IUser {
   id: string;
   firstName: string;
   lastName: string;

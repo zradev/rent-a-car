@@ -2,26 +2,15 @@ import React, { useEffect, useState, useMemo } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import axios from "axios";
 import Car from "../../components/catalogue/Car";
-import { ICar } from "../../../types.d";
+import { ICar } from "../../../types";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import NoResults from "../../components/catalogue/NoResults";
 import { useSearchParams } from "react-router-dom";
-import CarSkeleton from "./../../components/catalogue/CarSkeleton";
-import { DateRangePicker as DatePicker } from "../../components/searchForm/DateRangePicker";
-import { Dayjs } from "dayjs";
-import dayjs from "dayjs";
+import CarSkeleton from "../../components/catalogue/CarSkeleton";
+import { DateRangePicker } from "../../components/searchForm/DateRangePicker";
 
 const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [dayRange, setDayRange] = React.useState<Array<Dayjs | null>>([
-    searchParams.get("pick")
-      ? dayjs(searchParams.get("pick"), "DD/MM/YYYY")
-      : dayjs(new Date()),
-    searchParams.get("drop")
-      ? dayjs(searchParams.get("drop"), "DD/MM/YYYY")
-      : dayjs(new Date()),
-  ]);
-
   const [isLoading, setIsLoading] = useState(true);
   const [cars, setCars] = useState<ICar[]>([]);
   const [carsDB, setCarsDB] = useState<ICar[]>([]);
@@ -35,22 +24,14 @@ const Index = () => {
   const [sortingLocation, setSortingLocation] = useState(
     searchParams.get("location") || "all"
   );
-
+  const [days, setDays] = useState(1);
   const locations = useMemo(() => {
     return Array.from(new Set(carsDB.map((car) => car.location)));
   }, [carsDB]);
-  const [days, setDays] = useState(0);
-
-  useEffect(() => {
-    if (dayRange[0] !== null && dayRange[1] !== null) {
-      setDays(dayRange[1]?.diff(dayRange[0], "day") + 1);
-    }
-  }, [dayRange]);
 
   useEffect(() => {
     axios
-      // .get<ICar[]>(`${process.env.REACT_APP_REGISTER_URL}/cars/get-all`)
-      .get<ICar[]>(`http://localhost:8080/cars/get-all`)
+      .get<ICar[]>(`${process.env.REACT_APP_SERVER_URL}/cars/get-all`)
       .then((res) => {
         setCarsDB(res.data);
       })
@@ -88,22 +69,6 @@ const Index = () => {
       });
     setCars(sortedCars);
   }, [carsDB, sortByPriceIndex, sortingType, sortingFuel, sortingLocation]);
-
-  const onChangeFromDay = (newValue: Dayjs | null) => {
-    setDayRange((oldRange) => {
-      const newRange = [...oldRange];
-      newRange[0] = newValue;
-      return newRange;
-    });
-  };
-
-  const onChangeToDay = (newValue: Dayjs | null) => {
-    setDayRange((oldRange) => {
-      const newRange = [...oldRange];
-      newRange[1] = newValue;
-      return newRange;
-    });
-  };
 
   const sortByPrice = () => {
     if (sortByPriceIndex === 0) {
@@ -151,11 +116,7 @@ const Index = () => {
     <MainLayout>
       <div className=" w-full bg-gray-100 mb-5">
         <div className="flex flex-col md:flex-row justify-center items-center bg-white p-6 gap-3 text-xl mt-5">
-          <DatePicker
-            dayRange={dayRange}
-            onChangeFromDay={onChangeFromDay}
-            onChangeToDay={onChangeToDay}
-          />
+          <DateRangePicker setDays={setDays} />
         </div>
         <div className="flex  gap-4 justify-center items-center m-auto font-semibold text-md">
           <button onClick={sortByPrice} className="flex m-2">
