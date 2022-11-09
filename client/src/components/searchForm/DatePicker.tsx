@@ -20,12 +20,6 @@ const DatePicker = ({ value, onChange, min, max }: IProps) => {
       value={value}
       onChange={onChange}
       renderInput={(params) => <TextField {...params} />}
-      className={
-        min?.year()! < dayjs().subtract(18, "year").year() ||
-        max?.year()! > dayjs().add(1, "year").year()
-          ? "w-[45vw] md:w-[20vw]"
-          : ""
-      }
     />
   );
 };
