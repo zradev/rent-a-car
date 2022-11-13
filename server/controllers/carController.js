@@ -30,7 +30,7 @@ const handleUpdateCar = async (req, res) => {
   try {
     car = await Car.findOne({ _id: req.params.id });
     if (!car) return res.status(404).send({ message: "Car not found." });
-    await car.updateOne(req.body);
+    await car.updateOne(req.body, { runValidators: true });
     await car.save();
     res.status(200).send({ message: "Car updated successfully." });
   } catch (err) {

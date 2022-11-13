@@ -47,7 +47,7 @@ const handleGetOrder = async (req, res) => {
 
     if (!order) return res.status(404).send({ message: "Car not found." });
     if (!isOrderActive(order.drop)) {
-      await order.updateOne({ isActive: false });
+      await order.updateOne({ isActive: false }, { runValidators: true });
       await order.save();
       res.json({ ...order, isActive: false });
     } else {
@@ -63,7 +63,9 @@ const handleGetAllUserOrders = async (req, res) => {
     const orders = await Order.find({ userId: req.params.id });
     const result = orders.map((order) => {
       if (!isOrderActive(order.drop)) {
-        order.updateOne({ isActive: false }).then(() => order.save());
+        order
+          .updateOne({ isActive: false })
+          .then(() => order.save(), { runValidators: true });
         return { ...order._doc, isActive: false };
       } else {
         return order;

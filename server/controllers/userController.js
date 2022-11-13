@@ -113,7 +113,7 @@ const handleUpdateUser = async (req, res) => {
   try {
     foundUser = await User.findOne({ _id: req.params.id });
     if (!foundUser) return res.status(404).send({ message: "User not found." });
-    await foundUser.updateOne(req.body);
+    await foundUser.updateOne(req.body, { runValidators: true });
     await foundUser.save();
     res.status(200).send({ message: "User updated successfully." });
   } catch (err) {
