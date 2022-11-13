@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema({
   carId: { type: String, required: true },
   pick: { type: String, required: true },
   drop: { type: String, required: true },
-  isActive: { type: Boolean, required: true },
+  isActive: { type: Boolean, required: true, default: true },
 });
 
 Order = mongoose.model("order", orderSchema);

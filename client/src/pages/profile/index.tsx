@@ -11,6 +11,7 @@ const Index = () => {
   const { getUserData, logout } = useContext(AuthContext);
   const [user, setUser] = useState<IUser | null>();
   const [isLoading, setIsLoading] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,6 +37,37 @@ const Index = () => {
 
   return (
     <MainLayout>
+      {isOpen && (
+        <div
+          className={`${
+            isOpen
+              ? "fixed top-0 left-0 z-[9999] w-[100%] h-[100vh] overflow-hidden bg-black bg-opacity-50 "
+              : "hidden"
+          }`}
+          onClick={() => setIsOpen(() => false)}
+        >
+          <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex w-auto h-auto">
+            <div className="flex flex-col gap-5 bg-white px-8 pt-10 text-xl">
+              <h1>Please confirm</h1>
+              <p>Are you sure you want to delete this account?</p>
+              <div className="flex gap-8 justify-center">
+                <button
+                  onClick={() => setIsOpen(() => false)}
+                  className="bg-sky-100 text-black font-bold text-start w-fit my-10 border-2 border-black p-1 px-4 rounded-full hover:bg-sky-200"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleDelete}
+                  className="text-white bg-sky-800 text-start w-fit my-10 border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
+                >
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       {isLoading ? (
         <div className="h-[100vh]">Loading...</div>
       ) : user ? (
@@ -58,7 +90,7 @@ const Index = () => {
             </h2>
             <button
               className="text-white bg-sky-800 text-start w-fit my-10 border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
-              onClick={handleDelete}
+              onClick={() => setIsOpen(true)}
             >
               Delete Account
             </button>

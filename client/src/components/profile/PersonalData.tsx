@@ -58,7 +58,7 @@ const PersonalData = ({ user }: { user: IUser }) => {
             id="lName"
             value={lName}
             onChange={(e) => setLName(e.target.value)}
-            className="rounded-lg border border-gray-400 focus:outline-sky-800 w-[250px] p-1 px-2 w-[45vw] md:w-[20vw]"
+            className="rounded-lg border border-gray-400 focus:outline-sky-800 p-1 px-2 w-[45vw] md:w-[20vw]"
           />
         </div>
         <div className=" flex justify-between items-center m-3">
@@ -70,7 +70,7 @@ const PersonalData = ({ user }: { user: IUser }) => {
             id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="rounded-lg border border-gray-400 focus:outline-sky-800 w-[250px] p-1 px-2 w-[45vw] md:w-[20vw]"
+            className="rounded-lg border border-gray-400 focus:outline-sky-800  p-1 px-2 w-[45vw] md:w-[20vw]"
           />
         </div>
         <div className=" flex justify-between items-center m-3">
@@ -82,14 +82,14 @@ const PersonalData = ({ user }: { user: IUser }) => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="rounded-lg border border-gray-400 focus:outline-sky-800 w-[250px] p-1 px-2 w-[45vw] md:w-[20vw]"
+            className="rounded-lg border border-gray-400 focus:outline-sky-800  p-1 px-2 w-[45vw] md:w-[20vw]"
           />
         </div>
         <div className=" flex justify-between items-center h-fit m-3 ">
+          <label htmlFor="birthday" className="font-bold text-lg">
+            Date of birth
+          </label>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <label htmlFor="birthday" className="font-bold text-lg">
-              Date of birth
-            </label>
             <DatePicker
               value={bday}
               onChange={onChangeBday}

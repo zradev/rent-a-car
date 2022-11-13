@@ -13,6 +13,7 @@ import Profile from "./pages/profile";
 import AddCar from "./pages/addCar";
 import CarDetails from "./pages/details";
 import Redirect from "./pages/redirect";
+import MyRents from "./pages/myRents";
 import { AuthProvider } from "./context/AuthProvider";
 import useScrollToTop from "./hooks/useScrollToTop";
 
@@ -32,8 +33,8 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/add-car" element={<AddCar />} />
-          <Route path="/add-car" element={<AddCar />} />
-          <Route path="/cars/product/:id" element={<CarDetails />} />
+          <Route path="/cars/product/:id" element={<CarDetails />} />{" "}
+          <Route path="/my-rents" element={<MyRents />} />
           <Route path="/redirect" element={<Redirect />} />
         </Routes>
       </AuthProvider>

@@ -46,7 +46,7 @@ const Gallery = ({ images }: IProps) => {
           }`}
           onClick={() => setIsOpen(() => false)}
         >
-          <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex w-[100%] md:w-auto h-[50%] md:h-auto">
+          <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex w-[100%] md:w-max h-[50%] md:h-auto">
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -87,7 +87,7 @@ const Gallery = ({ images }: IProps) => {
           }
           alt="active"
           onClick={() => handleOnClick()}
-          className="w-[380px] h-[320px]"
+          className="w-[480px] h-[320px] select-none pointer-events-none md:pointer-events-auto"
         />
         <div className="flex gap-5 overflow-x-auto">
           {images.map((image: string, index: number) => (
@@ -103,7 +103,7 @@ const Gallery = ({ images }: IProps) => {
                 activeImgIndex === index
                   ? "border border-black"
                   : "border border-transparent hover:border-gray-500"
-              } w-[100px] h-[100px]`}
+              } w-[100px] h-[100px] select-none`}
               key={index}
             />
           ))}

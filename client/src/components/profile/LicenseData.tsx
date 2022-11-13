@@ -66,7 +66,7 @@ const LicenseData = ({ user }: { user: IUser }) => {
             id="licenseCountry"
             value={licenseCountry}
             onChange={(e) => setLicenseCountry(e.target.value)}
-            className="rounded-lg border border-gray-400 focus:outline-sky-800 w-[250px] p-1 px-2 w-[45vw] md:w-[20vw]"
+            className="rounded-lg border border-gray-400 focus:outline-sky-800  p-1 px-2 w-[45vw] md:w-[20vw]"
           />
         </div>
         <div className=" flex justify-between items-center h-fit m-3 ">
