@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 import MainLayout from "./../../layouts/MainLayout";
 import AuthContext from "./../../context/AuthProvider";
 import { IUser } from "../../utils/interfaces";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import { FaClock, FaCheck, FaTrash, FaSpinner } from "react-icons/fa";
 
@@ -13,6 +13,7 @@ const Index = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [deleteId, setDeleteId] = useState<number>();
   const { getUserData } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   console.log(orders);
 
@@ -27,6 +28,12 @@ const Index = () => {
     };
     userData();
   }, [getUserData]);
+
+  useEffect(() => {
+    if (!user) {
+      return navigate("/login");
+    }
+  }, [navigate, user]);
 
   useEffect(() => {
     const getOrders = async () => {

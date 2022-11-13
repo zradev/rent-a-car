@@ -17,6 +17,7 @@ import MyRents from "./pages/myRents";
 import EditCar from "./pages/cars/editCar";
 import { AuthProvider } from "./context/AuthProvider";
 import useScrollToTop from "./hooks/useScrollToTop";
+import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
   useScrollToTop();
@@ -35,9 +36,12 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/add-car" element={<AddCar />} />
           <Route path="/cars/product/:id" element={<CarDetails />} />
-          <Route path="/cars/edit/:id" element={<EditCar />} />
+          <Route
+            path="/cars/edit/:id"
+            element={<PrivateRoute component={EditCar} />}
+          />
           <Route path="/my-rents" element={<MyRents />} />
-          <Route path="/redirect" element={<Redirect />} />
+          <Route path="/*" element={<Redirect />} />
         </Routes>
       </AuthProvider>
     </div>

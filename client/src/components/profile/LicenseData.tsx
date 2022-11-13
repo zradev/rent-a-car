@@ -45,7 +45,7 @@ const LicenseData = ({ user }: { user: IUser }) => {
         </h2>
         <div className=" flex justify-between items-center m-3">
           <label htmlFor="licenseNum" className="font-bold text-lg">
-            First Name:
+            License Number:
           </label>
           <input
             type="text"
@@ -57,7 +57,7 @@ const LicenseData = ({ user }: { user: IUser }) => {
         </div>
         <div className=" flex justify-between items-center m-3">
           <label htmlFor="licenseCountry" className="font-bold text-lg">
-            Last Name:
+            Country:
           </label>
           <input
             type="text"

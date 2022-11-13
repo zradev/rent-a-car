@@ -7,7 +7,7 @@ import ImageUploader from "./ImageUploader";
 import { useNavigate } from "react-router-dom";
 import { handleAxiosErrors } from "../../utils/helpfulFunctions";
 
-const AddCar = ({ auth }: any) => {
+const AddCar = () => {
   const [brand, setBrand] = useState("");
   const [model, setModel] = useState("");
   const [year, setYear] = useState(2022);

@@ -24,7 +24,11 @@ const index = () => {
               consequatur aperiam iure?
             </p>
           </div>
-          <img src="https://picsum.photos/400/300" alt="about" />
+          <img
+            src="https://listnetworks.com/uploads/listing/images/1640083654_88f1fe064a9cc789cddd.jpg"
+            alt="about"
+            className="w-[450px] h-[300px]"
+          />
         </div>
         <div className="flex flex-col gap-6">
           <div>

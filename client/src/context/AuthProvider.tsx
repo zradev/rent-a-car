@@ -11,6 +11,7 @@ interface IAuthContext {
   auth: IUser | null;
   setAuth: React.Dispatch<React.SetStateAction<IUser | null>>;
   getUserData: () => Promise<IUser | null>;
+  userRole: string | undefined;
   login: (jwt: any) => void;
   logout: () => void;
 }
@@ -35,6 +36,8 @@ export const AuthProvider = ({ children }: IAuthProvider) => {
     return null;
   };
 
+  const userRole = auth?.role;
+
   const login = (jwt: any) => {
     localStorage.setItem("jwt", jwt);
     setAuth(jwt_decode(localStorage.getItem("jwt")!));
@@ -46,7 +49,9 @@ export const AuthProvider = ({ children }: IAuthProvider) => {
   };
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, getUserData, login, logout }}>
+    <AuthContext.Provider
+      value={{ auth, setAuth, getUserData, userRole, login, logout }}
+    >
       {children}
     </AuthContext.Provider>
   );
