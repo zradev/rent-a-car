@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useMemo } from "react";
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "../../../layouts/MainLayout";
 import axios from "axios";
-import Car from "../../components/catalogue/Car";
-import { ICar } from "../../../types";
+import Car from "../../../components/catalogue/Car";
+import { ICar } from "../../../../types";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
-import NoResults from "../../components/catalogue/NoResults";
+import NoResults from "../../../components/catalogue/NoResults";
 import { useSearchParams } from "react-router-dom";
-import CarSkeleton from "../../components/catalogue/CarSkeleton";
-import { DateRangePicker } from "../../components/searchForm/DateRangePicker";
+import CarSkeleton from "../../../components/catalogue/CarSkeleton";
+import { DateRangePicker } from "../../../components/searchForm/DateRangePicker";
 
 const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();

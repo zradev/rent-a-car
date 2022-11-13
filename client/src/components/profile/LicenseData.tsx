@@ -26,8 +26,6 @@ const LicenseData = ({ user }: { user: IUser }) => {
   };
 
   const onSubmit = async () => {
-    console.log("Submited");
-
     await axios.put(
       `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
       {

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 interface IProps {
   images: any[];
   setImages: React.Dispatch<React.SetStateAction<string[]>>;
-  inputRef: any;
 }
 
 interface IImage {
@@ -11,9 +10,10 @@ interface IImage {
   url: string;
 }
 
-const ImageUploader = ({ images, setImages, inputRef }: IProps) => {
+const ImageUploader = ({ images, setImages }: IProps) => {
   const [imageURLs, setImageURLs] = useState<IImage[]>([]);
 
+  const inputRef = useRef<any>(null);
   const MAX_LENGTH = 8;
   const imgPlaceholderArray = new Array(MAX_LENGTH - images.length).fill(true);
 
@@ -30,8 +30,6 @@ const ImageUploader = ({ images, setImages, inputRef }: IProps) => {
 
   const handleClick = (image: any) => {
     setImageURLs(imageURLs.filter((img) => img !== image));
-    console.log(URL.revokeObjectURL(image));
-
     setImages(() =>
       images.filter((img: any) => {
         return img.name !== image.name;

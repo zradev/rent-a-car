@@ -41,8 +41,6 @@ export const AuthProvider = ({ children }: IAuthProvider) => {
   };
 
   const logout = () => {
-    console.log("logout clicked");
-
     localStorage.removeItem("jwt");
     setAuth(null);
   };

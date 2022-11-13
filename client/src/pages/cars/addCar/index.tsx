@@ -1,6 +1,6 @@
 import React from "react";
-import AddCar from "../../components/addCar/AddCar";
-import MainLayout from "./../../layouts/MainLayout";
+import AddCar from "../../../components/addCar/AddCar";
+import MainLayout from "../../../layouts/MainLayout";
 
 const index = () => {
   return (

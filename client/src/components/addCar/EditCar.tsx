@@ -1,37 +1,30 @@
 import React, { useState } from "react";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import storage from "../../firebase";
-import { v4 } from "uuid";
 import axios from "axios";
-import ImageUploader from "./ImageUploader";
 import { useNavigate } from "react-router-dom";
 import { handleAxiosErrors } from "../../utils/helpfulFunctions";
+import { ICar } from "./../../../types.d";
+import Gallery from "../gallery/Gallery";
 
-const AddCar = ({ auth }: any) => {
-  const [brand, setBrand] = useState("");
-  const [model, setModel] = useState("");
-  const [year, setYear] = useState(2022);
-  const [type, setType] = useState("economy");
-  const [price, setPrice] = useState(0);
-  const [fuel, setFuel] = useState("petrol");
-  const [seats, setSeats] = useState(4);
-  const [images, setImages] = useState([] as string[]);
-  const [location, setLocation] = useState("");
-  const [description, setDescription] = useState("");
-  const [count, setCount] = useState(1);
-  const [error, setError] = useState("");
-  const [progress, setProgress] = useState<any>();
+const EditCar = ({ car }: { car: ICar }) => {
+  const [brand, setBrand] = useState(car?.brand);
+  const [model, setModel] = useState(car?.model);
+  const [year, setYear] = useState(car?.year);
+  const [type, setType] = useState(car?.type);
+  const [price, setPrice] = useState(car?.price);
+  const [fuel, setFuel] = useState(car?.fuel);
+  const [seats, setSeats] = useState(car?.seats);
+  const [location, setLocation] = useState(car?.location);
+  const [description, setDescription] = useState(car?.description);
+  const [count, setCount] = useState(car?.count);
+  const [error, setError] = useState<string>();
   const navigate = useNavigate();
 
   const onSubmit = async (e: any) => {
     e.preventDefault();
-
-    await uploadImages().then(async (res) => {
-      if (!res) {
-        throw new Error("No images selected");
-      }
-      try {
-        await axios.post(`http://localhost:8080/cars/create`, {
+    try {
+      await axios.put(
+        `${process.env.REACT_APP_SERVER_URL}/cars/update/${car?._id}`,
+        {
           brand,
           model,
           year,
@@ -39,21 +32,16 @@ const AddCar = ({ auth }: any) => {
           price,
           fuel,
           seats,
-          images: res as string[],
           location,
           description,
           count,
-        });
-        navigate("/cars");
-      } catch (error: any) {
-        if (error.response.status === 500) {
-          setError("Error: All fields are required.");
-        } else {
-          setError(handleAxiosErrors(error));
         }
-        window.scrollTo(0, 0);
-      }
-    });
+      );
+      navigate(`/cars/product/${car?._id}`);
+    } catch (error) {
+      setError(handleAxiosErrors(error));
+      window.scrollTo(0, 0);
+    }
   };
 
   const decreaseCount = (e: any) => {
@@ -66,47 +54,6 @@ const AddCar = ({ auth }: any) => {
     setCount((count) => count + 1);
   };
 
-  const uploadImages = async () => {
-    if (images.length === 0) {
-      setError("Error: At least 1 image is required!");
-      return window.scrollTo(0, 0);
-    }
-
-    try {
-      const result = await Promise.all(
-        images.map((image: any) => {
-          return new Promise((resolve, reject) => {
-            const imageName = image.name + v4();
-            const sotrageRef = ref(storage, `images/cars/${imageName}`);
-            const uploadTask = uploadBytesResumable(sotrageRef, image);
-            uploadTask.on(
-              "state_changed",
-              (snapshot) => {
-                const progress = Math.round(
-                  (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-                );
-                setProgress(progress);
-              },
-              (err) => {
-                console.log(err);
-                reject(error);
-              },
-              () => {
-                getDownloadURL(uploadTask.snapshot.ref).then((url) => {
-                  resolve(url);
-                });
-              }
-            );
-          });
-        })
-      );
-      return result as string[];
-    } catch (error: any) {
-      setError(error);
-      window.scrollTo(0, 0);
-    }
-  };
-
   return (
     <>
       <form
@@ -115,11 +62,11 @@ const AddCar = ({ auth }: any) => {
         className="flex flex-col  w-full p-3 lg:px-[250px] md:px-[200px] my-2"
         autoComplete="off"
       >
-        <h2 className="text-2xl text-center border-b mb-6">Add New Car</h2>
+        <h2 className="text-2xl text-center border-b mb-6">Edit</h2>
         {error && (
           <div className="text-center text-2xl text-rose-400">{error}</div>
         )}
-        <ImageUploader images={images} setImages={setImages} />
+        <Gallery images={car?.images} />
         <div className=" flex justify-between items-center m-3">
           <label htmlFor="brand" className="font-bold text-lg">
             Brand:
@@ -260,11 +207,10 @@ const AddCar = ({ auth }: any) => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          {progress > 0 && <p>Creating: {progress}%</p>}
           <input
             type="submit"
             className="text-white bg-sky-800 text-start w-fit mt-2 mb-10 border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700"
-            value={"Create"}
+            value={"Update"}
           />
         </div>
       </form>
@@ -272,4 +218,4 @@ const AddCar = ({ auth }: any) => {
   );
 };
 
-export default AddCar;
+export default EditCar;
