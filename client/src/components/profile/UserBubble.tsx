@@ -9,6 +9,7 @@ const UserBubble = () => {
   const [user, setUser] = useState<IUser | null>();
   const { logout, getUserData } = useContext(AuthContext);
   const { lockScroll, unlockScroll } = useScrollLock();
+  const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
   const bubble = useRef<any>(null);
 
   useEffect(() => {
@@ -40,40 +41,46 @@ const UserBubble = () => {
   }, [bubble]);
 
   return (
-    <div
-      ref={bubble}
-      className="relative flex flex-col justify-center items-center text-center select-none bg-gray-200 rounded-full w-[40px] h-[40px] md:w-9 md:h-9 md:ml-3 cursor-pointer border hover:border-gray-300"
-      onClick={() => {
-        setTimeout(() => setIsOpen((prev) => !prev), 100);
-      }}
-    >
-      {
-        // Display profile picture if you add file system to store images
-      }
-      <p className="m-auto"> {user?.firstName[0].toLocaleUpperCase()}</p>
-      {isOpen && (
-        <ul
-          className={`fixed md:absolute top-[10%] md:top-[100%] w-full h-full md:h-auto md:w-[115px] bg-white pt-[105px] md:p-3 text-xl md:text-md text-black md:text-gray-600 md:font-thin  rounded md:border mt-1 cursor-default ${
-            isOpen &&
-            "flex flex-col gap-4 left-[200%] md:left-auto slide-in-left md:animate-none"
-          }`}
-        >
-          <li className="hover:text-gray-800">
-            <Link to="/profile">Profile</Link>
-          </li>
-          {user?.role === "admin" && (
-            <li>
-              <Link to="/add-car">Add Car</Link>
+    <div ref={bubble}>
+      <button
+        onClick={() => {
+          setIsOpen((prev) => {
+            setPreventAnimationOnLoad(false);
+            return !prev;
+          });
+        }}
+        className={`flex items-center justify-center relative bg-gray-200 z-50 w-9 h-9 m-auto text-xl rounded-full hover:border`}
+      >
+        <p className="w-min h-min">{user?.firstName[0].toLocaleUpperCase()}</p>
+      </button>
+      <div
+        className={`fixed md:absolute top-0 w-full h-full pt-[20vh] px-9 md:w-max md:static md:h-auto md:p-5 md:mt-2 bg-white ${
+          isOpen
+            ? " right-[-100%] md:top-[100%] slide-in-right md:animate:none md:animate-none md:rounded-lg md:border"
+            : preventAnimationOnLoad
+            ? " right-[-100%] md:hidden"
+            : " right-0 slide-out-right md:hidden"
+        }`}
+      >
+        {isOpen && (
+          <ul className="flex flex-col items-center space-y-10 md:space-y-1 md:gap-4 text-2xl md:text-xl mt-10 md:mt-0">
+            <li className="hover:text-gray-800">
+              <Link to="/profile">Profile</Link>
             </li>
-          )}
-          <li>
-            <Link to="/my-rents">My Rents</Link>
-          </li>
-          <li>
-            <button onClick={logout}>Sign out</button>
-          </li>
-        </ul>
-      )}
+            {user?.role === "admin" && (
+              <li>
+                <Link to="/add-car">Add Car</Link>
+              </li>
+            )}
+            <li>
+              <Link to="/my-rents">My Rents</Link>
+            </li>
+            <li>
+              <button onClick={logout}>Sign out</button>
+            </li>
+          </ul>
+        )}
+      </div>
     </div>
   );
 };
