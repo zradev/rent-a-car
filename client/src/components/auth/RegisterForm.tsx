@@ -33,9 +33,19 @@ const RegisterForm = () => {
   const handleRegister = async (e: any) => {
     e.preventDefault();
 
+    if (!isEmailValid) {
+      window.scrollTo(0, 0);
+      return setError("Invalid Email Address!");
+    }
+
+    if (!isPasswordValid) {
+      window.scrollTo(0, 0);
+      return setError("Invalid Password!");
+    }
+
     if (isUserValid()) {
       try {
-        await axios.post("http://localhost:8080/user/register", {
+        await axios.post(`${process.env.REACT_APP_SERVER_URL}/user/register`, {
           firstName: fName,
           lastName: lName,
           email,
@@ -90,7 +100,11 @@ const RegisterForm = () => {
         </button>
         <p className="text-center">or</p>
         {error && <div className="text-2xl text-rose-400">{error}</div>}
-        <form className="flex flex-col ">
+        <form
+          method="post"
+          onSubmit={handleRegister}
+          className="flex flex-col "
+        >
           <label htmlFor="fName" className="mt-3">
             First Name
           </label>
@@ -166,21 +180,18 @@ const RegisterForm = () => {
             <p> {"\u2022"} At least 1 special symbol</p>
             <p> {"\u2022"} Min 8 and max 50 characters</p>
           </div>
-        </form>
-        <div className="flex flex-col justify-center items-center mt-3 gap-2">
-          <button
-            onClick={handleRegister}
-            className="w-full border bg-gray-100 text-xl p-1 px-3 rounded-lg hover:bg-green-600 hover:text-white"
-          >
-            Sign Up
-          </button>
-          <p>
+          <input
+            type="submit"
+            value=" Sign Up"
+            className="w-full border bg-gray-100 text-xl text-center p-1 px-3 mt-6 rounded-lg hover:bg-green-600 hover:text-white"
+          />
+          <p className="mt-3">
             Already have an account?{" "}
             <Link to="/login" className="text-blue-400">
               Log In
             </Link>
           </p>
-        </div>
+        </form>
       </div>
     </div>
   );

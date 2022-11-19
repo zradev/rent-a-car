@@ -3,30 +3,16 @@ import { useNavigate } from "react-router-dom";
 import AddCar from "../../../components/addCar/AddCar";
 import AuthContext from "../../../context/AuthProvider";
 import MainLayout from "../../../layouts/MainLayout";
-import { IUser } from "../../../utils/interfaces";
 
 const Index = () => {
-  const { getUserData } = useContext(AuthContext);
-  const [user, setUser] = useState<IUser | null>();
+  const { userRole } = useContext(AuthContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const userData = async () => {
-      try {
-        const data = await getUserData();
-        setUser(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    userData();
-  }, [getUserData]);
-
-  useEffect(() => {
-    if (!user) {
+    if (userRole !== "user" && userRole !== "admin") {
       return navigate("/login");
     }
-  }, [navigate, user]);
+  }, [navigate, userRole]);
 
   return (
     <MainLayout>

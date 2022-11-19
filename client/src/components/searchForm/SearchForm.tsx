@@ -12,12 +12,12 @@ const SearchForm = () => {
         action=""
         className="static md:w-[500px] w-[85vw] h-auto bg-white text-black shadow-xl"
       >
-        <div className="flex flex-col justify-center items-center p-5 md:p-[48px] h-auto text-xl">
+        <div className="flex flex-col justify-center items-center space-y-3 p-5 md:p-[48px] h-auto text-xl">
           <h2 className="text-2xl text-center font-black md:text-3xl mb-3">
-            Let's find your car!
+            Let's find your car !
           </h2>
           <label>Pick-up location:</label>
-          <div className="flex items-center w-[100%] h-10 gap-3 bg-gray-200 rounded-lg text-black outline-0 active:border-none p-5">
+          <div className="flex items-center w-[100%] h-10 space-x-3 bg-gray-200 rounded-lg text-black outline-0 active:border-none p-5">
             <FaCar />
             <input
               type="text"

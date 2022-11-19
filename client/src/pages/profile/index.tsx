@@ -6,6 +6,7 @@ import { IUser } from "../../utils/interfaces";
 import LicenseData from "../../components/profile/LicenseData";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Loader from "../../components/common/Loader";
 
 const Index = () => {
   const { getUserData, logout } = useContext(AuthContext);
@@ -28,10 +29,10 @@ const Index = () => {
   }, [getUserData]);
 
   useEffect(() => {
-    if (!user) {
+    if (!localStorage.getItem("jwt")) {
       return navigate("/login");
     }
-  }, [navigate, user]);
+  }, [navigate]);
 
   const handleDelete = async () => {
     await axios.delete(
@@ -75,7 +76,7 @@ const Index = () => {
         </div>
       )}
       {isLoading ? (
-        <div className="h-[100vh]">Loading...</div>
+        <Loader />
       ) : (
         user && (
           <div className="flex flex-col items-center gap-[50px] w-full p-3 lg:px-[250px] md:px-[200px] my-[50px]">

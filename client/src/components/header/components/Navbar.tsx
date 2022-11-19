@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.jpg";
 import AuthContext from "./../../../context/AuthProvider";
@@ -10,10 +10,23 @@ const Navbar = () => {
   const [preventAnimationOnLoad, setPreventAnimationOnLoad] = useState(true);
   const { auth } = useContext(AuthContext);
   const { lockScroll, unlockScroll } = useScrollLock();
+  const navRef = useRef<any>(null);
 
   useEffect(() => {
     isNavbarOpen ? lockScroll() : unlockScroll();
   }, [isNavbarOpen, lockScroll, unlockScroll]);
+
+  useEffect(() => {
+    function handleClickOutside(event: any) {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsNavbarOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navRef]);
 
   return (
     <nav className=" bg-white shadow-sm  p-3 md:mx-10">
@@ -49,7 +62,10 @@ const Navbar = () => {
               : "fixed md:block left-0 slide-out-left"
           }`}
         >
-          <ul className="flex flex-col items-center gap-4 text-xl mt-10 md:flex-row md:mt-0">
+          <ul
+            className="flex flex-col items-center space-y-10 md:space-y-0 md:gap-4 text-2xl md:text-xl mt-10 md:flex-row md:mt-0"
+            ref={navRef}
+          >
             <li className="hover:text-blue-500">
               <Link to="/">Home</Link>
             </li>
@@ -64,10 +80,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="ml-3">
+        <div className="ml-3 relative">
           {!auth ? (
             <Link to="/login">
-              <button className="text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700">
+              <button className="relative text-white bg-sky-800 text-start w-fit border-2 border-indigo-800 p-1 px-4 rounded-full hover:bg-sky-700">
                 Log in
               </button>
             </Link>

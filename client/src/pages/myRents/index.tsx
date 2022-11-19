@@ -6,11 +6,13 @@ import { IUser } from "../../utils/interfaces";
 import { Link, useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import { FaClock, FaCheck, FaTrash, FaSpinner } from "react-icons/fa";
+import Loader from "../../components/common/Loader";
 
 const Index = () => {
   const [user, setUser] = useState<IUser | null>();
   const [orders, setOrders] = useState<any>();
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [deleteId, setDeleteId] = useState<number>();
   const { getUserData } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -25,15 +27,16 @@ const Index = () => {
       } catch (error) {
         console.log(error);
       }
+      setIsLoading(false);
     };
     userData();
   }, [getUserData]);
 
   useEffect(() => {
-    if (!user) {
+    if (!localStorage.getItem("jwt")) {
       return navigate("/login");
     }
-  }, [navigate, user]);
+  }, [navigate]);
 
   useEffect(() => {
     const getOrders = async () => {
@@ -94,7 +97,9 @@ const Index = () => {
           </div>
         </div>
       )}
-      {orders && (
+      {isLoading ? (
+        <Loader />
+      ) : (
         <div className="flex flex-col my-10 justify-center items-center ">
           <h2 className="text-2xl text-center mb-3 md:mb-8">Your Rents:</h2>
           <table className="w-full mx-0.5 md:w-2/3 text-center mb-[200px]">

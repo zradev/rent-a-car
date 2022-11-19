@@ -51,12 +51,13 @@ const Index = () => {
       .filter((car) => {
         return sortingFuel === "all"
           ? car.fuel !== null
-          : car.fuel === sortingFuel;
+          : car.fuel.toLocaleLowerCase() === sortingFuel.toLocaleLowerCase();
       })
       .filter((car) => {
         return sortingLocation === "all"
           ? car.location !== null
-          : car.location === sortingLocation;
+          : car.location.toLocaleLowerCase() ===
+              sortingLocation.toLocaleLowerCase();
       })
       .sort((a, b) => {
         if (sortByPriceIndex === 0) {
@@ -141,12 +142,9 @@ const Index = () => {
             onChange={(e) => sortByType(e)}
             className="bg-transparent outline-none my-2 [&>*]:bg-gray-100"
           >
-            <option
-              value={searchParams.get("type") || "all"}
-              selected
-              className="hidden"
-            >
-              {searchParams.get("type") || "Type"}
+            <option value={searchParams.get("type") || "all"} hidden>
+              {searchParams.get("type")?.charAt(0).toUpperCase() +
+                searchParams.get("type")?.slice(1)! || "Type"}
             </option>
             <option value="all">Type</option>
             <option value="economy">Economy</option>
@@ -161,12 +159,9 @@ const Index = () => {
             onChange={(e) => sortByFuel(e)}
             className="bg-transparent outline-none my-2 [&>*]:bg-gray-100"
           >
-            <option
-              value={searchParams.get("fuel") || "all"}
-              selected
-              className="hidden"
-            >
-              {searchParams.get("fuel") || "Fuel"}
+            <option value={searchParams.get("fuel") || "all"} hidden>
+              {searchParams.get("fuel")?.charAt(0).toUpperCase() +
+                searchParams.get("fuel")?.slice(1)! || "Fuel"}
             </option>
             <option value="all">Fuel</option>
             <option value="petrol">Petrol</option>
@@ -180,12 +175,9 @@ const Index = () => {
             onChange={(e) => sortByLocation(e)}
             className="bg-transparent outline-none my-2 [&>*]:bg-gray-100 capitalize"
           >
-            <option
-              value={searchParams.get("location") || "all"}
-              selected
-              className="hidden"
-            >
-              {searchParams.get("location") || "Location"}
+            <option value={searchParams.get("location") || "all"} hidden>
+              {searchParams.get("location")?.charAt(0).toUpperCase() +
+                searchParams.get("location")?.slice(1)! || "Location"}
             </option>
             <option value="all">Location</option>
             {locations.map((location, index) => (

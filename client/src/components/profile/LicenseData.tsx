@@ -6,6 +6,7 @@ import dayjs from "dayjs";
 import { Dayjs } from "dayjs";
 import axios from "axios";
 import { IUser } from "../../utils/interfaces";
+import { COUNTRIES } from "../../utils/constants";
 
 const LicenseData = ({ user }: { user: IUser }) => {
   const [licenseNum, setLicenseNum] = useState(user.licenseNum);
@@ -59,18 +60,22 @@ const LicenseData = ({ user }: { user: IUser }) => {
           <label htmlFor="licenseCountry" className="font-bold text-lg">
             Country:
           </label>
-          <input
-            type="text"
-            id="licenseCountry"
-            value={licenseCountry}
+          <select
+            defaultValue={user.licenseCountry || "Select"}
             onChange={(e) => setLicenseCountry(e.target.value)}
-            className="rounded-lg border border-gray-400 focus:outline-sky-800  p-1 px-2 w-[45vw] md:w-[20vw]"
-          />
+            className="rounded-lg border border-gray-400 focus:outline-sky-800 p-1 px-2 w-[45vw] md:w-[20vw]"
+          >
+            {COUNTRIES.map((country: string) => (
+              <option key={country} value={country}>
+                {country}
+              </option>
+            ))}
+          </select>
         </div>
         <div className=" flex justify-between items-center h-fit m-3 ">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <label htmlFor="birthday" className="font-bold text-lg">
-              Issued:
+              Issued at:
             </label>
             <DatePicker
               value={licenseIssueDate}
@@ -83,7 +88,7 @@ const LicenseData = ({ user }: { user: IUser }) => {
         <div className=" flex justify-between items-center h-fit m-3 ">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <label htmlFor="birthday" className="font-bold text-lg">
-              Expires:
+              Expires at:
             </label>
             <DatePicker
               value={licenseExpireDate}

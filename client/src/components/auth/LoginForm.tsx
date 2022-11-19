@@ -29,10 +29,11 @@ const LoginForm = () => {
   };
 
   const handleLogin = async (e: any) => {
+    e.preventDefault();
     if (isValidEmail(email)) {
       try {
         const response = await axios.post(
-          "http://localhost:8080/user/login",
+          `${process.env.REACT_APP_SERVER_URL}/user/login`,
           {
             email,
             password,
@@ -56,8 +57,8 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="block md:flex w-full h-[100vh]">
-      <div className="relative z-10 flex flex-col gap-4 w-[100vw] md:w-[50vw] overflow-auto p-10">
+    <div className="block md:flex w-full">
+      <div className="relative z-10 flex flex-col gap-4 w-[100vw]  h-[100vh] md:w-[50vw] overflow-auto p-10">
         <h2 className="w-full text-center text-4xl">Log in to your account</h2>
         <button className="flex justify-center items-center text-xl font-semibold gap-2 text-gray-500 border p-2 px-auto hover:shadow-md">
           <FcGoogle className="text-3xl" />
@@ -65,7 +66,7 @@ const LoginForm = () => {
         </button>
         <p className="text-center">or</p>
         {error && <div className="text-2xl text-rose-400">{error}</div>}
-        <form className="flex flex-col">
+        <form method="get" onSubmit={handleLogin} className="flex flex-col">
           <label htmlFor="email" className="mt-3">
             Email Address
           </label>
@@ -114,21 +115,20 @@ const LoginForm = () => {
               password?.length === 0 &&
               "Please enter your password."}
           </p>
-        </form>
-        <div className="flex flex-col justify-center items-center mt-3 gap-2">
-          <button
-            onClick={handleLogin}
-            className="w-full border bg-gray-100 text-xl p-1 px-3 rounded-lg hover:bg-green-600 hover:text-white"
-          >
-            Login
-          </button>
-          <p>
+          <input
+            type="submit"
+            className="w-full border bg-gray-100 text-xl text-center p-1 px-3 mt-6 rounded-lg hover:bg-green-600 hover:text-white"
+            value={"Login"}
+          />
+          <p className="mt-3">
             Don't have an account?{" "}
             <Link to="/register" className="text-blue-400">
               Sign Up
             </Link>
           </p>
-          <p>
+        </form>
+        <div className="flex flex-col justify-center items-center mt-3 gap-2">
+          <p className="mt-10">
             Admin Account (for testing): <br /> email: admin@email.com <br />{" "}
             password: @Admin123
           </p>

@@ -32,7 +32,7 @@ const Index = () => {
             {CARDS.map((card, index) => (
               <div
                 key={index}
-                className="flex items-center gap-8 md:p-4 md:mb-2 md:shadow-md"
+                className="flex items-center space-x-8 md:p-4 md:mb-2 md:shadow-md"
               >
                 <card.image className="w-[55px] h-[55px] text-sky-900" />
                 <div className="w-fit">

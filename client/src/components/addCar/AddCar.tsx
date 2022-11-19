@@ -31,7 +31,7 @@ const AddCar = () => {
         throw new Error("No images selected");
       }
       try {
-        await axios.post(`http://localhost:8080/cars/create`, {
+        await axios.post(`${process.env.REACT_APP_SERVER_URL}/cars/create`, {
           brand,
           model,
           year,

@@ -63,12 +63,12 @@ export const DateRangePicker = ({ setDays }: { setDays?: any }) => {
       <div
         className={`flex flex-row ${
           pathname === "/" && "md:flex-col"
-        }  justify-center items-center gap-3 mx-3 p-1`}
+        }  justify-center items-center m-3 p-1`}
       >
         <div
           className={`grid grid-cols-1 ${
             pathname === "/" && "md:grid-cols-2"
-          } items-center`}
+          } items-center m-2`}
         >
           <label>Pick-up at:</label>
           <DatePicker
@@ -80,7 +80,7 @@ export const DateRangePicker = ({ setDays }: { setDays?: any }) => {
         </div>
         <div
           className={`grid grid-cols-1 ${
-            pathname === "/" && "md:grid-cols-2"
+            pathname === "/" && "md:grid-cols-2 m-2"
           } items-center`}
         >
           <label>Drop-off at:</label>

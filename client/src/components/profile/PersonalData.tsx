@@ -19,15 +19,13 @@ const PersonalData = ({ user }: { user: IUser }) => {
   };
 
   const onSubmit = async () => {
-    console.log("Submited");
-
     await axios.put(
       `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
       {
         firstName: fName,
         lastName: lName,
-        phone,
-        email,
+        phone: phone,
+        email: email,
         birthday: bday.format("DD/MM/YYYY"),
       }
     );
@@ -67,6 +65,7 @@ const PersonalData = ({ user }: { user: IUser }) => {
           </label>
           <input
             type="tel"
+            pattern="[0-9]*"
             id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}

@@ -6,8 +6,6 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-family: "Josefin Sans", cursive;
 }
@@ -33,6 +31,14 @@ a {
   animation: slide-out-left 0.5s forwards;
 }
 
+.slide-in-right {
+  animation: slide-in-right 0.5s forwards;
+}
+
+.slide-out-right {
+  animation: slide-out-right 0.5s forwards;
+}
+
 @keyframes skeleton-bg {
   0% {
     background-color: rgb(243 244 246);
@@ -54,5 +60,17 @@ a {
 @keyframes slide-out-left {
   100% {
     left: -100%;
+  }
+}
+
+@keyframes slide-in-right {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide-out-right {
+  100% {
+    right: -100%;
   }
 }

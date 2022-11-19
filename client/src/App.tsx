@@ -26,21 +26,24 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cars" element={<Cars />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/cars" element={<Cars />} />
+          <Route path="/cars/product/:id" element={<CarDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/add-car" element={<AddCar />} />
-          <Route path="/cars/product/:id" element={<CarDetails />} />
+          <Route path="/my-rents" element={<MyRents />} />
+          <Route
+            path="/add-car"
+            element={<PrivateRoute component={AddCar} />}
+          />
           <Route
             path="/cars/edit/:id"
             element={<PrivateRoute component={EditCar} />}
           />
-          <Route path="/my-rents" element={<MyRents />} />
           <Route path="/*" element={<Redirect />} />
         </Routes>
       </AuthProvider>

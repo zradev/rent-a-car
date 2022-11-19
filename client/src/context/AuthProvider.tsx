@@ -2,6 +2,7 @@ import { ReactNode, createContext, useState } from "react";
 import { IUser } from "../utils/interfaces";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export interface IAuthProvider {
   children: ReactNode;
@@ -24,11 +25,12 @@ export const AuthProvider = ({ children }: IAuthProvider) => {
       ? jwt_decode(localStorage.getItem("jwt")!)
       : null
   );
+  const navigate = useNavigate();
 
   const getUserData = async () => {
     if (auth) {
       const { data } = await axios.get<IUser>(
-        `http://localhost:8080/user/get/${auth?.id}`
+        `${process.env.REACT_APP_SERVER_URL}/user/get/${auth?.id}`
       );
 
       return data as IUser;
@@ -46,6 +48,7 @@ export const AuthProvider = ({ children }: IAuthProvider) => {
   const logout = () => {
     localStorage.removeItem("jwt");
     setAuth(null);
+    navigate("/");
   };
 
   return (
