@@ -6,6 +6,7 @@ import dayjs from "dayjs";
 import { Dayjs } from "dayjs";
 import axios from "axios";
 import { IUser } from "../../utils/interfaces";
+import { handleAxiosErrors } from "../../utils/helpfulFunctions";
 
 const PersonalData = ({ user }: { user: IUser }) => {
   const [fName, setFName] = useState(user.firstName);
@@ -18,17 +19,23 @@ const PersonalData = ({ user }: { user: IUser }) => {
     setBday(() => newValue);
   };
 
-  const onSubmit = async () => {
-    await axios.put(
-      `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
-      {
-        firstName: fName,
-        lastName: lName,
-        phone: phone,
-        email: email,
-        birthday: bday.format("DD/MM/YYYY"),
-      }
-    );
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    try {
+      await axios.put(
+        `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
+        {
+          firstName: fName,
+          lastName: lName,
+          phone: phone,
+          email: email,
+          birthday: bday.format("DD/MM/YYYY"),
+        }
+      );
+      window.scrollTo(0, 0);
+    } catch (error) {
+      console.log(handleAxiosErrors(error));
+    }
   };
 
   return (

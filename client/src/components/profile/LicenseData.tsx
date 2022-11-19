@@ -7,6 +7,7 @@ import { Dayjs } from "dayjs";
 import axios from "axios";
 import { IUser } from "../../utils/interfaces";
 import { COUNTRIES } from "../../utils/constants";
+import { handleAxiosErrors } from "../../utils/helpfulFunctions";
 
 const LicenseData = ({ user }: { user: IUser }) => {
   const [licenseNum, setLicenseNum] = useState(user.licenseNum);
@@ -26,16 +27,22 @@ const LicenseData = ({ user }: { user: IUser }) => {
     setLicenseExpireDate(() => newValue);
   };
 
-  const onSubmit = async () => {
-    await axios.put(
-      `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
-      {
-        licenseNum,
-        licenseCountry,
-        licenseIssueDate: licenseIssueDate.format("DD/MM/YYYY"),
-        licenseExpireDate: licenseExpireDate.format("DD/MM/YYYY"),
-      }
-    );
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    try {
+      await axios.put(
+        `${process.env.REACT_APP_SERVER_URL}/user/update/${user.id}`,
+        {
+          licenseNum,
+          licenseCountry,
+          licenseIssueDate: licenseIssueDate.format("DD/MM/YYYY"),
+          licenseExpireDate: licenseExpireDate.format("DD/MM/YYYY"),
+        }
+      );
+      window.scrollTo(0, 0);
+    } catch (error) {
+      console.log(handleAxiosErrors(error));
+    }
   };
 
   return (
