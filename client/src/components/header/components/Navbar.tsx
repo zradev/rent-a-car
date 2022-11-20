@@ -11,6 +11,7 @@ const Navbar = () => {
   const { auth } = useContext(AuthContext);
   const { lockScroll, unlockScroll } = useScrollLock();
   const navRef = useRef<any>(null);
+  const buttonRef = useRef<any>(null);
 
   useEffect(() => {
     isNavbarOpen ? lockScroll() : unlockScroll();
@@ -18,7 +19,10 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleClickOutside(event: any) {
-      if (navRef.current && !navRef.current.contains(event.target)) {
+      if (
+        (navRef.current && !navRef.current.contains(event.target)) ||
+        !buttonRef.current.contains(event.target)
+      ) {
         setIsNavbarOpen(false);
       }
     }
@@ -42,6 +46,7 @@ const Navbar = () => {
             </p>
           </Link>
           <button
+            ref={buttonRef}
             onClick={() =>
               setIsNavbarOpen((prev) => {
                 setPreventAnimationOnLoad(false);
