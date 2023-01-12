@@ -20,7 +20,8 @@ const Navbar = () => {
   useEffect(() => {
     function handleClickOutside(event: any) {
       if (
-        (navRef.current && !navRef.current.contains(event.target)) ||
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
         !buttonRef.current.contains(event.target)
       ) {
         setIsNavbarOpen(false);

@@ -8,6 +8,7 @@ import NoResults from "../../../components/catalogue/NoResults";
 import { useSearchParams } from "react-router-dom";
 import CarSkeleton from "../../../components/catalogue/CarSkeleton";
 import { DateRangePicker } from "../../../components/searchForm/DateRangePicker";
+import Pagination from "./../../../components/catalogue/Pagination";
 
 const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -28,6 +29,11 @@ const Index = () => {
   const locations = useMemo(() => {
     return Array.from(new Set(carsDB.map((car) => car.location)));
   }, [carsDB]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+  const lastProductIndex = currentPage * productsPerPage;
+  const firstProductIndex = lastProductIndex - productsPerPage;
+  const currentCars = cars.slice(firstProductIndex, lastProductIndex);
 
   useEffect(() => {
     axios
@@ -69,6 +75,8 @@ const Index = () => {
         }
       });
     setCars(sortedCars);
+    setCurrentPage(1);
+    window.scrollTo(0, 0);
   }, [carsDB, sortByPriceIndex, sortingType, sortingFuel, sortingLocation]);
 
   const sortByPrice = () => {
@@ -197,7 +205,7 @@ const Index = () => {
           </div>
         ) : cars.length > 0 ? (
           <div className="grid gap-2 mx-2 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
-            {cars.map((car) => (
+            {currentCars.map((car) => (
               <Car key={car._id} car={car} days={days} />
             ))}
           </div>
@@ -205,6 +213,12 @@ const Index = () => {
           <NoResults />
         )}
       </div>
+      <Pagination
+        totalPosts={cars.length}
+        productsPerPage={productsPerPage}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      />
     </MainLayout>
   );
 };

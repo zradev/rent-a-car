@@ -135,7 +135,7 @@ const LoginForm = () => {
         </div>
       </div>
       <div
-        className="relative z-0 w-full md:h-full bg-no-repeat bg-cover bg-center"
+        className="relative z-0 w-full md:h-[100vh] bg-no-repeat bg-cover bg-center"
         style={{
           backgroundImage: `url(${bgImg})`,
         }}

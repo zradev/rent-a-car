@@ -87,7 +87,7 @@ const Gallery = ({ images }: IProps) => {
           }
           alt="active"
           onClick={() => handleOnClick()}
-          className="w-[480px] h-[320px] select-none pointer-events-none md:pointer-events-auto"
+          className="w-[80vw] md:w-[30vw] h-[80vw] md:h-[30vw] mb-5 md:mb-0 select-none pointer-events-none md:pointer-events-auto object-contain"
         />
         <div className="flex gap-5 overflow-x-auto">
           {images.map((image: string, index: number) => (
@@ -97,13 +97,13 @@ const Gallery = ({ images }: IProps) => {
                   ? image
                   : require(`../../assets/images/cars/${image}`)
               }
-              alt=""
+              alt="option"
               onClick={() => setActiveImgIndex(() => index)}
               className={`${
                 activeImgIndex === index
-                  ? "border border-black"
-                  : "border border-transparent hover:border-gray-500"
-              } w-[100px] h-[100px] select-none`}
+                  ? "border-b-2 border-black pb-1.5"
+                  : "border-b-2 border-transparent hover:border-gray-500 pb-1.5"
+              } w-[20vw] md:w-[10vw] lg:h-[6vw] h-[20vw] md:h-[10vw] lg:h-[6vw] select-none object-contain`}
               key={index}
             />
           ))}
